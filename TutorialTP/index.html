@@ -50,6 +50,65 @@ pre {
   background-color: #d0deee;
 }
 
+summary {
+  width: 500px;
+  background-color: #cccccc;
+  padding: 3pt;
+  border-radius: 0px;
+  border-style: none;
+  border-color: #666666;
+box-shadow: 3pt 3pt 4pt 0px #333333;
+  margin: 0pt;
+  color: black;
+}
+
+details[open] > summary {
+  background-color: #666666;
+  color: white;
+}
+
+#mozToc {
+  background-color: #eeeeee;
+  width: 50%;
+  font-size: 1em;
+}
+
+a {
+  color: #0066ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+ul > li > ul {
+  font-size: 0.85em;
+}
+
+summary {
+  cursor: pointer;
+}
+      
+summary:hover {
+  background-color: #999999;
+}
+
+details > p {
+  background-color: silver;
+  margin: 0em 2em;
+  padding: 0.3em 1em;
+}
+
 </style></head>
   <body>
     <p></p>
@@ -58,8 +117,8 @@ pre {
     <p><br>
     </p>
     <p></p>
-    <details>
-      <summary>目次を開く</summary>
+    <details open="">
+      <summary>目次　</summary>
       <ul id="mozToc">
         <!--mozToc h1 1 h2 2 h3 3 h4 4 h5 5 h6 6-->
         <li><a href="#mozTocId793962">* 0.（初心者向け）ModComponentアイテム作成の段階的なチュートリアル</a></li>
@@ -205,12 +264,10 @@ pre {
       </ul>
     </details>
     <h1><a id="mozTocId154138" class="mozTocH1"></a>* 1.前置き</h1>
-    <p>（実は、ほとんどの必要な情報は既に <a href="https://github.com/ds5678/ModComponent/tree/master/docs/"
-
+    <p>（実は、ほとんどの必要な情報は既に <a href="https://github.com/ds5678/ModComponent/tree/master/docs/"
         target="_blank">https://github.com/ds5678/ModComponent/tree/master/docs/</a>
       にあります。<br>
-      チュートリアルも <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md"
-
+      チュートリアルも <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md"
         target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md</a>
       にあります。<br>
       しかしそれを読んだだけではまだ理解できない人のために、ここではもっとUnityビギナー向けの詳しい手順を書きます。）</p>
@@ -277,8 +334,7 @@ pre {
     <p><img src="Images/Tut6-1.jpg" alt=""> </p>
     <h2><a id="mozTocId521675" class="mozTocH2"></a>6-2.Unityテンプレートのダウンロード</h2>
     <ol>
-      <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
-
+      <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
           https://github.com/ds5678/ModComponent_TemplateProject</a><strong><br>
           「Code」</strong>ボタンをクリックし、<strong>Download ZIP</strong>をクリックします。<br>
@@ -305,27 +361,26 @@ pre {
       今回の作成したモデルは下記の通りです。</p>
     <p><img src="Images/Tut7-0.jpg" alt=""></p>
     <ul>
-      <li>- Blenderファイル名: TP01.blend</li>
-      <li>- マテリアル名: TP_Material</li>
-      <li>- テクスチャ名: TP1_Texture (1024*1024)</li>
-      <li>- FBX: TP01.fbx</li>
+      <li>- <strong>Blenderファイル名: </strong>TP01.blend</li>
+      <li>- <strong>マテリアル名:</strong> TP_Material</li>
+      <li>- <strong>テクスチャ名:</strong> TP1_Texture (1024*1024)</li>
+      <li>- <strong>FBX:</strong> TP01.fbx</li>
     </ul>
     <h2><a id="mozTocId855034" class="mozTocH2"></a>**7.1 インストール</h2>
-    <p>以下のページに行きます。<br>
-      <a href="https://www.blender.org/download/lts/2-93/" target="_blank">https://www.blender.org/download/lts/2-93/</a><br>
-      通常はページ上部のボタンを使ってWindowsストアかSteamから入手します。<br>
+    <p>以下のページに行きます。</p>
+    <p> <a href="https://www.blender.org/download/lts/2-93/" target="_blank">https://www.blender.org/download/lts/2-93/</a></p>
+    <p>通常はページ上部のボタンを使ってWindowsストアかSteamから入手します。<br>
       それらを使いたくない場合はその下部にある<b>2.93.7</b>のリンクを使用してダウンロードします。<br>
       インストールして次のステップに進みます。</p>
     <h2><a id="mozTocId10106" class="mozTocH2"></a>**7.2 準備</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
-      起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。<br>
-      周囲のなにもない領域をクリックして、スプラッシュスクリーンを閉じます。
-      <p><br>
-      </p>
+      <p> 起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。</p>
+      <p> 周囲のなにもない領域をクリックして、スプラッシュスクリーンを閉じます。 </p>
+      <p><img src="Images/Tut7-2_1.jpg" alt=""> </p>
       <p>初期設定を</p>
       <p>【【【【編集中】】】】</p>
-      <p><img src="Images/Tut7-2_1.jpg" alt=""></p>
+      <p></p>
       <p><img src="Images/Tut7-2_5.jpg" alt=""></p>
       <p><img src="Images/Tut7-2_2.jpg" alt=""></p>
       <p><img src="Images/Tut7-2_3.jpg" alt=""></p>
@@ -337,7 +392,7 @@ pre {
     <p><br>
     </p>
     <h2><a id="mozTocId89267" class="mozTocH2"></a>**7.3 オブジェクト作成</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <p>【【【【編集中】】】】</p>
       <p><img src="Images/Tut7-3_1.jpg" alt=""></p>
@@ -469,8 +524,7 @@ pre {
     <ul>
       <li>- コンポーネント</li>
       <ul>
-        <li>--<a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md"
-
+        <li>--<a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md"
             target="_blank">
 https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md</a></li>
       </ul>
@@ -582,8 +636,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId422509" class="mozTocH2"></a>**9.2 テンプレートの使用</h2>
     <p>Unityのインストールが完了したら、Unity Hubを開きます。<br>
       <strong>Project</strong>の<strong>Open</strong>(開く)をクリックします。</p>
-    <p><img src="Images/Tut9-2_1.jpg" alt="" style="width: 50%;"> <img src="Images/Tut9-2_2.jpg"
-
+    <p><img src="Images/Tut9-2_1.jpg" alt="" style="width: 50%;"> <img src="Images/Tut9-2_2.jpg"
         alt="" style="width: 50%;"></p>
     <p> 前もってUnityテンプレートをコピーしておいた自分のUnityフォルダを開きます。</p>
     <p><img src="Images/Tut9-2_5.jpg" alt=""></p>
@@ -867,8 +920,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     </ul>
     <p> <br>
       下記のページに詳しい情報があります。<br>
-      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md"
-
+      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md"
         target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md</a><br>
       <br>
       必須MODのCoordinates Grabberを使うので、その使用方法をMODの配布ページで確認してください。<br>
@@ -902,8 +954,7 @@ item=ToiletPaperA w=3
 </code></pre></blockquote>
     <p><strong>オプションとして：</strong>下記のURLにテンプレートがあります。<br>
       全ての行をコピーして自分のTXTファイルに貼り付けて使えます。<br>
-      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-LootTables.txt"
-
+      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-LootTables.txt"
         target="_blank">https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-LootTables.txt</a><br>
       ほとんどの容器の名前は&lt;LootTableName&gt;を見れば理解できるはずです。<br>
       しかしCargoから始まる名前はわかりにくいかもしれません。それらはTimberwolf Mountainに散在している大きな箱です。<br>
@@ -915,11 +966,9 @@ item=ToiletPaperA w=3
     <h2><a id="mozTocId659696" class="mozTocH2"></a>**13.3 Item Spawnの編集</h2>
     <p>TP-Scenes.txtをテキストエディタで編集して下さい。<br>
       下記URLに必要な情報があります。<br>
-      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
-
+      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
         target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md</a></p>
-    <p><a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
-
+    <p><a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
         target="_blank"></a>下記はTP-Scenes.txtのサンプルです。<br>
       これは<strong>キャンプオフィス</strong>にトイレットペーパーがスポーンする確率を設定します。（ファイルキャビネットの上に2箇所。確率
       は50%と100%。）<br>
@@ -934,8 +983,7 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
 </code></pre> </blockquote>
     <p><strong>オプションとして：</strong>下記のURLにテンプレートがあります。<br>
       全ての行をコピーして自分のTXTファイルに貼り付けて使えます。<br>
-      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-Scenes.txt"
-
+      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-Scenes.txt"
         target="_blank">https://github.com/stmSantana/ModComponentDocs/blob/main/Samples/template-Scenes.txt</a><br>
       ほとんどの主要な「シーン」の名前はコメント行の&lt;SceneName&gt;と付属説明を見れば理解できるはずです。<br>
       例えば沿岸ハイウェイの屋外のシーン名は「CoastalRegion」です。<br>
