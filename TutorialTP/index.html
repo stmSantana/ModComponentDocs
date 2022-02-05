@@ -33,10 +33,24 @@ h3 {
   padding-left: 10px;
 }
 
+details > h3 {
+  margin: 0.5em 1em;
+  background-color: #eeeeee;
+}
+
 h4 {
-  border-bottom: 0px none silver;
   text-decoration: underline overline;
   font-size: 1.2em;
+  margin: 1em 0em;
+  padding: 0em;
+}
+
+details > h4 {
+  background-color: #eeeeee;
+  margin: 0em 1.0em 0em 1.2em;
+  padding: 0em 1em;
+  border-left: 100px solid silver;
+  border-right: 30px solid silver;  
 }
 
 em {
@@ -47,7 +61,12 @@ em {
 }
 
 pre {
-  background-color: #d0deee;
+  margin: 1em 10%;
+  padding: 1em;
+  border-radius: 10px;
+  background: #cccccc none repeat scroll 0% 0%;
+  color: black;
+  white-space: pre-wrap;
 }
 
 summary {
@@ -60,6 +79,9 @@ summary {
 box-shadow: 3pt 3pt 4pt 0px #333333;
   margin: 0pt;
   color: black;
+}
+
+details {
 }
 
 details[open] > summary {
@@ -98,13 +120,13 @@ ul > li > ul {
 summary {
   cursor: pointer;
 }
-      
+
 summary:hover {
   background-color: #999999;
 }
 
 details > p {
-  background-color: silver;
+  background-color: #eeeeee;
   margin: 0em 2em;
   padding: 0.3em 1em;
 }
@@ -117,7 +139,7 @@ details > p {
     <p><br>
     </p>
     <p></p>
-    <details open="">
+    <details>
       <summary>目次　</summary>
       <ul id="mozToc">
         <!--mozToc h1 1 h2 2 h3 3 h4 4 h5 5 h6 6-->
@@ -322,9 +344,9 @@ details > p {
       実際には作業用のフォルダをあなたの好きな場所に任意の名前で作ることができます。<br>
       次に、そのサブフォルダに、各種作業用のフォルダを下記のように作成して下さい。</p>
     <ul>
-      <li> -2Dと3Dのデータ作成用フォルダ「<strong>Working</strong>」</li>
-      <li> -Unityプロジェクト用フォルダ「<strong>Unity</strong>」</li>
-      <li> -アセットバンドル用フォルダ「<strong>Items_TP</strong>」</li>
+      <li> - <strong>Working</strong> : 2Dと3Dのデータ作成用フォルダ</li>
+      <li> - <strong>Unity</strong> : Unityプロジェクト用フォルダ</li>
+      <li> - <strong>Items_TP</strong> : アセットバンドル用フォルダ</li>
     </ul>
     <p>これらのフォルダ名は<em>重要ではありません</em>。実際には任意の名前に変更できます。<br>
     </p>
@@ -349,8 +371,6 @@ details > p {
         す。全部 で12個あるはずです。 </li>
     </ol>
     <h1><a id="mozTocId134660" class="mozTocH1"></a>* 7. Blender</h1>
-    <p><br>
-    </p>
     <h2><a id="mozTocId348667" class="mozTocH2"></a>**7.0 Blenderに慣れているユーザーへの説明</h2>
     <p>7-1から7-8までの手順はBlenderの解説なので、読む必要はありません。<br>
       普通にBlenderで作るだけですが、最初は単純なモデルでテストします。<br>
@@ -368,137 +388,339 @@ details > p {
     </ul>
     <h2><a id="mozTocId855034" class="mozTocH2"></a>**7.1 インストール</h2>
     <p>以下のページに行きます。</p>
+    <p> </p>
     <p> <a href="https://www.blender.org/download/lts/2-93/" target="_blank">https://www.blender.org/download/lts/2-93/</a></p>
     <p>通常はページ上部のボタンを使ってWindowsストアかSteamから入手します。<br>
       それらを使いたくない場合はその下部にある<b>2.93.7</b>のリンクを使用してダウンロードします。<br>
       インストールして次のステップに進みます。</p>
     <h2><a id="mozTocId10106" class="mozTocH2"></a>**7.2 準備</h2>
-    <details open="">
-      <summary>Blender初心者用の説明</summary>
-      <p> 起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。</p>
-      <p> 周囲のなにもない領域をクリックして、スプラッシュスクリーンを閉じます。 </p>
-      <p><img src="Images/Tut7-2_1.jpg" alt=""> </p>
-      <p>初期設定を</p>
-      <p>【【【【編集中】】】】</p>
-      <p></p>
-      <p><img src="Images/Tut7-2_5.jpg" alt=""></p>
-      <p><img src="Images/Tut7-2_2.jpg" alt=""></p>
-      <p><img src="Images/Tut7-2_3.jpg" alt=""></p>
-      <p><img src="Images/Tut7-2_4.jpg" alt=""></p>
-      <p><br>
-      </p>
-      <p>【【【【編集中】】】】</p>
-    </details>
-    <p><br>
-    </p>
-    <h2><a id="mozTocId89267" class="mozTocH2"></a>**7.3 オブジェクト作成</h2>
-    <details open="">
-      <summary>Blender初心者用の説明</summary>
-      <p>【【【【編集中】】】】</p>
-      <p><img src="Images/Tut7-3_1.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_2.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_3.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_4.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_5_1.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_5_2.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_6.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_7.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_8.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_9.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_10.jpg" alt=""></p>
-      <p><br>
-      </p>
-      <p><img src="Images/Tut7-3_13.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_14.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_15.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_16.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_17.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_18.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_19.jpg" alt=""></p>
-      <p><img src="Images/Tut7-3_20.jpg" alt=""></p>
-      <p></p>
-      <p>【【【【編集中】】】】</p>
-    </details>
-    <p>保存をしましょう。ファイル名は「<b>TP01.blend</b>」にします。<br>
-      この名前は<em>重要ではありません</em>。</p>
-    <p><img src="Images/Tut7-3_21.jpg" alt=""></p>
-    <p><img src="Images/Tut7-3_22.jpg" alt=""> </p>
-    <h2><a id="mozTocId512646" class="mozTocH2"></a>**7.4 UV編集</h2>
     <details>
       <summary>Blender初心者用の説明</summary>
-      <p>【【【【編集中】】】】</p>
-      <p><img src="Images/Tut7-4_1.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_2.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_3.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_4.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_6.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_5.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_7_1.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_7_2.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_8.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_9.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_10.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_11.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_12b.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_13.jpg" alt=""></p>
-      <p><img src="Images/Tut7-4_14.jpg" alt=""></p>
-      <p>【【【【編集中】】】】</p>
+      <h3> ***7.2.1 Blenderの起動</h3>
+      <p>起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。</p>
+      <p></p>
+      <p><img src="Images/Tut7-2_1.jpg" alt=""></p>
+      <p> 周囲のなにもない領域をクリックして、スプラッシュスクリーンを閉じて下さい。 </p>
+      <p></p>
+      <p></p>
+      <h3>***7.2.2 Blenderのウィンドウ構成</h3>
+      <p><img src="Images/Tut7-2_5.jpg" alt=""><br>
+      </p>
+      <p>ウインドウ最上部にトップバーがあり、メニューなどが並んでいます。</p>
+      <p>ワークスペースのボタンが複数あり、最初は「Layout」（レイアウト）ワークスペースが選ばれています。</p>
+      <p>ウィンドウの内側は複数のエリアに区切られていて、それぞれが別の種類のエディタが表示されています。<br>
+        エリアの左上のボタンはエディタの種類を変更するためのものです。</p>
+      <p>一番広く表示されているエリアは「3D Viewpoint」です。<br>
+        そのエリアの上端にはヘッダーがあり、左端にはツールバーがあります。（ツールバーの表示・非表示の切り替えショートカットキーは［T］です。）</p>
+      <h3>***7.2.3 基本的な 3D Viewpoint 操作</h3>
+      <p>マウスカーソルが3Dビューポイントのエリア内にある時の操作を練習して下さい。<br>
+        （操作のヒントが、ウィンドウ下端のステータスバーに表示されています。）</p>
+      <p>最初はツールバーの「<strong>選択</strong>」ツールが選ばれているので、エリア中央の箱オブジェクトを<strong>左マウスボタ
+          ンクリック</strong>するとそれを選択できます。<br>
+        選ばれたオブジェクトはオレンジ色で強調表示されます。<br>
+        箱の近くにあるカメラやライトなどの別のオブジェクトも、同じように左クリックで選択できます。<br>
+        周囲の何もない部分をクリックすると選択が解除されます。</p>
+      <p><strong>マウスホイール</strong>を回転させると、視界がズームイン／ズームアウトします。 </p>
+      <p><strong>マウスホイール</strong>を抑えたままマウスを動かすと、視野を回転できます。</p>
+      <p><strong>[Shift]キー</strong>と<strong>マウスホイール</strong>を抑えたままマウスを動かすと、視点を移動
+        できます。</p>
+      <p><strong>[Home]</strong>キーを押すと、全てのオブジェクトが見えるように視野が変更されます。</p>
+      <p>いずれかのオブジェクトを選択してから<strong>[テンキー ピリオド]</strong>キーを押すと、そのオブジェクトが視界の中心になりま
+        す。</p>
+      <p><strong>注意：</strong>自分がどこを見ているのかわからなくなったら、<em>[Home]</em>キーを押して下さい。</p>
+      <h3>***7.2.2.2 選択と削除</h3>
+      <p>最初から表示されている3つのオブジェクト（箱、カメラ、ライト）を全て削除してください。</p>
+      <p><img src="Images/Tut7-2-2-2_1.jpg" alt=""></p>
+      <p>ヘッダーのSelectメニュー ＞ All コマンド （ショートカット： <strong>[A] </strong>キー）</p>
+      <p>全てのオブジェクトが選ばれます。アウトライナーエディターでもそれを確認できます。</p>
+      <p><img src="Images/Tut7-2-2-2_2.jpg" alt=""></p>
+      <p>全てを削除するために、 ヘッダーのObjectメニュー ＞ Delete コマンド （ショートカット：<strong>[X]</strong>キー、
+        または<strong>[Delete]</strong>キー）</p>
+      <p><img src="Images/Tut7-2-2-2_3.jpg" alt=""></p>
+      <p>全てのオブジェクトが削除されました。<br>
+      </p>
+      <br>
+      <h3>***7.2.4 Blenderの表示言語の変更<br>
+      </h3>
+      <p>Blenderは最初は英語表示になっています。表示言語を変更します。</p>
+      <p><img src="Images/Tut7-2_2.jpg" alt=""></p>
+      <p>Editメニュー ＞ Preferenceコマンド<br>
+      </p>
+      <p></p>
+      <p><img src="Images/Tut7-2_3.jpg" alt=""></p>
+      <p>Interface ＞ Translation ＞ Language ＞ 日本語（Japanese）</p>
+      <p>Affect（影響）のチェックボックスを全てオンにします。</p>
+      <p><img src="Images/Tut7-2_4.jpg" alt=""></p>
+      <br>
     </details>
-    <p>UVを編集したらUVレイアウトを<strong>PNG</strong>画像ファイルとしてエクスポートします。<br>
-    </p>
+    <h2><a id="mozTocId89267" class="mozTocH2"></a>**7.3 オブジェクト作成</h2>
+    <details>
+      <summary>Blender初心者用の説明</summary>
+      <h3>***7.3.1 シリンダー（円柱）作成</h3>
+      <p>X軸とY軸の交点に3Dカーソル（赤と白の円）があります。</p>
+      <p>そこに、トイレットペーパーの原型になる円柱を作成します。</p>
+      <p><img src="Images/Tut7-3_1.jpg" alt=""></p>
+      <p>Add ＞ Mesh ＞ Cylinder （追加 ＞ メッシュ ＞ 円柱）</p>
+      <p><img src="Images/Tut7-3_4.jpg" alt="" style="width: 1083px; height: 603px;"></p>
+      <p>3Dカーソルがある場所に円柱が追加され、それが選択された状態になっています。</p>
+      <p><img src="Images/Tut7-3_2.jpg" alt=""></p>
+      <p>その直後に、追加された円柱に関する設定を変更するパネルが3Dビューポイントの左下に表示されます。</p>
+      <p>「Add Cylinder」をクリックしてパネルを広げます。円柱の設定を下記のように変更します。</p>
+      <p><img src="Images/Tut7-3_3.jpg" alt=""></p>
+      <p>追加された円柱の半径は1mなのでトイレットペーパーとしては大きすぎます。半径0.07m、深さ0.12mに変更します。<br>
+        頂点の数は最初は32です。しかしThe Long Darkのほとんどのオブジェクトはローポリゴンなので、10角形に変更します。<br>
+        （参考：コーヒーカップは12角形、ソーダの缶やピーチの缶詰は10角形）</p>
+      <p><br>
+      </p>
+      <h3>***7.3.2 エディットモード</h3>
+      <p>基本的な円柱をもっと編集するために3Dビューポイントを<strong>エディットモード</strong>にします。<br>
+        Blenderの3Dビューにはオブジェクトモードとエディットモードがあります。<br>
+        <strong>オブジェクトモード：</strong>「立方体、円柱、カメラ、ライト」などのオブジェクトの「作成、削除、移動、回転」などの操作を
+        するモード。<br>
+        <strong>エディットモード：</strong>1つのオブジェクトを構成する「面、線、頂点」などの要素を詳細に編集するモード。</p>
+      <h4>****7.3.2.1 モードの切り替え</h4>
+      <p>オブジェクトモードで円柱オブジェクトを選んでから<strong>[Tab]</strong>キーを押して、ビューをそのオブジェクトのエディット
+        モー ドにします。<br>
+        （[Tab]キーを押す代わりにヘッダー左上のリストボックスを使ってもモードを変更できます。）</p>
+      <p></p>
+      <p><img src="Images/Tut7-3_5_2.jpg" alt=""></p>
+      <h4>****7.3.2.2 面の差し込み</h4>
+      <p>エディットモード状態で、ツールバーの選択矢印ボタンを選びます。<br>
+        下記のように「Face select」（面選択）ボタンを選びます。</p>
+      <p><img src="Images/Tut7-3_6.jpg" alt=""></p>
+      <p>これによってクリックした面を選べるようになります。円柱の一番上の面を選んで下さい。</p>
+      <p>ビューを回転して、円柱の一番底の面を<strong>[Shift]</strong>キーを押しながらクリックして選んで下さい。<br>
+        Shiftキーによって選択対象が追加され、2つの面が両方とも選ばれている状態になります。</p>
+      <h4></h4>
+      <p>選んだ面に対して、Face ＞ Insert Faces （面の差し込み）コマンドを使います。<br>
+      </p>
+      <p><img src="Images/Tut7-3_13.jpg" alt=""></p>
+      <p>マウスを円柱の中央に向かって動かすと選ばれた面の内側に新しい面が作成されます、左クリックすると大きさが確定します。</p>
+      <p>エリア左下に表示されている「Inset Faces」パネルで下記のように設定します。</p>
+      <p><img src="Images/Tut7-3_14.jpg" alt=""></p>
+      <h4>****7.3.2.3 面の削除</h4>
+      <p>差し込まれた面を削除します。</p>
+      <p>選んだ面を削除するために、[X]キーか[Del]キーを押して下さい。<br>
+        Deleteする対象の選択リストが表示されたら、「Faces」（面）を選んで下さい。</p>
+      <p><img src="Images/Tut7-3_15.jpg" alt=""></p>
+      <p><img src="Images/Tut7-3_16.jpg" alt=""></p>
+      <p>Blenderのメッシュオブジェクトは複数の面で作られていて、中身は空洞です。<br>
+        円柱に穴が開いて筒の内側が見えるようになりました。 </p>
+      <h4>****7.3.2.4 裏面の非表示</h4>
+      <p>Blenderの面は表と裏が両方表示されていますが、ゲームでは裏面は透明になって表示されません。<br>
+        ゲームにあわせるために、Blenderも裏面を表示しないように設定します。</p>
+      <p><img src="Images/Tut7-3_9b.jpg" alt=""> </p>
+      <p>上の図のように、ヘッダーにある「Shading」（シェーディング）設定パネルを表示して、<br>
+        「Backface Culling」（裏面の非表示）をオンにして下さい。</p>
+      <p><br>
+      </p>
+      <h4>****7.3.2.5 辺ループのブリッジ</h4>
+      <p> </p>
+      <p>円筒に穴が空いているので、面を貼って穴を塞ぎます。</p>
+      <p>エディットモード状態で、ツールバーの選択矢印ボタンを選びます。<br>
+        下記のように「Edge select」（辺選択）ボタンを選びます。</p>
+      <p><img src="Images/Tut7-3_17.jpg" alt=""></p>
+      <p>円筒の穴の周囲の辺を選択します。</p>
+      <p><img src="Images/Tut7-3_18.jpg" alt=""></p>
+      <p>10角形の穴なので、辺は10個あります。辺を１つずつ<strong>[Shift]</strong>＋<strong>左クリック</strong>で
+        選択して10個すべての辺を選びます。<br>
+        （または、<strong>[Alt]</strong>＋左クリックで円状の10個の辺を一度に選びます）<br>
+        Shiftキーを使って上面と下面とにある辺を同時に20個選びます。</p>
+      <p>Edge ＞ Bridge Edge Loops（辺 ＞ 辺ループのブリッジ）</p>
+      <p><img src="Images/Tut7-3_19.jpg" alt=""></p>
+      <p>上の円と下の円（実際にはどちらも十角形）との間に新しい筒状の面が作成されます。<br>
+        これがトイレットペーパーの紙芯の内側です。</p>
+      <p><img src="Images/Tut7-3_20.jpg" alt=""></p>
+      <p><br>
+      </p>
+      <h4>****7.3.2.6 オブジェクトモードへの復帰</h4>
+      <p></p>
+      <p><img src="Images/Tut7-3_5_1.jpg" alt=""></p>
+      <p>[Tab]キーで、エディットモードからオブジェクトモードに戻ります。</p>
+    </details>
+    <h3>***7.3.3 ファイルの保存</h3>
+    <p>オブジェクトの作成が終わったのでファイルを保存します。</p>
+    <p>File ＞ Save</p>
+    <p><img src="Images/Tut7-3_21.jpg" alt=""></p>
+    <p>保存するフォルダは<strong>「D:\Mod_TP\Working」</strong></p>
+    <p>ファイル名は「<b>TP01.blend</b>」にします。この名前は<em>重要ではありません</em>。</p>
+    <p><img src="Images/Tut7-3_22.jpg" alt=""> </p>
+    <h2><a id="mozTocId512646" class="mozTocH2"></a>**7.4 UV編集</h2>
+    <details open="">
+      <summary>Blender初心者用の説明</summary>
+      <p>Blenderでオブジェクトに2Dの画像（テクスチャ）を貼り付けるために、<br>
+        3Dのメッシュオブジェクトの「展開図」を作ります。（完成図は手順7.0を参照）</p>
+      <h3>***7.4.1 UVエディターの表示</h3>
+      <p>トップバーでワークスペースを「UV Editing」に切り替えます。<br>
+        3Dビューポートのエリアが左右に分割され、左側にUV Editorのエリアが表示されます。<br>
+      </p>
+      <p></p>
+      <p><img src="Images/Tut7-4_2.jpg" alt=""></p>
+      <p>3Dビューポート（右側のエリア）で、全てを選択します。（ショートカット：[<strong>A</strong>]キー）</p>
+      <p>選択された部分のUVマップが左側のエリアに表示されます。</p>
+      <p><img src="Images/Tut7-4_1.jpg" alt=""></p>
+      <h3>***7.4.2 UVマッピングの編集</h3>
+      <p>円筒の穴と穴とを繋いで作成した新しい筒は、そのUVも穴と穴とをつなぐ形で作成されています。<br>
+        その部分のUVを塗りやすいように別の位置に移動します。</p>
+      <h4>****7.4.2.1 面選択</h4>
+      <p>下記のように3Dビューで選択ツールを選び、面選択モードにします。<br>
+        [Shift]キーか[Alt]キーを使い、円筒の内側の面を10個全て選択します。</p>
+      <p><img src="Images/Tut7-4_3.jpg" alt=""></p>
+      <p>左側のエリア（UV Editor）に選択部分のUVだけが表示されるようになりました。</p>
+      <p><br>
+      </p>
+      <h4>****7.4.2.2 UV展開</h4>
+      <p>選択された円筒のUVが塗りにくい形状をしているので、平面的な展開図に変更します。</p>
+      <p><img src="Images/Tut7-4_4.jpg" alt=""></p>
+      <p>面が選択された状態のまま、ビューポートギズモの[-Y]ボタンを押します。（ショートカットキー：[テンキー 1]）<br>
+        視点が変更されて、円筒形を真横から表示されます。</p>
+      <p>選択中の円筒形のUVを展開しなおします。</p>
+      <p><img src="Images/Tut7-4_5.jpg" alt=""></p>
+      <p>UV &gt; Cylinder Projection （UV ＞ 円筒状投影）</p>
+      <p>下記のようにCylinder Projectionの設定をします。<br>
+        10個の面が横に並ぶように展開されます。</p>
+      <p><img src="Images/Tut7-4_6.jpg" alt=""></p>
+      <h4>****7.4.2.3 UV編集</h4>
+      <p></p>
+      <p>左側のエリア（UV Editor）で、選択ツールのUV選択モードを「Island」（島）にします。</p>
+      <p></p>
+      <p><img src="Images/Tut7-4_7_1.jpg" alt=""></p>
+      <p>UV Editorエリアに表示されている10個の長方形のうち、どれか１つをクリックすると10個全てが選択されます。<br>
+        島選択は、連続しているUVを一つにまとめて選択するためのモードです。</p>
+      <p><img src="Images/Tut7-4_7_2.jpg" alt=""></p>
+      <p>島が選択されてオレンジ色になったら、ツールバーの「Move」（移動）ツールを選びます。 </p>
+      <p>島を移動するには、島の中央に表示された白い円をドラッグします。<br>
+        島を一時的にグリッドの外に移動して下さい。<br>
+        島の中央に表示された緑色と赤色の矢印は、選択部分を縦や横に限定して移動させたい時に使用します。</p>
+      <p><br>
+      </p>
+      <p>3Dビューポートエリアで全てを選択します。（Select &gt; All 、または [A]キー）<br>
+        UV Editorに全てのUVが表示されるようになります。</p>
+      <p><img src="Images/Tut7-4_8.jpg" alt=""></p>
+      <p>UV Editorで島選択モードを使用して、上のサンプルのようにUVを移動、サイズ変更してください。</p>
+      <p>ドーナッツ形状の２つのUV島を同じ位置に移動して重ね合わせます。</p>
+      <p>先程グリッドの外に移動させた円筒部分のUV島をグリッドの空いている場所に移動します。<br>
+        この島を選んでいる時にツールバーの「Scale」を選び、白い円をドラッグしてサイズを変更します。</p>
+      <p><img src="Images/Tut7-4_9.jpg" alt=""></p>
+      <p>島を選択している時に、ツールバーの「Rotate」ツールを選ぶと、白い円をドラッグして島を回転できます。<br>
+        その時に[Ctrl]キーを押しながらドラッグすると角度を5度ずつに制限できます。<br>
+        または、左下の「Rotate」パネルで角度を直接入力できます。</p>
+      <p><img src="Images/Tut7-4_10.jpg" alt=""></p>
+      <p>最終的にUVがグリッドエリアからはみ出さないようにしてください。</p>
+      <p><img src="Images/Tut7-4_11.jpg" alt=""></p>
+      <h4>***7.4.2.4 UVマッピングの編集</h4>
+      <p></p>
+      <p>UVの編集が完了したら、UVレイアウトをPNG画像としてエクスポートします。 </p>
+      <p>UV &gt; Export UV Layout</p>
+      <p><img src="Images/Tut7-4_12b.jpg" alt=""></p>
+      <p>下記のようにオプションを設定します。<br>
+        sizeは実際のテクスチャのサイズと同じサイズにします。今回の例は、1024*1024です。</p>
+      <p><img src="Images/Tut7-4_13.jpg" alt=""></p>
+      <p>保存するフォルダは<strong>「D:\Mod_TP\Working」</strong> </p>
+      <p>ファイル名は「<b>TP01_UV.png</b>」にします。この名前は<em>重要ではありません</em>。実際には自由な名前にできます。</p>
+      <p><img src="Images/Tut7-4_14.jpg" alt=""></p>
+      <p></p>
+      <p></p>
+    </details>
+    <p> </p>
     <h2><a id="mozTocId395878" class="mozTocH2"></a>**7.5 テクスチャとマテリアルの作成</h2>
     <p>テクスチャは他のアイテムにあわせて1024x1024程度にします。<br>
       マテリアルの設定はUnityで行うので細かい設定は必要ありません。</p>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
-      <p>【【【【編集中】】】】</p>
-      <p><img src="Images/Tut7-5_1.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_2.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_3.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_4.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_5.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_6.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_7.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_8.jpg" alt=""> </p>
-      <p><img src="Images/Tut7-5_9.jpg" alt=""> </p>
+      <p>上のセクションまでに作成したオブジェクトにテクスチャとマテリアルとを設定します。</p>
+      <h3>***7.5.1 新規テクスチャの作成</h3>
+      <p>UVエディターで、テクスチャ画像を新規作成します。</p>
+      <p>ヘッダーの「＋ New」ボタンを押します。</p>
+      <p><img src="Images/Tut7-5_1.jpg" alt=""></p>
+      <p>下記のように設定して下さい。Colorは白にします。<br>
+      </p>
+      <p><img src="Images/Tut7-5_2.jpg" alt=""></p>
+      <p>新しい画像が作成されました。まだ白紙ですが、最初に保存します。</p>
+      <p>Image &gt; Save As</p>
+      <p><img src="Images/Tut7-5_3.jpg" alt=""></p>
+      <p>保存するフォルダは<strong>「D:\Mod_TP\Working」</strong> </p>
+      <p>ファイル名は「<b>TP1_Texture.png</b>」にします。この名前は<em>重要ではありません</em>。実際には自由な名前にでき
+        ます。</p>
+      <p> </p>
+      <p><img src="Images/Tut7-5_4.jpg" alt=""></p>
+      <h3>***7.5.1 新規マテリアルの作成</h3>
+      <p> </p>
+      <p>プロパティエリアで、マテリアルプロパティを選択します。<br>
+        「＋ New」ボタンを押して新しいマテリアルを作成します。</p>
+      <p><img src="Images/Tut7-5_5.jpg" alt=""></p>
+      <p>マテリアルの名前ボックスに「TP_Material」と入力します。</p>
+      <p><img src="Images/Tut7-5_6.jpg" alt=""></p>
+      <p>Base Colorの丸いリンクボタンを押して、「Image Texture」（画像テクスチャ）を選択します。</p>
+      <p><img src="Images/Tut7-5_7.jpg" alt=""></p>
+      <p>「Base Color」の下の「Open」をクリックします。<br>
+      </p>
+      <p><img src="Images/Tut7-5_8.jpg" alt=""></p>
+      <p>先程保存しておいたテクスチャ「TP1_Texture.png」を開きます。</p>
+      <p><img src="Images/Tut7-5_9.jpg" alt=""></p>
+      <p>Base Colorに反映されます。</p>
+      <p><img src="Images/Tut7-5-10.jpg" alt=""></p>
       <p><br>
       </p>
-      <p><br>
-      </p>
-      <p>【【【【編集中】】】】</p>
+      <br>
     </details>
     <h2><a id="mozTocId988957" class="mozTocH2"></a>**7.6 テクスチャペイント</h2>
-    <p>UVレイアウトを保存してから、ペイントソフトを使ってテクスチャの<strong>PNG</strong>を直接描くこともできます。<br>
-      しかし、今回の例ではBlenderで簡単なペイントをします。</p>
-    <p><br>
-    </p>
-    <details>
+    <p>保存されたUVレイアウト画像とテクスチャ画像の２つのPNGを使って、ペイントソフトを使ってテクスチャ<strong></strong>を直接描くこ
+      ともできます。<br>
+      しかし、今回の例ではBlenderで直接簡単なペイントをします。</p>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
-      <p>【【【【編集中】】】】</p>
+      <p>トップバーで「Texture Paint」ワークスペースを選択します。</p>
+      <p>左右のエリアがペイントモードになり、どちらでもTP1_Textureにペイントできます。<br>
+        「ドロー」ツールが選ばれています。</p>
       <p><img src="Images/Tut7-6_1.jpg" alt=""></p>
+      <p>「ドロー」ツールで右クリックすると、筆の設定を変更できます。<br>
+        通常は「Mix」でペイントします。</p>
       <p><img src="Images/Tut7-6_2.jpg" alt=""></p>
+      <p>3Dビューポートのシェーディングボタンを「<strong>マテリアルプレビュー</strong>」モードにすると、オブジェクトにライトが当たっ
+        た状態をプレビューできます。</p>
       <p><img src="Images/Tut7-6_3.jpg" alt=""></p>
+      <p>ペイントが終わったら、テクスチャ画像（TP1_Texture.png）を上書き保存します。</p>
       <p><img src="Images/Tut7-6_4.jpg" alt=""> </p>
-      <p>【【【【編集中】】】】</p>
+      <p><br>
+      </p>
     </details>
     <p><br>
     </p>
     <h2><a id="mozTocId61019" class="mozTocH2"></a>**7.7 オブジェクトの微調整</h2>
-    <p>アイテムの外見がもっと良くなるように編集しましょう。</p>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
-      <p>【【【【編集中】】】】</p>
-      <p><img src="Images/Tut7-7_1.jpg" alt=""></p>
+      <h3>***7.7.1 スムーズシェーディング</h3>
+      <p>アイテムの外見がもっと良くなるように編集しましょう。</p>
+      <p>「Layout」ワークスペースで、オブジェクトモードにします。（ショートカット：<strong>[Tab]</strong>）</p>
+      <p><img src="Images/Tut7-7-1_1.jpg" alt=""></p>
+      <p>トイレットペーパーのオブジェクトを選んで、Object ＞ Shade Smooth コマンドを選びます。</p>
+      <p><img src="Images/Tut7-7-1_2.jpg" alt=""></p>
+      <p>面の影がスムーズになりますが、見た目が悪いです。</p>
+      <p><img src="Images/Tut7-7-1_4.jpg" alt=""></p>
+      <p>「Object Data Property」パネルを選択し、「Auto Smooth」をチェックします。</p>
+      <p>角度のボックスを変更すると、影が改善される角度を探します。</p>
+      <p><img src="Images/Tut7-7-1_5.jpg" alt=""></p>
+      <p><br>
+      </p>
+      <h3>***7.7.1 </h3>
+      <p>レイアウトワークスペースで、オブジェクトにします。</p>
       <p><img src="Images/Tut7-7_2.jpg" alt=""></p>
+      <p>トイレットペーパーのオブジェクトを選んでから、右上のギズモの赤いXをクリックします。（ショートカット：[テンキー 3]）</p>
       <p><img src="Images/Tut7-7_3.jpg" alt=""></p>
+      <p>視線が横方向からになります。</p>
+      <p>移動ツールを選び、トイレットペーパーオブジェクトの「上向き青色矢印」を上にドラッグします。</p>
       <p><img src="Images/Tut7-7_4.jpg" alt=""></p>
+      <p>上の図のように、トイレットペーパーの底面とY軸の位置を揃えてください。</p>
+      <p> 最後に、オブジェクトの原点やサイズを適用します。</p>
+      <p>位置が決定したら、Object ＞ Apply &gt; All Transforms を選択します。</p>
       <p><img src="Images/Tut7-7_5.jpg" alt=""></p>
-      <p>【【【【編集中】】】】</p>
+      <p>これによって、オブジェクトが移動した事が反映されます。</p>
+      <p>以上で、Blenderでの編集は終わりです。</p>
+      <p>ファイルを上書き保存してください。</p>
     </details>
-    <p><br>
-    </p>
-    <p>BlenderとUnityではXYZの軸の方向が異なるので、オブジェクトをZ軸で90度回転する事をおすすめします。<br>
-      最後に、オブジェクトの原点やサイズを適用します。</p>
+    <p>今回の例のトイレットペーパーには関係ありませんが、BlenderとUnityではXYZの軸の方向が異なるので<br>
+      通常はApplyをするより先にオブジェクトの正面の方向をUnityにあわせるためにオブジェクトをZ軸で180度回転する事をおすすめします。</p>
     <h2><a id="mozTocId972953" class="mozTocH2"></a>**7.8 FBXのエクスポート</h2>
     <p>BlenderファイルのままでもUnityで使用できますが、今回はFBXにエクスポートします。<br>
       ファイルメニュー＞エクスポート＞FBXを選択します。</p>
