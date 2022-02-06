@@ -340,7 +340,7 @@ details > p {
       <br>
     </p>
     <h1><a id="mozTocId681342" class="mozTocH1"></a>* 6.フォルダ構成</h1>
-    <h2><a id="mozTocId203054" class="mozTocH2"></a>6-1. フォルダの作成</h2>
+    <h2><a id="mozTocId203054" class="mozTocH2"></a>**6-1. フォルダの作成</h2>
     <p>今回は作業用フォルダとして<em>「D:\Mod_TP」</em>フォルダを使うと仮定して説明します。<br>
       実際には作業用のフォルダをあなたの好きな場所に任意の名前で作ることができます。<br>
       次に、そのサブフォルダに、各種作業用のフォルダを下記のように作成して下さい。</p>
@@ -355,7 +355,7 @@ details > p {
       を作成して下さい。<br>
       これらの<em>3つのフォルダ名は重要なので変更できません</em>。</p>
     <p><img src="Images/Tut6-1.jpg" alt=""> </p>
-    <h2><a id="mozTocId521675" class="mozTocH2"></a>6-2.Unityテンプレートのダウンロード</h2>
+    <h2><a id="mozTocId521675" class="mozTocH2"></a>**6-2.Unityテンプレートのダウンロード</h2>
     <ol>
       <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
@@ -547,7 +547,7 @@ details > p {
     <p>ファイル名は「<b>TP01.blend</b>」にします。この名前は<em>重要ではありません</em>。</p>
     <p><img src="Images/Tut7-3_22.jpg" alt=""> </p>
     <h2><a id="mozTocId512646" class="mozTocH2"></a>**7.4 UV編集</h2>
-    <details open="">
+    <details>
       <summary>Blender初心者用の説明</summary>
       <p>Blenderでオブジェクトに2Dの画像（テクスチャ）を貼り付けるために、<br>
         3Dのメッシュオブジェクトの「展開図」を作ります。（完成図は手順7.0を参照）</p>
@@ -627,7 +627,7 @@ details > p {
     <h2><a id="mozTocId395878" class="mozTocH2"></a>**7.5 テクスチャとマテリアルの作成</h2>
     <p>テクスチャは他のアイテムにあわせて1024x1024程度にします。<br>
       マテリアルの設定はUnityで行うので細かい設定は必要ありません。</p>
-    <details open="">
+    <details>
       <summary>Blender初心者用の説明</summary>
       <p>上のセクションまでに作成したオブジェクトにテクスチャとマテリアルとを設定します。</p>
       <h3>***7.5.1 新規テクスチャの作成</h3>
@@ -669,7 +669,7 @@ details > p {
     <p>保存されたUVレイアウト画像とテクスチャ画像の２つのPNGを使って、ペイントソフトを使ってテクスチャ<strong></strong>を直接描くこ
       ともできます。<br>
       しかし、今回の例ではBlenderで直接簡単なペイントをします。</p>
-    <details open="">
+    <details>
       <summary>Blender初心者用の説明</summary>
       <p>トップバーで「Texture Paint」ワークスペースを選択します。</p>
       <p>左右のエリアがペイントモードになり、どちらでもTP1_Textureにペイントできます。<br>
@@ -689,7 +689,7 @@ details > p {
     <p><br>
     </p>
     <h2><a id="mozTocId61019" class="mozTocH2"></a>**7.7 オブジェクトの微調整</h2>
-    <details open="">
+    <details>
       <summary>Blender初心者用の説明</summary>
       <h3>***7.7.1 スムーズシェーディング</h3>
       <p>アイテムの外見がもっと良くなるように編集しましょう。</p>
@@ -765,12 +765,11 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-
       使います。<br>
       必要な部分をコピーしてから、次の項目を変更する必要があります。</p>
     <ul>
-      <li> - <strong>"GAMEPLAY_SampleItem"</strong> を <strong>"GAMEPLAY_ToiletPaperA"</strong>に
-        変更</li>
-      <li> - <strong>"GAMEPLAY_SampleItemDescription"</strong> を<strong>
-          "GAMEPLAY_ToiletPaperADescription" </strong>に変更</li>
-      <li> - <strong>"GAMEPLAY_SampleItemAction"</strong> を<strong> "" </strong>に
-        変更（２つのダブルクォーテーションの間にある文字を削除する）</li>
+      <li> - <strong>"GAMEPLAY_SampleItem"</strong> －－－－－＞ <strong>"GAMEPLAY_ToiletPaperA"</strong></li>
+      <li> - <strong>"GAMEPLAY_SampleItemDescription"</strong> －－－－－＞<strong>
+          "GAMEPLAY_ToiletPaperADescription"</strong></li>
+      <li> - <strong>"GAMEPLAY_SampleItemAction"</strong> －－－－－＞<strong> "" </strong>（２
+        つのダブルクォーテーションの間にある文字を削除する）</li>
     </ul>
     <p><br>
     </p>
@@ -778,8 +777,6 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-
     <p>toiletpapera.jsonファイルの内容を編集してください。<br>
       オブジェクトを追加したり削除したりする時は、カンマの位置に注意して下さい。<br>
       JSON内にはコメントが書けないので、もしテンプレートにコメント部分があったら削除して下さい。<br>
-      <br>
-      コード<br>
     </p>
     <pre><code>
 {
@@ -814,10 +811,18 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-
                                 "YieldCounts" : [2],
                                 "YieldNames" : ["GEAR_Tinder"],
                                 "RequiredToolNames" : []
+                            },
+    "ModStackableBehaviour": {
+                                "SingleUnitTextId" : "GAMEPLAY_ToiletPaperA",
+                                "MultipleUnitTextId" : "GAMEPLAY_ToiletPaperA",
+                                "StackSprite" : "",
+                                "UnitsPerItem" : 1,
+                                "ChanceFull" : 100
+                             }
 }
     </code></pre>
     <h2><a id="mozTocId306107" class="mozTocH2"></a>**8.2 翻訳用JSONの作成</h2>
-    <p>手順(6-2)でUnityテンプレートから作業用フォルダにコピーした「Mod_TP\Unity\Assets\Localization.json」
+    <p>手順(6-2)でUnityテンプレートから作業用フォルダにコピーした「Mod_TP\Unity\Assets\<strong>Localization.json</strong>」
       を編集 します。<br>
       JSONエディタか、単なるテキストエディタで編集できます。<br>
       ローカライズJSONの説明は下記にあります。<br>
@@ -828,23 +833,19 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       「<strong>GAMEPLAY_SampleItem</strong>」と「<strong>GAMEPLAY_SampleItemDescription</strong>」
       の名前を変更しなければいけません。<br>
       アイテムの名前が「GEAR_ToiletPaperA」の場合、「<em>GAMEPLAY_ToiletPaperA</em>」と 「<em>GAMEPLAY_ToiletPaperADescription</em>」
-      に変更します。<br>
-      <br>
-      コード</p>
+      に変更します。</p>
     <pre><code><br>{
     "GAMEPLAY_ToiletPaperA" : {
                             "English" : "Toilet Paper Roll",
                             "Japanese" : "トイレットペーパーのロール"
     },
     "GAMEPLAY_ToiletPaperADescription" : {
-                            "English" : "For now, you can just burn it for a short time.",
-                            "Japanese" : "今の所、ただ短時間燃やせるだけです。"
-    }
+                            "English" : "Not only used for toilets, can be used as tinder in survival.",
+                            "Japanese" : "トイレに使うだけではなく、サバイバルでは火口としても使えます。"
+</code><code><code>    }</code>
 }
 <br></code></pre>
     <p> </p>
-    <p><br>
-    </p>
     <h1><a id="mozTocId957446" class="mozTocH1"></a>* 9. Unity</h1>
     <h2><a id="mozTocId39708" class="mozTocH2"></a>**9.1 インストール</h2>
     <p>下記のリンクから、まずUnity Hubをダウンロード、インストールします。<br>
@@ -1006,8 +1007,8 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <p>これがUnityでの最後の作業です。<br>
       Assets（アセット）メニューの「Build AssetBundles」コマンドを選びます。</p>
     <p><img src="Images/Tut9-7-2_1.jpg" alt=""></p>
-    <p>これによって「Mod_TP\Unity\<strong>AssetBundles</strong>」フォルダが作成されて、アセットバンドルファイル
-      がその中にエクスポートされます。<br>
+    <p>Unityテンプレートによって「Mod_TP\Unity\<strong>AssetBundles</strong>」フォルダが作成されて、アセッ
+      トバンドルファイル がその中にエクスポートされます。<br>
       AssetBundlesフォルダの中には複数のファイルが保存されますが、「<em>toiletpapermod.unity3d</em>」という名前
       の１つのファイルだけが ModComponentに必要です。</p>
     <h1><a id="mozTocId385264" class="mozTocH1"></a>* 10.ModComponent</h1>
@@ -1031,8 +1032,8 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       変更します。</p>
     <h2><a id="mozTocId380884" class="mozTocH2"></a>**10.3 ModComponent
       Extractorを使用する</h2>
-    <p>ModComponentExtractor is an application for making and extracting
-      '.modcomponent' files used by ModComponent.<br>
+    <p>ModComponentExtractor is an application for making and extracting '<strong>.modcomponent</strong>'
+      files used by ModComponent.<br>
       （ModComponentExtractorは、ModComponentが使用する<b>「.modcomponent」ファイル</b>を作成および抽
       出するためのア プリケーションです。）</p>
     <h3><a id="mozTocId170229" class="mozTocH3"></a>***10.3.1 ModComponent
@@ -1042,8 +1043,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       <a href="https://github.com/ds5678/ModComponentExtractor">https://github.com/ds5678/ModComponentExtractor</a><br>
       ダウンロードされたzipファイルの中から<strong>ModComponentExtractor.exe</strong>を<strong>Mod_TP</strong>フォ
       ルダに抽出してください。</p>
-    <h3><a id="mozTocId675157" class="mozTocH3"></a>***10.3.2 ModComponent
-      Extractorを使用して.modcomponentファイルを作成する</h3>
+    <h3>***10.3.2 ModComponent Extractorを使用して.modcomponentを作成する</h3>
     <p>Windowsファイルエクスプローラーで、Mod_TPフォルダ内の<strong>Items_TP</strong>アイコンを<strong>ModComponentExtractor.exe</strong>に
       ド ラッグしてください。</p>
     <p><img src="Images/Tut10-3-2.jpg" alt=""> </p>
@@ -1058,16 +1058,21 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       基本的なModのインストールの説明は、<a href="https://xpazeman.com/tld-mod-list/">https://xpazeman.com/tld-mod-list/</a>
       にあります。</p>
     <h3><a id="mozTocId191539" class="mozTocH3"></a>***11.1.1 必須MOD</h3>
-    <p>以下のMODを全てインストールして、エラーなしで動作するようにしてください。<br>
-      -ModComponentと、それの依存関係
-      （ModSettings,GearSpawner,LocalizationUtilities,CraftingRevisions)<br>
-      -DeveloperConsole<br>
-      -Coordinates Grabber</p>
+    <p>以下のMODを全てインストールして、エラーなしで動作するようにしてください。</p>
+    <ul>
+      <li> - ModComponentと、それの依存関係
+        （ModSettings,GearSpawner,LocalizationUtilities,CraftingRevisions)</li>
+      <li> - DeveloperConsole</li>
+      <li> - Coordinates Grabber</li>
+    </ul>
     <h3><a id="mozTocId783319" class="mozTocH3"></a>***11.1.2 推奨MOD</h3>
-    <p>-Placing Anywhere（アイテムを配置するため）<br>
-      -PlaceFromInventory（アイテムの配置を簡単にするため）<br>
-      -SaveAnywhere（いつでもセーブとロードをできるように）<br>
-      -他のModderのアイテムMod（それらとスポーン位置を重複させたくない場合）</p>
+    <p>以下のMODは必須ではありませんが、便利なので推奨します。</p>
+    <ul>
+      <li>- Placing Anywhere（アイテムを配置するため）</li>
+      <li>- PlaceFromInventory（アイテムの配置を簡単にするため）</li>
+      <li>- SaveAnywhere（いつでもセーブとロードをできるように）</li>
+      <li>- 他のModderのアイテムMod（それらとスポーン位置を重複させたくない場合）</li>
+    </ul>
     <h2><a id="mozTocId239653" class="mozTocH2"></a>**11.2 自分のMODのインストール</h2>
     <p>The Long Darkのゲームプログラムが終了している事を確認します。<br>
       他のModと同じように、自分のMod(Items_TP.modcomponent)をTheLongDark\Modsフォルダにコピーします。</p>
@@ -1080,14 +1085,15 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       <br>
       もしエラーがあれば、JSONやUnityでの作業に間違いがあります。<br>
       フォルダやファイルの名前やそれらの階層構造、プレハブなどの名前の間違いやアルファベットの大文字小文字やミスタイプに注意して下さい。<br>
-      間違いを見つけてからアセットバンドルとModComponentを作り直し、修正されたMODを再インストールしてください。</p>
+      間違いを見つけて修正し、アセットバンドルとModComponentを作り直し、修正されたMODを再インストールしてください。</p>
     <ul>
       <li>エラーのサンプル。赤い文字！<br>
         <img src="Images/Tut12-1.jpg" alt=""></li>
     </ul>
     <h2><a id="mozTocId103816" class="mozTocH2"></a>**12.2 コンソールコマンドでのチェック</h2>
     <p>エラーがなければ、ゲームを起動してからデベロッパーコンソールを開きます。（<strong>F1</strong> キー）<br>
-      「add toil」のように名前を途中まで入力したら、Tabキーでアイテム名の残りの文字が「オートコンプリート」されます。<br>
+      「add toil」のように名前を途中まで入力したら、<strong>[Tab]</strong>キーでアイテム名の残りの文字が「オートコンプリー
+      ト」されます。<br>
       それからEnterキーでコマンドを実行します。インベントリにアイテムが追加されていれば成功です。</p>
     <p><b> もしアイテム名をオートコンプリートできない場合、Modに何かのエラーがあります。</b></p>
     <h2><a id="mozTocId627127" class="mozTocH2"></a>**12.3 アイテムの保存チェック</h2>
@@ -1193,9 +1199,7 @@ item=ToiletPaperA w=3
     <p><a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
         target="_blank"></a>下記はTP-Scenes.txtのサンプルです。<br>
       これは<strong>キャンプオフィス</strong>にトイレットペーパーがスポーンする確率を設定します。（ファイルキャビネットの上に2箇所。確率
-      は50%と100%。）<br>
-      <br>
-      コード </p>
+      は50%と100%。）</p>
     <blockquote>
       <pre><code>
 scene=CampOffice
@@ -1213,14 +1217,19 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       しかし一般的な洞窟やキャビンのA、B、Cのような違いは、名前を見てもわからないでしょう。<br>
       Coordinates Grabberでそれを調べる必要があります。<br>
       <br>
-      ゲーム中に自分のMODのアイテム（ToiletPaperA）をスポーンさせたい場所に、それを配置して下さい。<br>
-      Coordinates
-      GrabberをSceneモードで使用すれば、マウスカーソルの下にあるアイテムの&lt;SceneName&gt;を調べられます。<br>
-      次に、Sceneモード中に［<strong>右 Ctrl</strong>］キーを押せば、マウスカーソルの下にあるアイテムの完全なアイテムスポーン定
-      義がクリップボードに<strong>コピー</strong>されます。それをテキストエディタでTP- Scenes.txtの正しいScene位置に「<strong>貼
-        り付け</strong>」して下さい。<br>
-    </p>
-    <h1><a id="mozTocId949378" class="mozTocH1"></a>* 14.MODの再作成</h1>
+      ゲームプレイを開始して、自分のMODのアイテム（ToiletPaperA）をデベロッパーコンソールの <strong>add</strong>
+      コマンドで入手してください。<br>
+      それから、アイテムをスポーンさせたい位置にそれを自分で実際に配置して下さい。<br>
+      Coordinates Grabberを<strong>Sceneモード</strong>で使用すれば、マウスカーソルの下にあるアイテム
+      の&lt;SceneName&gt;を調べられます。<br>
+      次に、Sceneモード中に［<strong>右 Ctrl</strong>］キーを押せば、その&lt;<strong>SceneName</strong>&gt;
+      がクリップボードに<strong>コピー</strong>されます。<br>
+      それをテキストエディタでTP- Scenes.txtの正しいScene位置に「<strong>貼 り付け</strong>」して下さい。<br>
+      次に、Coordinates Grabberを<strong>Nameモード</strong>で使用して［<strong>右 Ctrl</strong>］
+      キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ
+      れます。<br>
+      それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼 り付け</strong>」して下さい。</p>
+    <h1>* 14.MODの再作成</h1>
     <p>2つのテキストファイルを保存したら、もう一度ModComponentを作ります。（手順10.3.2.）を参照。<br>
       それから、再び完成したMODを、もう一度インストールします。（手順11.）を参照。<br>
       それから、もう一度MODのテストをします。（手順12.）を参照。</p>
