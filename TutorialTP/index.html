@@ -47,10 +47,10 @@ h4 {
 
 details > h4 {
   background-color: #eeeeee;
-  margin: 0em 1.0em 0em 1.2em;
+  margin: 0em 1em 0em 1.2em;
   padding: 0em 1em;
   border-left: 100px solid silver;
-  border-right: 30px solid silver;  
+  border-right: 30px solid silver;
 }
 
 em {
@@ -64,8 +64,8 @@ pre {
   margin: 1em 10%;
   padding: 1em;
   border-radius: 10px;
-  background: #cccccc none repeat scroll 0% 0%;
-  color: black;
+  background: #333333 none repeat scroll 0% 0%;
+  color: white;
   white-space: pre-wrap;
 }
 
@@ -114,7 +114,7 @@ ul {
 }
 
 ul > li > ul {
-  font-size: 0.85em;
+  font-size: 0.9em;
 }
 
 summary {
@@ -131,11 +131,17 @@ details > p {
   padding: 0.3em 1em;
 }
 
+code {
+  line-height: 1.3em;
+}
+
 </style></head>
   <body>
     <p></p>
     <h1><a id="mozTocId793962" class="mozTocH1"></a>*
       0.（初心者向け）ModComponentアイテム作成の段階的なチュートリアル</h1>
+    <p style="text-align: right;"><br>
+    </p>
     <p style="text-align: right;"><a href="https://github.com/stmSantana/ModComponentDocs">README.md</a>
     </p>
     <p> </p>
@@ -162,20 +168,67 @@ details > p {
         <li><a href="#mozTocId314477">* 5.ワークフロー</a></li>
         <li><a href="#mozTocId681342">* 6.フォルダ構成</a>
           <ul>
-            <li><a href="#mozTocId203054">6-1. フォルダの作成</a></li>
-            <li><a href="#mozTocId521675">6-2.Unityテンプレートのダウンロード</a></li>
+            <li><a href="#mozTocId203054">**6-1. フォルダの作成</a></li>
+            <li><a href="#mozTocId521675">**6-2.Unityテンプレートのダウンロード</a></li>
           </ul>
         </li>
         <li><a href="#mozTocId134660">* 7. Blender</a>
           <ul>
             <li><a href="#mozTocId348667">**7.0 Blenderに慣れているユーザーへの説明</a></li>
             <li><a href="#mozTocId855034">**7.1 インストール</a></li>
-            <li><a href="#mozTocId10106">**7.2 準備</a></li>
-            <li><a href="#mozTocId89267">**7.3 オブジェクト作成</a></li>
-            <li><a href="#mozTocId512646">**7.4 UV編集</a></li>
-            <li><a href="#mozTocId395878">**7.5 テクスチャとマテリアルの作成</a></li>
+            <li><a href="#mozTocId10106">**7.2 準備</a>
+              <ul>
+                <li><a href="#mozTocId973464">***7.2.1 Blenderの起動</a></li>
+                <li><a href="#mozTocId964529">***7.2.2 Blenderのウィンドウ構成</a></li>
+                <li><a href="#mozTocId765575">***7.2.3 基本的な 3D Viewpoint 操作</a></li>
+                <li><a href="#mozTocId330304">***7.2.2.2 選択と削除</a></li>
+                <li><a href="#mozTocId73774">***7.2.4 Blenderの表示言語の変更</a></li>
+              </ul>
+            </li>
+            <li><a href="#mozTocId89267">**7.3 オブジェクト作成</a>
+              <ul>
+                <li><a href="#mozTocId867159">***7.3.1 シリンダー（円柱）作成</a></li>
+                <li><a href="#mozTocId907974">***7.3.2 エディットモード</a>
+                  <ul>
+                    <li><a href="#mozTocId841875">****7.3.2.1 モードの切り替え</a></li>
+                    <li><a href="#mozTocId830725">****7.3.2.2 面の差し込み</a></li>
+                    <li><a href="#mozTocId687483"></a><br>
+                    </li>
+                    <li><a href="#mozTocId38186">****7.3.2.3 面の削除</a></li>
+                    <li><a href="#mozTocId970831">****7.3.2.4 裏面の非表示</a></li>
+                    <li><a href="#mozTocId84727">****7.3.2.5 辺ループのブリッジ</a></li>
+                    <li><a href="#mozTocId278498">****7.3.2.6 オブジェクトモードへの復帰</a></li>
+                  </ul>
+                </li>
+                <li><a href="#mozTocId941406">***7.3.3 ファイルの保存</a></li>
+              </ul>
+            </li>
+            <li><a href="#mozTocId512646">**7.4 UV編集</a>
+              <ul>
+                <li><a href="#mozTocId464256">***7.4.1 UVエディターの表示</a></li>
+                <li><a href="#mozTocId718762">***7.4.2 UVマッピングの編集</a>
+                  <ul>
+                    <li><a href="#mozTocId86424">****7.4.2.1 面選択</a></li>
+                    <li><a href="#mozTocId929127">****7.4.2.2 UV展開</a></li>
+                    <li><a href="#mozTocId976309">****7.4.2.3 UV編集</a></li>
+                    <li><a href="#mozTocId38562">***7.4.2.4 UVマッピングの編集</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#mozTocId395878">**7.5 テクスチャとマテリアルの作成</a>
+              <ul>
+                <li><a href="#mozTocId312760">***7.5.1 新規テクスチャの作成</a></li>
+                <li><a href="#mozTocId282443">***7.5.1 新規マテリアルの作成</a></li>
+              </ul>
+            </li>
             <li><a href="#mozTocId988957">**7.6 テクスチャペイント</a></li>
-            <li><a href="#mozTocId61019">**7.7 オブジェクトの微調整</a></li>
+            <li><a href="#mozTocId61019">**7.7 オブジェクトの微調整</a>
+              <ul>
+                <li><a href="#mozTocId26161">***7.7.1 スムーズシェーディング</a></li>
+                <li><a href="#mozTocId454380">***7.7.1</a></li>
+              </ul>
+            </li>
             <li><a href="#mozTocId972953">**7.8 FBXのエクスポート</a></li>
           </ul>
         </li>
@@ -248,8 +301,8 @@ details > p {
               <ul>
                 <li><a href="#mozTocId170229">***10.3.1 ModComponent
                     Extractorのダウンロード</a></li>
-                <li><a href="#mozTocId675157">***10.3.2 ModComponent
-                    Extractorを使用して.modcomponentファイルを作成する</a></li>
+                <li><a href="#mozTocId984704">***10.3.2 ModComponent
+                    Extractorを使用して.modcomponentを作成する</a></li>
               </ul>
             </li>
           </ul>
@@ -281,7 +334,7 @@ details > p {
             <li><a href="#mozTocId659696">**13.3 Item Spawnの編集</a></li>
           </ul>
         </li>
-        <li><a href="#mozTocId949378">* 14.MODの再作成</a></li>
+        <li><a href="#mozTocId977385">* 14.MODの再作成</a></li>
         <li><a href="#mozTocId115658">* 15.完成</a></li>
         <li><a href="#mozTocId546022">* 16.追加のチュートリアル課題</a></li>
       </ul>
@@ -316,7 +369,8 @@ details > p {
     <h1><a id="mozTocId943680" class="mozTocH1"></a>* 4.今回のサンプルModの構想</h1>
     <p></p>
     <h2><a id="mozTocId83002" class="mozTocH2"></a>**4.1 GEAR（プレイヤーが所持するアイテム）</h2>
-    <p><img src="Images/Tut4-1.png"></p>
+    <p><img src="Images/Tut4-1.png" style="width: 200px; height: 200px;"><img src="Images/Tut0-0.jpg"
+        alt="" style="width: 200px; height: 200px;"></p>
     <ul>
       <li>今回のチュートリアルでは、単純な円筒形オブジェクトを使って「トイレットペーパー」を作成します。</li>
       <li>それを新聞紙のようにキャンプファイヤーのTinder(火口)として使えるアイテムとして設定します。</li>
@@ -397,14 +451,14 @@ details > p {
     <h2><a id="mozTocId10106" class="mozTocH2"></a>**7.2 準備</h2>
     <details>
       <summary>Blender初心者用の説明</summary>
-      <h3> ***7.2.1 Blenderの起動</h3>
+      <h3><a id="mozTocId973464" class="mozTocH3"></a> ***7.2.1 Blenderの起動</h3>
       <p>起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。</p>
       <p></p>
       <p><img src="Images/Tut7-2_1.jpg" alt=""></p>
       <p> 周囲のなにもない領域をクリックして、スプラッシュスクリーンを閉じて下さい。 </p>
       <p></p>
       <p></p>
-      <h3>***7.2.2 Blenderのウィンドウ構成</h3>
+      <h3><a id="mozTocId964529" class="mozTocH3"></a>***7.2.2 Blenderのウィンドウ構成</h3>
       <p><img src="Images/Tut7-2_5.jpg" alt=""><br>
       </p>
       <p>ウインドウ最上部にトップバーがあり、メニューなどが並んでいます。</p>
@@ -413,7 +467,8 @@ details > p {
         エリアの左上のボタンはエディタの種類を変更するためのものです。</p>
       <p>一番広く表示されているエリアは「3D Viewpoint」です。<br>
         そのエリアの上端にはヘッダーがあり、左端にはツールバーがあります。（ツールバーの表示・非表示の切り替えショートカットキーは［T］です。）</p>
-      <h3>***7.2.3 基本的な 3D Viewpoint 操作</h3>
+      <h3><a id="mozTocId765575" class="mozTocH3"></a>***7.2.3 基本的な 3D Viewpoint
+        操作</h3>
       <p>マウスカーソルが3Dビューポイントのエリア内にある時の操作を練習して下さい。<br>
         （操作のヒントが、ウィンドウ下端のステータスバーに表示されています。）</p>
       <p>最初はツールバーの「<strong>選択</strong>」ツールが選ばれているので、エリア中央の箱オブジェクトを<strong>左マウスボタ
@@ -429,7 +484,7 @@ details > p {
       <p>いずれかのオブジェクトを選択してから<strong>[テンキー ピリオド]</strong>キーを押すと、そのオブジェクトが視界の中心になりま
         す。</p>
       <p><strong>注意：</strong>自分がどこを見ているのかわからなくなったら、<em>[Home]</em>キーを押して下さい。</p>
-      <h3>***7.2.2.2 選択と削除</h3>
+      <h3><a id="mozTocId330304" class="mozTocH3"></a>***7.2.2.2 選択と削除</h3>
       <p>最初から表示されている3つのオブジェクト（箱、カメラ、ライト）を全て削除してください。</p>
       <p><img src="Images/Tut7-2-2-2_1.jpg" alt=""></p>
       <p>ヘッダーのSelectメニュー ＞ All コマンド （ショートカット： <strong>[A] </strong>キー）</p>
@@ -441,7 +496,7 @@ details > p {
       <p>全てのオブジェクトが削除されました。<br>
       </p>
       <br>
-      <h3>***7.2.4 Blenderの表示言語の変更<br>
+      <h3><a id="mozTocId73774" class="mozTocH3"></a>***7.2.4 Blenderの表示言語の変更<br>
       </h3>
       <p>Blenderは最初は英語表示になっています。表示言語を変更します。</p>
       <p><img src="Images/Tut7-2_2.jpg" alt=""></p>
@@ -457,7 +512,7 @@ details > p {
     <h2><a id="mozTocId89267" class="mozTocH2"></a>**7.3 オブジェクト作成</h2>
     <details>
       <summary>Blender初心者用の説明</summary>
-      <h3>***7.3.1 シリンダー（円柱）作成</h3>
+      <h3><a id="mozTocId867159" class="mozTocH3"></a>***7.3.1 シリンダー（円柱）作成</h3>
       <p>X軸とY軸の交点に3Dカーソル（赤と白の円）があります。</p>
       <p>そこに、トイレットペーパーの原型になる円柱を作成します。</p>
       <p><img src="Images/Tut7-3_1.jpg" alt=""></p>
@@ -473,33 +528,33 @@ details > p {
         （参考：コーヒーカップは12角形、ソーダの缶やピーチの缶詰は10角形）</p>
       <p><br>
       </p>
-      <h3>***7.3.2 エディットモード</h3>
+      <h3><a id="mozTocId907974" class="mozTocH3"></a>***7.3.2 エディットモード</h3>
       <p>基本的な円柱をもっと編集するために3Dビューポイントを<strong>エディットモード</strong>にします。<br>
         Blenderの3Dビューにはオブジェクトモードとエディットモードがあります。<br>
         <strong>オブジェクトモード：</strong>「立方体、円柱、カメラ、ライト」などのオブジェクトの「作成、削除、移動、回転」などの操作を
         するモード。<br>
         <strong>エディットモード：</strong>1つのオブジェクトを構成する「面、線、頂点」などの要素を詳細に編集するモード。</p>
-      <h4>****7.3.2.1 モードの切り替え</h4>
+      <h4><a id="mozTocId841875" class="mozTocH4"></a>****7.3.2.1 モードの切り替え</h4>
       <p>オブジェクトモードで円柱オブジェクトを選んでから<strong>[Tab]</strong>キーを押して、ビューをそのオブジェクトのエディット
         モー ドにします。<br>
         （[Tab]キーを押す代わりにヘッダー左上のリストボックスを使ってもモードを変更できます。）</p>
       <p></p>
       <p><img src="Images/Tut7-3_5_2.jpg" alt=""></p>
-      <h4>****7.3.2.2 面の差し込み</h4>
+      <h4><a id="mozTocId830725" class="mozTocH4"></a>****7.3.2.2 面の差し込み</h4>
       <p>エディットモード状態で、ツールバーの選択矢印ボタンを選びます。<br>
         下記のように「Face select」（面選択）ボタンを選びます。</p>
       <p><img src="Images/Tut7-3_6.jpg" alt=""></p>
       <p>これによってクリックした面を選べるようになります。円柱の一番上の面を選んで下さい。</p>
       <p>ビューを回転して、円柱の一番底の面を<strong>[Shift]</strong>キーを押しながらクリックして選んで下さい。<br>
         Shiftキーによって選択対象が追加され、2つの面が両方とも選ばれている状態になります。</p>
-      <h4></h4>
+      <h4><a id="mozTocId687483" class="mozTocH4"></a></h4>
       <p>選んだ面に対して、Face ＞ Insert Faces （面の差し込み）コマンドを使います。<br>
       </p>
       <p><img src="Images/Tut7-3_13.jpg" alt=""></p>
       <p>マウスを円柱の中央に向かって動かすと選ばれた面の内側に新しい面が作成されます、左クリックすると大きさが確定します。</p>
       <p>エリア左下に表示されている「Inset Faces」パネルで下記のように設定します。</p>
       <p><img src="Images/Tut7-3_14.jpg" alt=""></p>
-      <h4>****7.3.2.3 面の削除</h4>
+      <h4><a id="mozTocId38186" class="mozTocH4"></a>****7.3.2.3 面の削除</h4>
       <p>差し込まれた面を削除します。</p>
       <p>選んだ面を削除するために、[X]キーか[Del]キーを押して下さい。<br>
         Deleteする対象の選択リストが表示されたら、「Faces」（面）を選んで下さい。</p>
@@ -507,7 +562,7 @@ details > p {
       <p><img src="Images/Tut7-3_16.jpg" alt=""></p>
       <p>Blenderのメッシュオブジェクトは複数の面で作られていて、中身は空洞です。<br>
         円柱に穴が開いて筒の内側が見えるようになりました。 </p>
-      <h4>****7.3.2.4 裏面の非表示</h4>
+      <h4><a id="mozTocId970831" class="mozTocH4"></a>****7.3.2.4 裏面の非表示</h4>
       <p>Blenderの面は表と裏が両方表示されていますが、ゲームでは裏面は透明になって表示されません。<br>
         ゲームにあわせるために、Blenderも裏面を表示しないように設定します。</p>
       <p><img src="Images/Tut7-3_9b.jpg" alt=""> </p>
@@ -515,7 +570,7 @@ details > p {
         「Backface Culling」（裏面の非表示）をオンにして下さい。</p>
       <p><br>
       </p>
-      <h4>****7.3.2.5 辺ループのブリッジ</h4>
+      <h4><a id="mozTocId84727" class="mozTocH4"></a>****7.3.2.5 辺ループのブリッジ</h4>
       <p> </p>
       <p>円筒に穴が空いているので、面を貼って穴を塞ぎます。</p>
       <p>エディットモード状態で、ツールバーの選択矢印ボタンを選びます。<br>
@@ -534,12 +589,12 @@ details > p {
       <p><img src="Images/Tut7-3_20.jpg" alt=""></p>
       <p><br>
       </p>
-      <h4>****7.3.2.6 オブジェクトモードへの復帰</h4>
+      <h4><a id="mozTocId278498" class="mozTocH4"></a>****7.3.2.6 オブジェクトモードへの復帰</h4>
       <p></p>
       <p><img src="Images/Tut7-3_5_1.jpg" alt=""></p>
       <p>[Tab]キーで、エディットモードからオブジェクトモードに戻ります。</p>
     </details>
-    <h3>***7.3.3 ファイルの保存</h3>
+    <h3><a id="mozTocId941406" class="mozTocH3"></a>***7.3.3 ファイルの保存</h3>
     <p>オブジェクトの作成が終わったのでファイルを保存します。</p>
     <p>File ＞ Save</p>
     <p><img src="Images/Tut7-3_21.jpg" alt=""></p>
@@ -551,7 +606,7 @@ details > p {
       <summary>Blender初心者用の説明</summary>
       <p>Blenderでオブジェクトに2Dの画像（テクスチャ）を貼り付けるために、<br>
         3Dのメッシュオブジェクトの「展開図」を作ります。（完成図は手順7.0を参照）</p>
-      <h3>***7.4.1 UVエディターの表示</h3>
+      <h3><a id="mozTocId464256" class="mozTocH3"></a>***7.4.1 UVエディターの表示</h3>
       <p>トップバーでワークスペースを「UV Editing」に切り替えます。<br>
         3Dビューポートのエリアが左右に分割され、左側にUV Editorのエリアが表示されます。<br>
       </p>
@@ -560,17 +615,17 @@ details > p {
       <p>3Dビューポート（右側のエリア）で、全てを選択します。（ショートカット：[<strong>A</strong>]キー）</p>
       <p>選択された部分のUVマップが左側のエリアに表示されます。</p>
       <p><img src="Images/Tut7-4_1.jpg" alt=""></p>
-      <h3>***7.4.2 UVマッピングの編集</h3>
+      <h3><a id="mozTocId718762" class="mozTocH3"></a>***7.4.2 UVマッピングの編集</h3>
       <p>円筒の穴と穴とを繋いで作成した新しい筒は、そのUVも穴と穴とをつなぐ形で作成されています。<br>
         その部分のUVを塗りやすいように別の位置に移動します。</p>
-      <h4>****7.4.2.1 面選択</h4>
+      <h4><a id="mozTocId86424" class="mozTocH4"></a>****7.4.2.1 面選択</h4>
       <p>下記のように3Dビューで選択ツールを選び、面選択モードにします。<br>
         [Shift]キーか[Alt]キーを使い、円筒の内側の面を10個全て選択します。</p>
       <p><img src="Images/Tut7-4_3.jpg" alt=""></p>
       <p>左側のエリア（UV Editor）に選択部分のUVだけが表示されるようになりました。</p>
       <p><br>
       </p>
-      <h4>****7.4.2.2 UV展開</h4>
+      <h4><a id="mozTocId929127" class="mozTocH4"></a>****7.4.2.2 UV展開</h4>
       <p>選択された円筒のUVが塗りにくい形状をしているので、平面的な展開図に変更します。</p>
       <p><img src="Images/Tut7-4_4.jpg" alt=""></p>
       <p>面が選択された状態のまま、ビューポートギズモの[-Y]ボタンを押します。（ショートカットキー：[テンキー 1]）<br>
@@ -581,7 +636,7 @@ details > p {
       <p>下記のようにCylinder Projectionの設定をします。<br>
         10個の面が横に並ぶように展開されます。</p>
       <p><img src="Images/Tut7-4_6.jpg" alt=""></p>
-      <h4>****7.4.2.3 UV編集</h4>
+      <h4><a id="mozTocId976309" class="mozTocH4"></a>****7.4.2.3 UV編集</h4>
       <p></p>
       <p>左側のエリア（UV Editor）で、選択ツールのUV選択モードを「Island」（島）にします。</p>
       <p></p>
@@ -609,7 +664,7 @@ details > p {
       <p><img src="Images/Tut7-4_10.jpg" alt=""></p>
       <p>最終的にUVがグリッドエリアからはみ出さないようにしてください。</p>
       <p><img src="Images/Tut7-4_11.jpg" alt=""></p>
-      <h4>***7.4.2.4 UVマッピングの編集</h4>
+      <h4><a id="mozTocId38562" class="mozTocH4"></a>***7.4.2.4 UVマッピングの編集</h4>
       <p></p>
       <p>UVの編集が完了したら、UVレイアウトをPNG画像としてエクスポートします。 </p>
       <p>UV &gt; Export UV Layout</p>
@@ -630,7 +685,7 @@ details > p {
     <details>
       <summary>Blender初心者用の説明</summary>
       <p>上のセクションまでに作成したオブジェクトにテクスチャとマテリアルとを設定します。</p>
-      <h3>***7.5.1 新規テクスチャの作成</h3>
+      <h3><a id="mozTocId312760" class="mozTocH3"></a>***7.5.1 新規テクスチャの作成</h3>
       <p>UVエディターで、テクスチャ画像を新規作成します。</p>
       <p>ヘッダーの「＋ New」ボタンを押します。</p>
       <p><img src="Images/Tut7-5_1.jpg" alt=""></p>
@@ -645,7 +700,7 @@ details > p {
         ます。</p>
       <p> </p>
       <p><img src="Images/Tut7-5_4.jpg" alt=""></p>
-      <h3>***7.5.1 新規マテリアルの作成</h3>
+      <h3><a id="mozTocId282443" class="mozTocH3"></a>***7.5.1 新規マテリアルの作成</h3>
       <p> </p>
       <p>プロパティエリアで、マテリアルプロパティを選択します。<br>
         「＋ New」ボタンを押して新しいマテリアルを作成します。</p>
@@ -691,7 +746,7 @@ details > p {
     <h2><a id="mozTocId61019" class="mozTocH2"></a>**7.7 オブジェクトの微調整</h2>
     <details>
       <summary>Blender初心者用の説明</summary>
-      <h3>***7.7.1 スムーズシェーディング</h3>
+      <h3><a id="mozTocId26161" class="mozTocH3"></a>***7.7.1 スムーズシェーディング</h3>
       <p>アイテムの外見がもっと良くなるように編集しましょう。</p>
       <p>「Layout」ワークスペースで、オブジェクトモードにします。（ショートカット：<strong>[Tab]</strong>）</p>
       <p><img src="Images/Tut7-7-1_1.jpg" alt=""></p>
@@ -704,7 +759,7 @@ details > p {
       <p><img src="Images/Tut7-7-1_5.jpg" alt=""></p>
       <p><br>
       </p>
-      <h3>***7.7.1 </h3>
+      <h3><a id="mozTocId454380" class="mozTocH3"></a>***7.7.1 </h3>
       <p>レイアウトワークスペースで、オブジェクトにします。</p>
       <p><img src="Images/Tut7-7_2.jpg" alt=""></p>
       <p>トイレットペーパーのオブジェクトを選んでから、右上のギズモの赤いXをクリックします。（ショートカット：[テンキー 3]）</p>
@@ -1043,7 +1098,8 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       <a href="https://github.com/ds5678/ModComponentExtractor">https://github.com/ds5678/ModComponentExtractor</a><br>
       ダウンロードされたzipファイルの中から<strong>ModComponentExtractor.exe</strong>を<strong>Mod_TP</strong>フォ
       ルダに抽出してください。</p>
-    <h3>***10.3.2 ModComponent Extractorを使用して.modcomponentを作成する</h3>
+    <h3><a id="mozTocId984704" class="mozTocH3"></a>***10.3.2 ModComponent
+      Extractorを使用して.modcomponentを作成する</h3>
     <p>Windowsファイルエクスプローラーで、Mod_TPフォルダ内の<strong>Items_TP</strong>アイコンを<strong>ModComponentExtractor.exe</strong>に
       ド ラッグしてください。</p>
     <p><img src="Images/Tut10-3-2.jpg" alt=""> </p>
@@ -1229,7 +1285,7 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ
       れます。<br>
       それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼 り付け</strong>」して下さい。</p>
-    <h1>* 14.MODの再作成</h1>
+    <h1><a id="mozTocId977385" class="mozTocH1"></a>* 14.MODの再作成</h1>
     <p>2つのテキストファイルを保存したら、もう一度ModComponentを作ります。（手順10.3.2.）を参照。<br>
       それから、再び完成したMODを、もう一度インストールします。（手順11.）を参照。<br>
       それから、もう一度MODのテストをします。（手順12.）を参照。</p>
