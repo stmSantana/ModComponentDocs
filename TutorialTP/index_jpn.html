@@ -8,8 +8,8 @@ h1 {
   font-size: 1.5em;
   font-weight: bold;
   border-style: solid;
-  border-color: #666666;
-  background-color: #333333;
+  border-color: #663333;
+  background-color: #663333;
   color: #cccccc;
   padding: 5pt 9pt 5pt 10pt;
   margin-top: 2em;
@@ -18,7 +18,7 @@ h1 {
 h2 {
   border-width: 2px 2px 2px 20px;
   border-style: solid;
-  border-color: #666666;
+  border-color: #996666;
   font-size: 1.3em;
   font-weight: bold;
   padding-left: 10px;
@@ -27,36 +27,37 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  border-bottom: 1px solid #999999;
-  border-left: 10px solid #999999;
+  border-bottom: 1px solid #cc9999;
+  border-left: 10px solid #cc9999;
   border-radius: 0px;
   padding-left: 10px;
 }
 
 details > h3 {
   margin: 0.5em 1em;
-  background-color: #eeeeee;
+  background-color: #f3eeee;
 }
 
 h4 {
   text-decoration: underline overline;
+  text-decoration-color: #663333;
   font-size: 1.2em;
   margin: 1em 0em;
   padding: 0em;
 }
 
 details > h4 {
-  background-color: #eeeeee;
+  background-color: #f3eeee;
   margin: 0em 1em 0em 1.2em;
   padding: 0em 1em;
-  border-left: 100px solid silver;
-  border-right: 30px solid silver;
+  border-left: 100px solid #cc9999;
+  border-right: 30px solid #cc9999;
 }
 
 em {
   font-weight: bold;
   font-size: 1.2em;
-  color: #990000;
+  color: #009900;
   font-style: normal;
 }
 
@@ -71,7 +72,7 @@ pre {
 
 summary {
   width: 500px;
-  background-color: #cccccc;
+  background-color: #cc9999;
   padding: 3pt;
   border-radius: 0px;
   border-style: none;
@@ -85,24 +86,24 @@ details {
 }
 
 details[open] > summary {
-  background-color: #666666;
+  background-color: #993333;
   color: white;
 }
 
 #mozToc {
-  background-color: #eeeeee;
+  background-color: #f3eeee;
   width: 50%;
   font-size: 1em;
 }
 
 a {
-  color: #0066ff;
+  color: #0033ff;
   text-decoration: none;
   cursor: pointer;
 }
 
 a:hover {
-  color: #00aaff;
+  color: #0099ff;
   text-decoration: none;
 }
 
@@ -122,11 +123,11 @@ summary {
 }
 
 summary:hover {
-  background-color: #999999;
+  background-color: #eecccc;
 }
 
 details > p {
-  background-color: #eeeeee;
+  background-color: #f3eeee;
   margin: 0em 2em;
   padding: 0.3em 1em;
 }
@@ -135,16 +136,17 @@ code {
   line-height: 1.3em;
 }
 
+body {
+  background-color: #fafafa;
+}
+
 </style></head>
   <body>
-    <h1><a id="mozTocId793962" class="mozTocH1"></a>*
-      0.（初心者向け）ModComponentアイテム作成の段階的なチュートリアル</h1>
-    <p style="text-align: right;"><strong>日本語 / <a href="index.html">English</a>
-        <br>
+    <h1><a id="mozTocId793962" class="mozTocH1"></a>* 0.（初心者向け）ModComponentアイテム作成の段階的なチュートリアル</h1>
+    <p style="text-align: right;"><strong>日本語 / <a href="index.html">English</a> <br>
       </strong></p>
     <p style="text-align: right;"> </p>
-    <p style="text-align: right;"><a href="https://github.com/stmSantana/ModComponentDocs">README.md</a>
-    </p>
+    <p style="text-align: right;"><a href="https://github.com/stmSantana/ModComponentDocs">README.md</a> </p>
     <p> </p>
     <p></p>
     <details>
@@ -300,10 +302,8 @@ code {
             <li><a href="#mozTocId915396">**10.2 ZIPファイルの作成</a></li>
             <li><a href="#mozTocId380884">**10.3 ModComponent Extractorを使用する</a>
               <ul>
-                <li><a href="#mozTocId170229">***10.3.1 ModComponent
-                    Extractorのダウンロード</a></li>
-                <li><a href="#mozTocId984704">***10.3.2 ModComponent
-                    Extractorを使用して.modcomponentを作成する</a></li>
+                <li><a href="#mozTocId170229">***10.3.1 ModComponent Extractorのダウンロード</a></li>
+                <li><a href="#mozTocId984704">***10.3.2 ModComponent Extractorを使用して.modcomponentを作成する</a></li>
               </ul>
             </li>
           </ul>
@@ -341,19 +341,14 @@ code {
       </ul>
     </details>
     <h1><a id="mozTocId154138" class="mozTocH1"></a>* 1.前置き</h1>
-    <p>（実は、ほとんどの必要な情報は既に <a href="https://github.com/ds5678/ModComponent/tree/master/docs/"
-
-        target="_blank">https://github.com/ds5678/ModComponent/tree/master/docs/</a>
-      にあります。<br>
-      チュートリアルも <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md"
-
-        target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md</a>
-      にあります。<br>
-      しかしそれを読んだだけではまだ理解できない人のために、ここではもっとUnityビギナー向けの詳しい手順を書きます。）</p>
+    <p>（実は、ほとんどの必要な情報は既に <a href="https://github.com/ds5678/ModComponent/tree/master/docs/"
+        target="_blank">https://github.com/ds5678/ModComponent/tree/master/docs/</a> にあります。<br>
+      チュートリアルも <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md"
+        target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Item-Mod-Tutorial.md</a> にあります。<br>
+      しかしそれを読んだだけではまだ理解できない人のために、ここではもっと<em>Unityビギナー向け</em>の詳しい手順を書きます。）</p>
     <p>アイテムMODを作るのに必要なのは、素材となる3Dモデルや2D画像を用意してから、Unityで少し作業をするだけです。<br>
       しかし素材を作ることができる人であっても、今までUnityを使った事がなければ、凄く複雑で難しそうだと思って諦めてしまうかもしれません。<br>
-      実際には、ModComponentを使えばUnityで行う操作はいつも同じ単純な手順なので、このガイドと同じように操作するだけで短時間で簡単にできま
-      す。<br>
+      実際には、ModComponentを使えばUnityで行う操作はいつも同じ単純な手順なので、このガイドと同じように操作するだけで短時間で簡単にできます。<br>
       <br>
       このチュートリアルは、3Dソフトウェア(Blender)とUnityのインストールをして、実際にモデルを作成してからゲームに導入するまでです。<br>
       <b> Blenderの操作は詳しく説明するときりがないので、今回のチュートリアルでは簡単なモデルしか作りません。</b><br>
@@ -372,9 +367,8 @@ code {
     <h1><a id="mozTocId943680" class="mozTocH1"></a>* 4.今回のサンプルModの構想</h1>
     <p></p>
     <h2><a id="mozTocId83002" class="mozTocH2"></a>**4.1 GEAR（プレイヤーが所持するアイテム）</h2>
-    <p><img src="Images/Tut4-1.png" style="width: 200px; height: 200px;"><img src="Images/Tut0-0.jpg"
-
-        alt="" style="width: 200px; height: 200px;"></p>
+    <p><img src="Images/Tut4-1.png" style="width: 200px; height: 200px;"><img
+        src="Images/Tut0-0.jpg" style="width: 200px; height: 200px;"></p>
     <ul>
       <li>今回のチュートリアルでは、単純な円筒形オブジェクトを使って「トイレットペーパー」を作成します。</li>
       <li>それを新聞紙のようにキャンプファイヤーのTinder(火口)として使えるアイテムとして設定します。</li>
@@ -409,14 +403,12 @@ code {
     </ul>
     <p>これらのフォルダ名は<em>重要ではありません</em>。実際には任意の名前に変更できます。<br>
     </p>
-    <p>さらに、「Items_TP」のサブフォルダとして「<em>auto-mapped</em>」「<em>blueprints</em>」 「<em>gear-spawns</em>」
-      を作成して下さい。<br>
+    <p>さらに、「Items_TP」のサブフォルダとして「<em>auto-mapped</em>」「<em>blueprints</em>」 「<em>gear-spawns</em>」 を作成して下さい。<br>
       これらの<em>3つのフォルダ名は重要なので変更できません</em>。</p>
     <p><img src="Images/Tut6-1.jpg" alt=""> </p>
     <h2><a id="mozTocId521675" class="mozTocH2"></a>**6-2.Unityテンプレートのダウンロード</h2>
     <ol>
-      <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
-
+      <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
           https://github.com/ds5678/ModComponent_TemplateProject</a><strong><br>
           「Code」</strong>ボタンをクリックし、<strong>Download ZIP</strong>をクリックします。<br>
@@ -424,11 +416,9 @@ code {
       <li>Zipファイルがダウンロードされたらそれを展開すると、<br>
         その中にはModComponent_TemplateProject-mainフォルダが あり、さらにその中にはUnityフォルダがあります。<br>
         <img src="Images/Tut6-2_2.jpg" alt=""></li>
-      <li>そのUnityフォルダに入っている「Assets」と「ProjectSettings」を全て、自分の作業用フォルダ「D:\Mod_TP
-        \Unity」 にコピーして下さい。<br>
+      <li>そのUnityフォルダに入っている「Assets」と「ProjectSettings」を全て、自分の作業用フォルダ「D:\Mod_TP \Unity」 にコピーして下さい。<br>
         <img src="Images/Tut6-2_3.jpg" alt=""></li>
-      <li>その後、Assetフォルダ以下の全てのサブフォルダから、「DELETE_This_」から始まる名前がついているファイルを検索して全て削除しま
-        す。全部 で12個あるはずです。 </li>
+      <li>その後、Assetフォルダ以下の全てのサブフォルダから、「DELETE_This_」から始まる名前がついているファイルを検索して全て削除しま す。全部 で12個あるはずです。 </li>
     </ol>
     <h1><a id="mozTocId134660" class="mozTocH1"></a>* 7. Blender</h1>
     <h2><a id="mozTocId348667" class="mozTocH2"></a>**7.0 Blenderに慣れているユーザーへの説明</h2>
@@ -436,8 +426,7 @@ code {
     <p>そうでない場合は、7.1から7.8までの手順はBlenderの解説なので、読む必要はありません。<br>
       普通にBlenderで作るだけですが、最初は単純なモデルでテストします。<br>
       UVとマテリアルとテクスチャも、簡単に済ませます。カメラやライトは必須ではありません。<br>
-      BlenderファイルのままでもUnityに使用できますが、今回は必要なオブジェクトだけを<strong>FBX</strong>にエクスポートしま
-      す。<br>
+      BlenderファイルのままでもUnityに使用できますが、今回は必要なオブジェクトだけを<strong>FBX</strong>にエクスポートしま す。<br>
       <br>
       今回の作成したモデルは下記の通りです。</p>
     <p><img src="Images/Tut7-0.jpg" alt=""></p>
@@ -473,22 +462,18 @@ code {
         エリアの左上のボタンはエディタの種類を変更するためのものです。</p>
       <p>一番広く表示されているエリアは「3D Viewpoint」です。<br>
         そのエリアの上端にはヘッダーがあり、左端にはツールバーがあります。（ツールバーの表示・非表示の切り替えショートカットキーは［T］です。）</p>
-      <h3><a id="mozTocId765575" class="mozTocH3"></a>***7.2.3 基本的な 3D Viewpoint
-        操作</h3>
+      <h3><a id="mozTocId765575" class="mozTocH3"></a>***7.2.3 基本的な 3D Viewpoint 操作</h3>
       <p>マウスカーソルが3Dビューポイントのエリア内にある時の操作を練習して下さい。<br>
         （操作のヒントが、ウィンドウ下端のステータスバーに表示されています。）</p>
-      <p>最初はツールバーの「<strong>選択</strong>」ツールが選ばれているので、エリア中央の箱オブジェクトを<strong>左マウスボタ
-          ンクリック</strong>するとそれを選択できます。<br>
+      <p>最初はツールバーの「<strong>選択</strong>」ツールが選ばれているので、エリア中央の箱オブジェクトを<strong>左マウスボタ ンクリック</strong>するとそれを選択できます。<br>
         選ばれたオブジェクトはオレンジ色で強調表示されます。<br>
         箱の近くにあるカメラやライトなどの別のオブジェクトも、同じように左クリックで選択できます。<br>
         周囲の何もない部分をクリックすると選択が解除されます。</p>
       <p><strong>マウスホイール</strong>を回転させると、視界がズームイン／ズームアウトします。 </p>
       <p><strong>マウスホイール</strong>を抑えたままマウスを動かすと、視野を回転できます。</p>
-      <p><strong>[Shift]キー</strong>と<strong>マウスホイール</strong>を抑えたままマウスを動かすと、視点を移動
-        できます。</p>
+      <p><strong>[Shift]キー</strong>と<strong>マウスホイール</strong>を抑えたままマウスを動かすと、視点を移動 できます。</p>
       <p><strong>[Home]</strong>キーを押すと、全てのオブジェクトが見えるように視野が変更されます。</p>
-      <p>いずれかのオブジェクトを選択してから<strong>[テンキー ピリオド]</strong>キーを押すと、そのオブジェクトが視界の中心になりま
-        す。</p>
+      <p>いずれかのオブジェクトを選択してから<strong>[テンキー ピリオド]</strong>キーを押すと、そのオブジェクトが視界の中心になりま す。</p>
       <p><strong>注意：</strong>自分がどこを見ているのかわからなくなったら、<em>[Home]</em>キーを押して下さい。</p>
       <h3><a id="mozTocId330304" class="mozTocH3"></a>***7.2.2.2 選択と削除</h3>
       <p>最初から表示されている3つのオブジェクト（箱、カメラ、ライト）を全て削除してください。</p>
@@ -496,8 +481,7 @@ code {
       <p>ヘッダーのSelectメニュー ＞ All コマンド （ショートカット： <strong>[A] </strong>キー）</p>
       <p>全てのオブジェクトが選ばれます。アウトライナーエディターでもそれを確認できます。</p>
       <p><img src="Images/Tut7-2-2-2_2.jpg" alt=""></p>
-      <p>全てを削除するために、 ヘッダーのObjectメニュー ＞ Delete コマンド （ショートカット：<strong>[X]</strong>キー、
-        または<strong>[Delete]</strong>キー）</p>
+      <p>全てを削除するために、 ヘッダーのObjectメニュー ＞ Delete コマンド （ショートカット：<strong>[X]</strong>キー、 または<strong>[Delete]</strong>キー）</p>
       <p><img src="Images/Tut7-2-2-2_3.jpg" alt=""></p>
       <p>全てのオブジェクトが削除されました。<br>
       </p>
@@ -537,12 +521,10 @@ code {
       <h3><a id="mozTocId907974" class="mozTocH3"></a>***7.3.2 エディットモード</h3>
       <p>基本的な円柱をもっと編集するために3Dビューポイントを<strong>エディットモード</strong>にします。<br>
         Blenderの3Dビューにはオブジェクトモードとエディットモードがあります。<br>
-        <strong>オブジェクトモード：</strong>「立方体、円柱、カメラ、ライト」などのオブジェクトの「作成、削除、移動、回転」などの操作を
-        するモード。<br>
+        <strong>オブジェクトモード：</strong>「立方体、円柱、カメラ、ライト」などのオブジェクトの「作成、削除、移動、回転」などの操作を するモード。<br>
         <strong>エディットモード：</strong>1つのオブジェクトを構成する「面、線、頂点」などの要素を詳細に編集するモード。</p>
       <h4><a id="mozTocId841875" class="mozTocH4"></a>****7.3.2.1 モードの切り替え</h4>
-      <p>オブジェクトモードで円柱オブジェクトを選んでから<strong>[Tab]</strong>キーを押して、ビューをそのオブジェクトのエディット
-        モー ドにします。<br>
+      <p>オブジェクトモードで円柱オブジェクトを選んでから<strong>[Tab]</strong>キーを押して、ビューをそのオブジェクトのエディット モー ドにします。<br>
         （[Tab]キーを押す代わりにヘッダー左上のリストボックスを使ってもモードを変更できます。）</p>
       <p></p>
       <p><img src="Images/Tut7-3_5_2.jpg" alt=""></p>
@@ -584,8 +566,7 @@ code {
       <p><img src="Images/Tut7-3_17.jpg" alt=""></p>
       <p>円筒の穴の周囲の辺を選択します。</p>
       <p><img src="Images/Tut7-3_18.jpg" alt=""></p>
-      <p>10角形の穴なので、辺は10個あります。辺を１つずつ<strong>[Shift]</strong>＋<strong>左クリック</strong>で
-        選択して10個すべての辺を選びます。<br>
+      <p>10角形の穴なので、辺は10個あります。辺を１つずつ<strong>[Shift]</strong>＋<strong>左クリック</strong>で 選択して10個すべての辺を選びます。<br>
         （または、<strong>[Alt]</strong>＋左クリックで円状の10個の辺を一度に選びます）<br>
         Shiftキーを使って上面と下面とにある辺を同時に20個選びます。</p>
       <p>Edge ＞ Bridge Edge Loops（辺 ＞ 辺ループのブリッジ）</p>
@@ -702,8 +683,7 @@ code {
       <p>Image &gt; Save As</p>
       <p><img src="Images/Tut7-5_3.jpg" alt=""></p>
       <p>保存するフォルダは<strong>「D:\Mod_TP\Working」</strong> </p>
-      <p>ファイル名は「<b>TP1_Texture.png</b>」にします。この名前は<em>重要ではありません</em>。実際には自由な名前にでき
-        ます。</p>
+      <p>ファイル名は「<b>TP1_Texture.png</b>」にします。この名前は<em>重要ではありません</em>。実際には自由な名前にでき ます。</p>
       <p> </p>
       <p><img src="Images/Tut7-5_4.jpg" alt=""></p>
       <h3><a id="mozTocId282443" class="mozTocH3"></a>***7.5.1 新規マテリアルの作成</h3>
@@ -727,8 +707,7 @@ code {
       <br>
     </details>
     <h2><a id="mozTocId988957" class="mozTocH2"></a>**7.6 テクスチャペイント</h2>
-    <p>保存されたUVレイアウト画像とテクスチャ画像の２つのPNGを使って、ペイントソフトを使ってテクスチャ<strong></strong>を直接描くこ
-      ともできます。<br>
+    <p>保存されたUVレイアウト画像とテクスチャ画像の２つのPNGを使って、ペイントソフトを使ってテクスチャ<strong></strong>を直接描くこ ともできます。<br>
       しかし、今回の例ではBlenderで直接簡単なペイントをします。</p>
     <details>
       <summary>Blender初心者用の説明</summary>
@@ -739,8 +718,7 @@ code {
       <p>「ドロー」ツールで右クリックすると、筆の設定を変更できます。<br>
         通常は「Mix」でペイントします。</p>
       <p><img src="Images/Tut7-6_2.jpg" alt=""></p>
-      <p>3Dビューポートのシェーディングボタンを「<strong>マテリアルプレビュー</strong>」モードにすると、オブジェクトにライトが当たっ
-        た状態をプレビューできます。</p>
+      <p>3Dビューポートのシェーディングボタンを「<strong>マテリアルプレビュー</strong>」モードにすると、オブジェクトにライトが当たっ た状態をプレビューできます。</p>
       <p><img src="Images/Tut7-6_3.jpg" alt=""></p>
       <p>ペイントが終わったら、テクスチャ画像（TP1_Texture.png）を上書き保存します。</p>
       <p><img src="Images/Tut7-6_4.jpg" alt=""> </p>
@@ -795,23 +773,18 @@ code {
       アイテム1つにつき1つのアイテムJSONファイルが必要です。<br>
       アイテムのJSONは「auto-mapped」フォルダに保存します。<br>
       作成するModアイテムの名前に合わせ、テキストエディタでファイルを作成します。<br>
-      拡張子は <strong>.txt</strong> ではなく<em style="color: #990000;"> </em><em>.json</em>
-      に変更します。<br>
-      例えば、アイテムの名前が「GEAR_ToiletPaperA」の場合、JSONファイルの名前は「GEAR_」を取り去って 「<em>toiletpapera.json</em>」
-      にしなければいけません。<br>
+      拡張子は <strong>.txt</strong> ではなく<em style="color: #990000;"> </em><em>.json</em> に変更します。<br>
+      例えば、アイテムの名前が「GEAR_ToiletPaperA」の場合、JSONファイルの名前は「GEAR_」を取り去って 「<em>toiletpapera.json</em>」 にしなければいけません。<br>
       ファイル名は全て小文字にする必要があります。<br>
-      実際に<strong> Mod_TP\Items_TP\auto-mapped\toiletpapera.json </strong>を作成して下
-      さい。</p>
+      実際に<strong> Mod_TP\Items_TP\auto-mapped\toiletpapera.json </strong>を作成して下 さい。</p>
     <h3><a id="mozTocId816444" class="mozTocH3"></a>***8.1.1 アイテムJSONテンプレートの導入</h3>
     <p>それぞれのJSONの説明は下記のページにあります。<br>
     </p>
     <ul>
       <li>- コンポーネント</li>
       <ul>
-        <li>--<a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md"
-
-            target="_blank">
-https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md</a></li>
+        <li>--<a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md"
+            target="_blank"> https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-Components.md</a></li>
       </ul>
       <li> - 挙動</li>
       <ul>
@@ -823,15 +796,12 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-
       <li> - <a href="https://github.com/ds5678/ModComponent/blob/master/docs/index.md">https://github.com/ds5678/ModComponent/blob/master/docs/index.md</a></li>
     </ul>
     <p> <br>
-      今回は <strong>ModGenericComponent </strong>と <strong>ModTinderBehaviour </strong>を
-      使います。<br>
+      今回は <strong>ModGenericComponent </strong>と <strong>ModTinderBehaviour </strong>を 使います。<br>
       必要な部分をコピーしてから、次の項目を変更する必要があります。</p>
     <ul>
       <li> - <strong>"GAMEPLAY_SampleItem"</strong> －－－－－＞ <strong>"GAMEPLAY_ToiletPaperA"</strong></li>
-      <li> - <strong>"GAMEPLAY_SampleItemDescription"</strong> －－－－－＞<strong>
-          "GAMEPLAY_ToiletPaperADescription"</strong></li>
-      <li> - <strong>"GAMEPLAY_SampleItemAction"</strong> －－－－－＞<strong> "" </strong>（２
-        つのダブルクォーテーションの間にある文字を削除する）</li>
+      <li> - <strong>"GAMEPLAY_SampleItemDescription"</strong> －－－－－＞<strong> "GAMEPLAY_ToiletPaperADescription"</strong></li>
+      <li> - <strong>"GAMEPLAY_SampleItemAction"</strong> －－－－－＞<strong> "" </strong>（２ つのダブルクォーテーションの間にある文字を削除する）</li>
     </ul>
     <p><br>
     </p>
@@ -884,18 +854,14 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Information-about-
 }
     </code></pre>
     <h2><a id="mozTocId306107" class="mozTocH2"></a>**8.2 翻訳用JSONの作成</h2>
-    <p>手順(6-2)でUnityテンプレートから作業用フォルダにコピーした「Mod_TP\Unity\Assets\<strong>Localization.json</strong>」
-      を編集 します。<br>
+    <p>手順(6-2)でUnityテンプレートから作業用フォルダにコピーした「Mod_TP\Unity\Assets\<strong>Localization.json</strong>」 を編集 します。<br>
       JSONエディタか、単なるテキストエディタで編集できます。<br>
       ローカライズJSONの説明は下記にあります。<br>
-      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md">
-https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md</a></p>
+      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md"> https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md</a></p>
     <h3><a id="mozTocId413548" class="mozTocH3"></a>***8.2 Localization.jsonの編集</h3>
     <p>作成するModアイテムの名前に合わせてJSONの内容を編集します。<br>
-      「<strong>GAMEPLAY_SampleItem</strong>」と「<strong>GAMEPLAY_SampleItemDescription</strong>」
-      の名前を変更しなければいけません。<br>
-      アイテムの名前が「GEAR_ToiletPaperA」の場合、「<em>GAMEPLAY_ToiletPaperA</em>」と 「<em>GAMEPLAY_ToiletPaperADescription</em>」
-      に変更します。</p>
+      「<strong>GAMEPLAY_SampleItem</strong>」と「<strong>GAMEPLAY_SampleItemDescription</strong>」 の名前を変更しなければいけません。<br>
+      アイテムの名前が「GEAR_ToiletPaperA」の場合、「<em>GAMEPLAY_ToiletPaperA</em>」と 「<em>GAMEPLAY_ToiletPaperADescription</em>」 に変更します。</p>
     <pre><code><br>{
     "GAMEPLAY_ToiletPaperA" : {
                             "English" : "Toilet Paper Roll",
@@ -922,9 +888,8 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId422509" class="mozTocH2"></a>**9.2 テンプレートの使用</h2>
     <p>Unityのインストールが完了したら、Unity Hubを開きます。<br>
       <strong>Project</strong>の<strong>Open</strong>(開く)をクリックします。</p>
-    <p><img src="Images/Tut9-2_1.jpg" alt="" style="width: 50%;"> <img src="Images/Tut9-2_2.jpg"
-
-        alt="" style="width: 50%;"></p>
+    <p><img src="Images/Tut9-2_1.jpg" alt="" style="width: 50%;"> <img
+        src="Images/Tut9-2_2.jpg" alt="" style="width: 50%;"></p>
     <p> 前もってUnityテンプレートをコピーしておいた自分のUnityフォルダを開きます。</p>
     <p><img src="Images/Tut9-2_5.jpg" alt=""></p>
     <p><img src="Images/Tut9-2_6.jpg" alt="" style="width: 50%;"></p>
@@ -933,12 +898,10 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId928437" class="mozTocH2"></a>**9.3 Unityエディタの開始</h2>
     <h3><a id="mozTocId704016" class="mozTocH3"></a>***9.3.1 プロジェクト作成</h3>
     <p>Unity Hubに新しいプロジェクトができたので、それをクリックして開きます。<br>
-      Unityエディタの新しいバージョンを確認するダイアログボックスが表示されるので、「Skip new
-      version」ボタンを押してダウンロードをキャンセルします。<br>
+      Unityエディタの新しいバージョンを確認するダイアログボックスが表示されるので、「Skip new version」ボタンを押してダウンロードをキャンセルします。<br>
       <br>
       Unityエディターのウィンドウが開きます。ウインドウ内はいくつかのビューに区切られています。<br>
-      左上にHierarchy（ヒエラルキー）、中央上にScene（シーン）、左下にProject（プロジェクト）、右にInspector（インスペク
-      ター）があります。</p>
+      左上にHierarchy（ヒエラルキー）、中央上にScene（シーン）、左下にProject（プロジェクト）、右にInspector（インスペク ター）があります。</p>
     <p><img src="Images/Tut9-3.jpg" alt=""></p>
     <h3><a id="mozTocId272488" class="mozTocH3"></a>***9.3.1 日本語化</h3>
     <p>言語パックをインストールしてあれば、Editメニュー＞Preference＞Languagesを開き、言語を選択できます。</p>
@@ -946,18 +909,15 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId368665" class="mozTocH2"></a>**9.4 アセット作成</h2>
     <h3><a id="mozTocId913856" class="mozTocH3"></a>***9.4.1 FBXのインポート</h3>
     <p>BlenderからエクスポートしたFBXファイルを、Unityにインポートします。<br>
-      プロジェクトビューの「Models」フォルダへ、<b>Windowsファイルエクスプローラー</b>から<strong>TP01.fbx</strong>ファ
-      イルをドラッグします。</p>
+      プロジェクトビューの「Models」フォルダへ、<b>Windowsファイルエクスプローラー</b>から<strong>TP01.fbx</strong>ファ イルをドラッグします。</p>
     <p><img src="Images/Tut9-4-1_1.jpg" alt=""></p>
-    <p> または、プロジェクトビューのModelsフォルダを選び、<strong>Assetメニュー</strong>か<strong>右クリック</strong>か
-      ら、「新しいアセットをインポート」して、TP01.fbxを選びます。</p>
+    <p> または、プロジェクトビューのModelsフォルダを選び、<strong>Assetメニュー</strong>か<strong>右クリック</strong>か ら、「新しいアセットをインポート」して、TP01.fbxを選びます。</p>
     <p><img src="Images/Tut9-4-1_1b.jpg" alt=""></p>
     <p>Modelsフォルダの中にTP01がインポートされてアイコンが表示されます。</p>
     <p><img src="Images/Tut9-4-1_2.jpg" alt=""></p>
     <h3><a id="mozTocId179068" class="mozTocH3"></a>***9.4.2 テクスチャのインポート</h3>
     <p>Blenderで使ったテクスチャー用のPNGファイルをUnityにインポートします。<br>
-      プロジェクトビューの「Textures」フォルダへ、<strong>Windowsファイルエクスプローラー</strong>から<strong>TP1_Texture.png</strong>ファ
-      イルをドラッグします。<br>
+      プロジェクトビューの「Textures」フォルダへ、<strong>Windowsファイルエクスプローラー</strong>から<strong>TP1_Texture.png</strong>ファ イルをドラッグします。<br>
       または、プロジェクトビューのModelsフォルダを選び、Assetメニューか右クリックから、「新しいアセットをインポート」します。</p>
     <p><img src="Images/Tut9-4-2.jpg" alt=""></p>
     <h3><a id="mozTocId202005" class="mozTocH3"></a>***9.4.3 マテリアル</h3>
@@ -972,8 +932,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <p>プロジェクトビューのMaterialsフォルダに抽出された「<strong>TP_Material</strong>」を選びます。<br>
       インスペクタビューで下記のように設定して下さい。</p>
     <p> <img src="Images/Tut9-4-3_2.jpg" alt=""><br>
-      <strong>Albedo</strong>（アルベド）にはテクスチャに<strong>TP1_Texture</strong>が設定されているは
-      ずです。<br>
+      <strong>Albedo</strong>（アルベド）にはテクスチャに<strong>TP1_Texture</strong>が設定されているは ずです。<br>
       アルベドのカラーは白、MetallicとSmoothnessの値は0です。</p>
     <h3><a id="mozTocId287137" class="mozTocH3"></a>***9.4.4 保存</h3>
     <p>ここで一度、保存しておきましょう。</p>
@@ -987,16 +946,14 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <p></p>
     <h3><a id="mozTocId52479" class="mozTocH3"></a>***9.5.2 プレハブの作成</h3>
     <p>HierarchyのTP01アイコンをAsset/Prefabsにドラッグします。<br>
-      「Original Prefab」（原型プレハブ）か「Prefab
-      Variant」（プレハブバリアント）かを選ぶ質問が表示されるので、「原型プレハブ」ボタンを選択します。</p>
+      「Original Prefab」（原型プレハブ）か「Prefab Variant」（プレハブバリアント）かを選ぶ質問が表示されるので、「原型プレハブ」ボタンを選択します。</p>
     <p><img src="Images/Tut9-5-2_1.jpg" alt=""></p>
     <p> HierarchyのTP01の名前が青い文字になります。そして、Prefabsフォルダの中にTP01が表示されます。<br>
       それから、Prefabsの中のTP01の名前を事前に決めていた通りに「<em>GEAR_ToiletPaperA</em>」に変更します。<br>
       この<em>プレハブ名</em>はModComponentにとって<em>重要です</em>。</p>
     <p><img src="Images/Tut9-5-2_2.jpg" alt=""></p>
     <h3><a id="mozTocId847231" class="mozTocH3"></a>***9.5.3 プレハブの編集</h3>
-    <p>Prefabsの中のGEAR_ToiletPaperAを選択してからInspectorの「<strong>Open Prefab</strong>」
-      ボタンをクリックします。<br>
+    <p>Prefabsの中のGEAR_ToiletPaperAを選択してからInspectorの「<strong>Open Prefab</strong>」 ボタンをクリックします。<br>
       または、GEAR_ToiletPaperAを<strong>ダブルクリック</strong>します。<br>
       または、HierarchyのTP01の名前の右にある「<strong>＞</strong>」ボタンをクリックします。<br>
       するとプレハブが開かれてInspectorで編集できるようになります。</p>
@@ -1007,8 +964,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <p> Physics＞Box Collider（物理＞ボックスコライダー）を選びます。</p>
     <p><img src="Images/Tut9-5-4_1.jpg" alt=""></p>
     <p> シーンの中にあるオブジェクトが箱型の緑色の線で包まれます。<br>
-      コライダーは通常はぴったりのサイズのはずですが、もし大きさを編集したいなら「Edit
-      Collider」ボタンをオンにしてから、箱の面に表示された緑色の点をドラッグします。</p>
+      コライダーは通常はぴったりのサイズのはずですが、もし大きさを編集したいなら「Edit Collider」ボタンをオンにしてから、箱の面に表示された緑色の点をドラッグします。</p>
     <p><img src="Images/Tut9-5-4_2.jpg" alt=""></p>
     <h3><a id="mozTocId289038" class="mozTocH3"></a>***9.5.5 プレハブの編集を終了する</h3>
     <p>HierarchyのGEAR_ToiletPaperAの名前の左側にある「＜」ボタンをクリックします。</p>
@@ -1016,12 +972,10 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId320558" class="mozTocH2"></a>**9.6 インベントリ用のアイコン</h2>
     <h3><a id="mozTocId162699" class="mozTocH3"></a>***9.6.1 アイコン名の変更</h3>
     <p>ProjectビューのAssets/<strong>InventoryGridIcons</strong>フォルダを選択します。<br>
-      フォルダの中にはテンプレートとして「ico_GearItem__SampleItem.png」という画像ファイルが入っています。（GearItemに
-      続く文字は<em>2個のアンダースコア</em>です）<br>
+      フォルダの中にはテンプレートとして「ico_GearItem__SampleItem.png」という画像ファイルが入っています。（GearItemに 続く文字は<em>2個のアンダースコア</em>です）<br>
       <em> このファイル名は重要です。<br>
       </em> 自分のModアイテムのプレハブ名に基づいた名前に変更する必要があります。<br>
-      今回の例では、プレハブ名が「GEAR_ToiletPaperA」なので、アイコン名を「<em>ico_GearItem__ToiletPaperA.png</em>」
-      に変更します。<br>
+      今回の例では、プレハブ名が「GEAR_ToiletPaperA」なので、アイコン名を「<em>ico_GearItem__ToiletPaperA.png</em>」 に変更します。<br>
       GearItemの次の文字はアンダースコアが2つ連続している必要があります。</p>
     <p><img src="Images/Tut9-6-1.jpg" alt=""></p>
     <p> インベントリアイコンについてのもっと詳しい説明は以下のページにあります。<br>
@@ -1029,9 +983,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       この画像は512*512ピクセルのサイズでなければなりません。</p>
     <h3><a id="mozTocId729619" class="mozTocH3"></a>***9.6.2 アイコン画像の編集</h3>
     <p>テンプレートのアイコン画像には何も描かれていませんので、自分自身で編集してください。<br>
-      画像ファイルを<strong>Windowsファイルエクスプローラー</strong>で表示したいなら、Projectビューの <strong>
-        ico_GearItem__ToiletPaperA.png</strong>を<strong>右クリック</strong>してか ら「Show
-      in Explorer」（エクスプローラーで表示）を選んでください。</p>
+      画像ファイルを<strong>Windowsファイルエクスプローラー</strong>で表示したいなら、Projectビューの <strong> ico_GearItem__ToiletPaperA.png</strong>を<strong>右クリック</strong>してか ら「Show in Explorer」（エクスプローラーで表示）を選んでください。</p>
     <p><img src="Images/Tut9-6-2.jpg" alt=""> </p>
     <p>最も簡単な方法は、BlenderやUnityのスクリーンショットをとって、2D画像編集ソフトでアイテムの画像をトリミングする事でしょう。</p>
     <p>Unityでスクリーンショットを撮影する手順のヒントは下記の通りです。</p>
@@ -1040,18 +992,14 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       <li>（１）ProjectビューのPrefabsフォルダを選びます</li>
       <li>（２）アイコンをダブルクリックします。</li>
       <li>（３）Hierarchyビューの内側をクリックします。</li>
-      <li> （４）<strong>ハンドツール</strong>を使って<strong>シーンビュー</strong>内を<strong>左マウスボタ
-          ンドラッグ</strong>すると、視点を移動できます。</li>
+      <li> （４）<strong>ハンドツール</strong>を使って<strong>シーンビュー</strong>内を<strong>左マウスボタ ンドラッグ</strong>すると、視点を移動できます。</li>
       <li> シーンビュー内を<strong>右マウスボタンドラッグ</strong>すると、視点を回転できます。</li>
-      <li> さらに、シーンビュー内を右マウスボタンを押したままの時に、キーボードの<strong>WASDQEキー</strong>を使うと、視点を
-        FPSゲームのように移動できます。</li>
-      <li> （５）シーン内のアイテムの表示サイズや角度が気に入ったら、<strong>グリッド表示ボタン</strong>をオフにしてスクリーンショッ
-        トを撮ってください。</li>
+      <li> さらに、シーンビュー内を右マウスボタンを押したままの時に、キーボードの<strong>WASDQEキー</strong>を使うと、視点を FPSゲームのように移動できます。</li>
+      <li> （５）シーン内のアイテムの表示サイズや角度が気に入ったら、<strong>グリッド表示ボタン</strong>をオフにしてスクリーンショッ トを撮ってください。</li>
       <li>2D画像編集ソフトで ico_GearItem__ToiletPaperA.png を開き、スクリーンショットをペーストします。<br>
         背景を選択して削除して透明にしてください。（PNGのアルファチャンネル）</li>
     </ul>
-    <p>画像が正しく保存されれば、<strong>InventoryGridIcons</strong>フォルダの中の「<strong>ico_GearItem__ToiletPaperA.png</strong>」
-      が更新されます。</p>
+    <p>画像が正しく保存されれば、<strong>InventoryGridIcons</strong>フォルダの中の「<strong>ico_GearItem__ToiletPaperA.png</strong>」 が更新されます。</p>
     <p><img src="Images/Tut9-6-2_3.jpg" alt=""></p>
     <p></p>
     <h2><a id="mozTocId842792" class="mozTocH2"></a>**9.7 アセットバンドル</h2>
@@ -1063,25 +1011,20 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <p> 新しい名前として「toiletpapermod」と入力します。</p>
     <p><img src="Images/Tut9-7-1_2.jpg" alt=""></p>
     <p></p>
-    <p>同じようにして、「InventoryGridIcons」フォルダと「Prefabs」フォルダのアイコンの２つを選んで、そららの
-      AssetBundleの名前も「toiletpapermod」 にします。<br>
+    <p>同じようにして、「InventoryGridIcons」フォルダと「Prefabs」フォルダのアイコンの２つを選んで、そららの AssetBundleの名前も「toiletpapermod」 にします。<br>
       注意：それらのフォルダに入っているファイルのAssetBundleの名前を変更する必要はありません。</p>
     <h3><a id="mozTocId844749" class="mozTocH3"></a>***9.7.2 アセットバンドルのエクスポート</h3>
     <p>これがUnityでの最後の作業です。<br>
       Assets（アセット）メニューの「Build AssetBundles」コマンドを選びます。</p>
     <p><img src="Images/Tut9-7-2_1.jpg" alt=""></p>
-    <p>Unityテンプレートによって「Mod_TP\Unity\<strong>AssetBundles</strong>」フォルダが作成されて、アセッ
-      トバンドルファイル がその中にエクスポートされます。<br>
-      AssetBundlesフォルダの中には複数のファイルが保存されますが、「<em>toiletpapermod.unity3d</em>」という名前
-      の１つのファイルだけが ModComponentに必要です。</p>
+    <p>Unityテンプレートによって「Mod_TP\Unity\<strong>AssetBundles</strong>」フォルダが作成されて、アセッ トバンドルファイル がその中にエクスポートされます。<br>
+      AssetBundlesフォルダの中には複数のファイルが保存されますが、「<em>toiletpapermod.unity3d</em>」という名前 の１つのファイルだけが ModComponentに必要です。</p>
     <h1><a id="mozTocId385264" class="mozTocH1"></a>* 10.ModComponent</h1>
     <p>ModComponentファイルはZIPファイルをリネームして拡張子を「.modcomponent」に変更しただけのファイルです。</p>
     <h2><a id="mozTocId298886" class="mozTocH2"></a>**10.1 ファイルを正しいフォルダにコピーする</h2>
     <p>必要なファイルを「Items_TP」フォルダに集めて、最初にZIPを作る必要があります。<br>
-      Mod_TP\Unity\AssetBundlesフォルダにエクスポートされた<strong>toiletpapermod.unity3d</strong>を、
-      Mod_TP \Items_TP\<strong>auto-mapped</strong>フォルダにコピーします。<br>
-      この時、auto-mappedフォルダには（手順8.1）によって既に<strong>toiletpapera.json</strong>が保存されて
-      いるはずです。</p>
+      Mod_TP\Unity\AssetBundlesフォルダにエクスポートされた<strong>toiletpapermod.unity3d</strong>を、 Mod_TP \Items_TP\<strong>auto-mapped</strong>フォルダにコピーします。<br>
+      この時、auto-mappedフォルダには（手順8.1）によって既に<strong>toiletpapera.json</strong>が保存されて いるはずです。</p>
     <h2><a id="mozTocId915396" class="mozTocH2"></a>**10.2 ZIPファイルの作成</h2>
     <p>今回の例では、ModComponentファイルを簡単に作成するツール「ModComponent Extractor」を使います。<br>
       次のステップ(10.3)に進んで下さい。<br>
@@ -1089,27 +1032,17 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       しかし、<strong>もし自分でZIPファイルを作成したければ</strong>、以下の手順に従って下さい。</p>
     <p>「Items_TP」フォルダの中の3つのフォルダを、「Items_TP.zip」という名前で圧縮します。</p>
     <p><img src="Images/Tut10-2.jpg" alt=""></p>
-    <p> 注意点として、Items_TP.zipの中にはItems_TPフォルダは入れてはいけません。「auto-mapped」「blueprints」
-      「gear-spawns」の3つのフォルダが直接ZIPの中に置かれていなければいけません。</p>
-    <p> ZIPファイルが作られたら、その拡張子を<strong>.zip</strong>から<strong>.modcomponent</strong>に
-      変更します。</p>
-    <h2><a id="mozTocId380884" class="mozTocH2"></a>**10.3 ModComponent
-      Extractorを使用する</h2>
-    <p>ModComponentExtractor is an application for making and extracting '<strong>.modcomponent</strong>'
-      files used by ModComponent.<br>
-      （ModComponentExtractorは、ModComponentが使用する<b>「.modcomponent」ファイル</b>を作成および抽
-      出するためのア プリケーションです。）</p>
-    <h3><a id="mozTocId170229" class="mozTocH3"></a>***10.3.1 ModComponent
-      Extractorのダウンロード</h3>
-    <p>下記のリンクを開き、最新のリリースをダウンロードします。（WindowsユーザーはModComponentExtractor_Win64.zipが
-      必要）<br>
+    <p> 注意点として、Items_TP.zipの中にはItems_TPフォルダは入れてはいけません。「auto-mapped」「blueprints」 「gear-spawns」の3つのフォルダが直接ZIPの中に置かれていなければいけません。</p>
+    <p> ZIPファイルが作られたら、その拡張子を<strong>.zip</strong>から<strong>.modcomponent</strong>に 変更します。</p>
+    <h2><a id="mozTocId380884" class="mozTocH2"></a>**10.3 ModComponent Extractorを使用する</h2>
+    <p>ModComponentExtractor is an application for making and extracting '<strong>.modcomponent</strong>' files used by ModComponent.<br>
+      （ModComponentExtractorは、ModComponentが使用する<b>「.modcomponent」ファイル</b>を作成および抽 出するためのア プリケーションです。）</p>
+    <h3><a id="mozTocId170229" class="mozTocH3"></a>***10.3.1 ModComponent Extractorのダウンロード</h3>
+    <p>下記のリンクを開き、最新のリリースをダウンロードします。（WindowsユーザーはModComponentExtractor_Win64.zipが 必要）<br>
       <a href="https://github.com/ds5678/ModComponentExtractor">https://github.com/ds5678/ModComponentExtractor</a><br>
-      ダウンロードされたzipファイルの中から<strong>ModComponentExtractor.exe</strong>を<strong>Mod_TP</strong>フォ
-      ルダに抽出してください。</p>
-    <h3><a id="mozTocId984704" class="mozTocH3"></a>***10.3.2 ModComponent
-      Extractorを使用して.modcomponentを作成する</h3>
-    <p>Windowsファイルエクスプローラーで、Mod_TPフォルダ内の<strong>Items_TP</strong>アイコンを<strong>ModComponentExtractor.exe</strong>に
-      ド ラッグしてください。</p>
+      ダウンロードされたzipファイルの中から<strong>ModComponentExtractor.exe</strong>を<strong>Mod_TP</strong>フォ ルダに抽出してください。</p>
+    <h3><a id="mozTocId984704" class="mozTocH3"></a>***10.3.2 ModComponent Extractorを使用して.modcomponentを作成する</h3>
+    <p>Windowsファイルエクスプローラーで、Mod_TPフォルダ内の<strong>Items_TP</strong>アイコンを<strong>ModComponentExtractor.exe</strong>に ド ラッグしてください。</p>
     <p><img src="Images/Tut10-3-2.jpg" alt=""> </p>
     <p>ModComponentExtractorの黒いウインドウに白い文字で「Succeeded」と表示されていれば成功です。<br>
       黒いウインドウを閉じて下さい。</p>
@@ -1119,13 +1052,11 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId175729" class="mozTocH2"></a>**11.1 準備</h2>
     <p>自分でアイテムModを作りたいと考えているあなたは、既に他のTLDのModを使用しているはずです。<br>
       だからここでは基本的なModのインストールについて詳しくは説明しません。<br>
-      基本的なModのインストールの説明は、<a href="https://xpazeman.com/tld-mod-list/">https://xpazeman.com/tld-mod-list/</a>
-      にあります。</p>
+      基本的なModのインストールの説明は、<a href="https://xpazeman.com/tld-mod-list/">https://xpazeman.com/tld-mod-list/</a> にあります。</p>
     <h3><a id="mozTocId191539" class="mozTocH3"></a>***11.1.1 必須MOD</h3>
     <p>以下のMODを全てインストールして、エラーなしで動作するようにしてください。</p>
     <ul>
-      <li> - ModComponentと、それの依存関係
-        （ModSettings,GearSpawner,LocalizationUtilities,CraftingRevisions)</li>
+      <li> - ModComponentと、それの依存関係 （ModSettings,GearSpawner,LocalizationUtilities,CraftingRevisions)</li>
       <li> - DeveloperConsole</li>
       <li> - Coordinates Grabber</li>
     </ul>
@@ -1144,8 +1075,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     <h2><a id="mozTocId553277" class="mozTocH2"></a>**12.1 MelonLoaderでのチェック</h2>
     <p>The Long Darkを起動します。<br>
       MelonLoaderのウィンドウで、エラーが無いかどうかを見て下さい。<br>
-      ゲームのウィンドウでMelonLoaderが隠れた時は、<strong>Alt+Tab</strong>キーなどを使ってウィンドウを最前面にしてくだ
-      さい。<br>
+      ゲームのウィンドウでMelonLoaderが隠れた時は、<strong>Alt+Tab</strong>キーなどを使ってウィンドウを最前面にしてくだ さい。<br>
       <br>
       もしエラーがあれば、JSONやUnityでの作業に間違いがあります。<br>
       フォルダやファイルの名前やそれらの階層構造、プレハブなどの名前の間違いやアルファベットの大文字小文字やミスタイプに注意して下さい。<br>
@@ -1156,8 +1086,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     </ul>
     <h2><a id="mozTocId103816" class="mozTocH2"></a>**12.2 コンソールコマンドでのチェック</h2>
     <p>エラーがなければ、ゲームを起動してからデベロッパーコンソールを開きます。（<strong>F1</strong> キー）<br>
-      「add toil」のように名前を途中まで入力したら、<strong>[Tab]</strong>キーでアイテム名の残りの文字が「オートコンプリー
-      ト」されます。<br>
+      「add toil」のように名前を途中まで入力したら、<strong>[Tab]</strong>キーでアイテム名の残りの文字が「オートコンプリー ト」されます。<br>
       それからEnterキーでコマンドを実行します。インベントリにアイテムが追加されていれば成功です。</p>
     <p><b> もしアイテム名をオートコンプリートできない場合、Modに何かのエラーがあります。</b></p>
     <h2><a id="mozTocId627127" class="mozTocH2"></a>**12.3 アイテムの保存チェック</h2>
@@ -1213,13 +1142,11 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
     </ul>
     <p> <br>
       下記のページに詳しい情報があります。<br>
-      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md"
-
+      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md"
         target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Gear-Spawns.md</a><br>
       <br>
       必須MODのCoordinates Grabberを使うので、その使用方法をMODの配布ページで確認してください。<br>
-      <a href="https://github.com/ds5678/Coordinates-Grabber" target="_blank">
-        https://github.com/ds5678/Coordinates-Grabber</a></p>
+      <a href="https://github.com/ds5678/Coordinates-Grabber" target="_blank"> https://github.com/ds5678/Coordinates-Grabber</a></p>
     <h2><a id="mozTocId202163" class="mozTocH2"></a>**13.1 TXTファイルの作成</h2>
     <p>Mod_TP\Items_TP\<strong>gear-spawns</strong>フォルダの中にテキストファイルを作る必要があります。<br>
       <em>ファイルの個数やファイル名は重要ではありません。</em><br>
@@ -1234,8 +1161,7 @@ https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration
       下記URLに必要な情報があります。<br>
       <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Loot-Tables.md">https://github.com/ds5678/ModComponent/blob/master/docs/Loot-Tables.md</a></p>
     <p>下記はTP-LootTables.txtのサンプルです。<br>
-      これは<strong>浴室のキャビネット</strong>と<strong>釣り小屋の引き出し</strong>からトイレットペーパーが発見される確
-      率を設定します。<br>
+      これは<strong>浴室のキャビネット</strong>と<strong>釣り小屋の引き出し</strong>からトイレットペーパーが発見される確 率を設定します。<br>
       手順13.0の説明に従って「GEAR_ToiletPaperA」の名前を省略可能なので「ToiletPaperA」と記述しています。</p>
     <p>コード </p>
     <blockquote>
@@ -1251,22 +1177,18 @@ item=ToiletPaperA w=3
       <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/TutorialTP/Samples/template-LootTables.txt">https://github.com/stmSantana/ModComponentDocs/blob/main/TutorialTP/Samples/template-LootTables.txt</a><br>
       ほとんどの容器の名前は&lt;LootTableName&gt;を見れば理解できるはずです。<br>
       しかしCargoから始まる名前はわかりにくいかもしれません。それらはTimberwolf Mountainに散在している大きな箱です。<br>
-      ゲーム中にCoordinates Grabberをloot
-      tableモードで使用すれば、マウスカーソルの下にある容器の&lt;LootTableName&gt;を調べられます。<br>
+      ゲーム中にCoordinates Grabberをloot tableモードで使用すれば、マウスカーソルの下にある容器の&lt;LootTableName&gt;を調べられます。<br>
     </p>
     <p><br>
       <code></code></p>
     <h2><a id="mozTocId659696" class="mozTocH2"></a>**13.3 Item Spawnの編集</h2>
     <p>TP-Scenes.txtをテキストエディタで編集して下さい。<br>
       下記URLに必要な情報があります。<br>
-      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
-
+      <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
         target="_blank">https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md</a></p>
-    <p><a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
-
+    <p><a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
         target="_blank"></a>下記はTP-Scenes.txtのサンプルです。<br>
-      これは<strong>キャンプオフィス</strong>にトイレットペーパーがスポーンする確率を設定します。（ファイルキャビネットの上に2箇所。確率
-      は50%と100%。）</p>
+      これは<strong>キャンプオフィス</strong>にトイレットペーパーがスポーンする確率を設定します。（ファイルキャビネットの上に2箇所。確率 は50%と100%。）</p>
     <blockquote>
       <pre><code>
 scene=CampOffice
@@ -1276,8 +1198,7 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
 </code></pre> </blockquote>
     <p><strong>オプションとして：</strong>下記のURLにテンプレートがあります。<br>
       全ての行をコピーして自分のTXTファイルに貼り付けて使えます。<br>
-      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/TutorialTP/Samples/template-Scenes.txt"
-
+      <a href="https://github.com/stmSantana/ModComponentDocs/blob/main/TutorialTP/Samples/template-Scenes.txt"
         target="_blank">https://github.com/stmSantana/ModComponentDocs/blob/main/TutorialTP/Samples/template-Scenes.txt</a><br>
       ほとんどの主要な「シーン」の名前はコメント行の&lt;SceneName&gt;と付属説明を見れば理解できるはずです。<br>
       例えば沿岸ハイウェイの屋外のシーン名は「CoastalRegion」です。<br>
@@ -1285,17 +1206,12 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       しかし一般的な洞窟やキャビンのA、B、Cのような違いは、名前を見てもわからないでしょう。<br>
       Coordinates Grabberでそれを調べる必要があります。<br>
       <br>
-      ゲームプレイを開始して、自分のMODのアイテム（ToiletPaperA）をデベロッパーコンソールの <strong>add</strong>
-      コマンドで入手してください。<br>
+      ゲームプレイを開始して、自分のMODのアイテム（ToiletPaperA）をデベロッパーコンソールの <strong>add</strong> コマンドで入手してください。<br>
       それから、アイテムをスポーンさせたい位置にそれを自分で実際に配置して下さい。<br>
-      Coordinates Grabberを<strong>Sceneモード</strong>で使用すれば、マウスカーソルの下にあるアイテム
-      の&lt;SceneName&gt;を調べられます。<br>
-      次に、Sceneモード中に［<strong>右 Ctrl</strong>］キーを押せば、その&lt;<strong>SceneName</strong>&gt;
-      がクリップボードに<strong>コピー</strong>されます。<br>
+      Coordinates Grabberを<strong>Sceneモード</strong>で使用すれば、マウスカーソルの下にあるアイテム の&lt;SceneName&gt;を調べられます。<br>
+      次に、Sceneモード中に［<strong>右 Ctrl</strong>］キーを押せば、その&lt;<strong>SceneName</strong>&gt; がクリップボードに<strong>コピー</strong>されます。<br>
       それをテキストエディタでTP- Scenes.txtの正しいScene位置に「<strong>貼 り付け</strong>」して下さい。<br>
-      次に、Coordinates Grabberを<strong>Nameモード</strong>で使用して［<strong>右 Ctrl</strong>］
-      キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ
-      れます。<br>
+      次に、Coordinates Grabberを<strong>Nameモード</strong>で使用して［<strong>右 Ctrl</strong>］ キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ れます。<br>
       それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼 り付け</strong>」して下さい。</p>
     <h1><a id="mozTocId977385" class="mozTocH1"></a>* 14.MODの再作成</h1>
     <p>2つのテキストファイルを保存したら、もう一度ModComponentを作ります。（手順10.3.2.）を参照。<br>
@@ -1308,8 +1224,7 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
     <p><em>おめでとう！これでアイテムMODが完成しました。</em><br>
       完成した「Items_TP.modcomponent」を公開できます。</p>
     <h1><a id="mozTocId546022" class="mozTocH1"></a>* 16.追加のチュートリアル課題</h1>
-    <p>別の新しいアイテム（半分使用されていて細くなったトイレットペーパーロール）として「ToiletPaperB」という新しいオブジェクトを
-      Blenderで作って、自分のMODに追加してみてください。<br>
+    <p>別の新しいアイテム（半分使用されていて細くなったトイレットペーパーロール）として「ToiletPaperB」という新しいオブジェクトを Blenderで作って、自分のMODに追加してみてください。<br>
       この場合、１つのアセットバンドルファイルに2つのプレハブが入ることになります。<br>
       アイテムJSONのtoiletpaperb.jsonを新たに作る必要があります。<br>
       翻訳JSONであるLocalization.jsonのファイルは1つだけのままです。その中に2つ目のアイテムの設定を追加します。<br>
