@@ -172,8 +172,8 @@ body {
         <li><a href="#mozTocId314477">* 5.ワークフロー</a></li>
         <li><a href="#mozTocId681342">* 6.フォルダ構成</a>
           <ul>
-            <li><a href="#mozTocId203054">**6-1. フォルダの作成</a></li>
-            <li><a href="#mozTocId521675">**6-2.Unityテンプレートのダウンロード</a></li>
+            <li><a href="#mozTocId985425">**6.1. フォルダの作成</a></li>
+            <li><a href="#mozTocId307735">**6.2.Unityテンプレートのダウンロード</a></li>
           </ul>
         </li>
         <li><a href="#mozTocId134660">* 7. Blender</a>
@@ -196,8 +196,7 @@ body {
                   <ul>
                     <li><a href="#mozTocId841875">****7.3.2.1 モードの切り替え</a></li>
                     <li><a href="#mozTocId830725">****7.3.2.2 面の差し込み</a></li>
-                    <li><a href="#mozTocId687483"></a><br>
-                    </li>
+                    <li><a href="#mozTocId687483"></a></li>
                     <li><a href="#mozTocId38186">****7.3.2.3 面の削除</a></li>
                     <li><a href="#mozTocId970831">****7.3.2.4 裏面の非表示</a></li>
                     <li><a href="#mozTocId84727">****7.3.2.5 辺ループのブリッジ</a></li>
@@ -215,7 +214,7 @@ body {
                     <li><a href="#mozTocId86424">****7.4.2.1 面選択</a></li>
                     <li><a href="#mozTocId929127">****7.4.2.2 UV展開</a></li>
                     <li><a href="#mozTocId976309">****7.4.2.3 UV編集</a></li>
-                    <li><a href="#mozTocId38562">***7.4.2.4 UVマッピングの編集</a></li>
+                    <li><a href="#mozTocId38562">***7.4.2.4 UVレイアウトのエクスポート</a></li>
                   </ul>
                 </li>
               </ul>
@@ -230,7 +229,7 @@ body {
             <li><a href="#mozTocId61019">**7.7 オブジェクトの微調整</a>
               <ul>
                 <li><a href="#mozTocId26161">***7.7.1 スムーズシェーディング</a></li>
-                <li><a href="#mozTocId454380">***7.7.1</a></li>
+                <li><a href="#mozTocId461384">***7.7.1 適用（原点の操作）</a></li>
               </ul>
             </li>
             <li><a href="#mozTocId972953">**7.8 FBXのエクスポート</a></li>
@@ -333,7 +332,11 @@ body {
             <li><a href="#mozTocId838759">**13.0 説明</a></li>
             <li><a href="#mozTocId202163">**13.1 TXTファイルの作成</a></li>
             <li><a href="#mozTocId486593">**13.2 Loot Tableの編集</a></li>
-            <li><a href="#mozTocId659696">**13.3 Item Spawnの編集</a></li>
+            <li><a href="#mozTocId659696">**13.3 Item Spawnの編集</a>
+              <ul>
+                <li><a href="#mozTocId430742">***13.3.2 scene コマンド</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#mozTocId977385">* 14.MODの再作成</a></li>
@@ -393,7 +396,7 @@ body {
       <br>
     </p>
     <h1><a id="mozTocId681342" class="mozTocH1"></a>* 6.フォルダ構成</h1>
-    <h2>**6.1. フォルダの作成</h2>
+    <h2><a id="mozTocId985425" class="mozTocH2"></a>**6.1. フォルダの作成</h2>
     <p>今回は作業用フォルダとして<em>「D:\Mod_TP」</em>フォルダを使うと仮定して説明します。<br>
       実際には作業用のフォルダをあなたの好きな場所に任意の名前で作ることができます。<br>
       次に、そのサブフォルダに、各種作業用のフォルダを下記のように作成して下さい。</p>
@@ -407,7 +410,7 @@ body {
     <p>さらに、「Items_TP」のサブフォルダとして「<em>auto-mapped</em>」「<em>blueprints</em>」 「<em>gear-spawns</em>」 を作成して下さい。<br>
       これらの<em>3つのフォルダ名は重要なので変更できません</em>。</p>
     <p><img src="Images/Tut6-1.jpg" alt=""> </p>
-    <h2>**6.2.Unityテンプレートのダウンロード</h2>
+    <h2><a id="mozTocId307735" class="mozTocH2"></a>**6.2.Unityテンプレートのダウンロード</h2>
     <ol>
       <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
@@ -725,7 +728,10 @@ body {
       <p><img src="Images/Tut7-6_3.jpg" alt=""></p>
       <p><img src="Images/Tut7-6_3c.jpg" alt=""></p>
       <p>ペイントが終わったら、テクスチャ画像（<strong>TP1_Texture.png</strong>）を上書き保存します。</p>
-      <p><img src="Images/Tut7-6_4.jpg" alt=""> </p>
+      <p><img src="Images/Tut7-6_4.jpg" alt=""></p>
+      <p>テクスチャをさらにペイントソフトで編集できます。</p>
+      <p><a href="file:///G:/mydoc/The_Long_Dark/%7ETEST-Mod/ModCompDocs/TutorialTP/Samples/TP1_Texture_2.png"
+          target="_blank"><img src="Samples/TP1_Texture_2.jpg" alt=""></a></p>
       <p><br>
       </p>
     </details>
@@ -747,7 +753,7 @@ body {
       <p><img src="Images/Tut7-7-1_5.jpg" alt=""></p>
       <p><br>
       </p>
-      <h3>***7.7.1 適用（原点の操作）</h3>
+      <h3><a id="mozTocId461384" class="mozTocH3"></a>***7.7.1 適用（原点の操作）</h3>
       <p>レイアウトワークスペースで、オブジェクトにします。</p>
       <p><img src="Images/Tut7-7_2.jpg" alt=""></p>
       <p>トイレットペーパーのオブジェクトを選んでから、右上の<strong>ギズモ</strong>にある<strong>赤いX</strong>をクリックします。（ショートカット：[テンキー 3]か[Ctrl]+[テンキー3]）</p>
@@ -1001,7 +1007,9 @@ body {
       <li> さらに、シーンビュー内を右マウスボタンを押したままの時に、キーボードの<strong>WASDQEキー</strong>を使うと、視点を FPSゲームのように移動できます。</li>
       <li> （５）シーン内のアイテムの表示サイズや角度が気に入ったら、<strong>グリッド表示ボタン</strong>をオフにしてスクリーンショッ トを撮ってください。</li>
       <li>2D画像編集ソフトで ico_GearItem__ToiletPaperA.png を開き、スクリーンショットをペーストします。<br>
-        背景を選択して削除して透明にしてください。（PNGのアルファチャンネル）</li>
+        背景を選択して削除して透明にしてください。（PNGのアルファチャンネル）<br>
+        必要ならペイントソフトの機能でテクスチャにさらにノイズやシャドウを加えられます。<br>
+        <img src="Samples/ico_GearItem__ToiletPaperA.png" alt=""></li>
     </ul>
     <p>画像が正しく保存されれば、<strong>InventoryGridIcons</strong>フォルダの中の「<strong>ico_GearItem__ToiletPaperA.png</strong>」 が更新されます。</p>
     <p><img src="Images/Tut9-6-2_3.jpg" alt=""></p>
@@ -1216,7 +1224,7 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       それをテキストエディタでTP- Scenes.txtの正しいScene位置に「<strong>貼 り付け</strong>」して下さい。<br>
       次に、Coordinates Grabberを<strong>Nameモード</strong>で使用して［<strong>右 Ctrl</strong>］ キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ れます。<br>
       それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼り付け</strong>」して下さい。</p>
-    <h3>***13.3.2 scene コマンド</h3>
+    <h3><a id="mozTocId430742" class="mozTocH3"></a>***13.3.2 scene コマンド</h3>
     <p>デベロッパーコンソールで<strong>scene</strong>コマンドを使うと、そのsceneがすぐにロードされます。<br>
       （例：　<strong style="background-color: #cccccc;">scene campoffice</strong>&nbsp;&nbsp; ）<br>
       <em>注意：</em>まるで瞬間移動のようで便利だと思うでしょうが、シーンやプレイヤーのインベントリが初期化されるので、これは通常のプレイではなくデバッグでのみ使用してください。</p>

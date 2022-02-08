@@ -137,7 +137,7 @@ code {
 
 </style></head>
   <body>
-    <h1><a id="mozTocId365947"></a>* 0. (For beginners) Step-by-step tutorial on creating ModComponent items</h1>
+    <h1><a id="mozTocId365947" class="mozTocH1"></a>* 0. (For beginners) Step-by-step tutorial on creating ModComponent items</h1>
     <p style="text-align: left; background-color: #ffeeff; width: 40%; display: block; margin-left: auto; font-size: 0.9em;">I am not an English speaker and there may be translation errors in the English of this document. I welcome suggestions for grammar and spelling errors.</p>
     <p style="text-align: right;"><strong><a href="index_jpn.html">日本語</a> / English</strong></p>
     <p style="text-align: right;"><a href="https://github.com/stmSantana/ModComponentDocs">README.md</a></p>
@@ -148,7 +148,7 @@ code {
         <li><a href="#mozTocId365947">* 0. (For beginners) Step-by-step tutorial on creating ModComponent items</a></li>
         <li><a href="#mozTocId857564">* 1. Preface</a></li>
         <li><a href="#mozTocId559000">* 2. Premise</a></li>
-        <li><a href="#mozTocId502846">* 3. Environment</a></li>
+        <li><a href="#mozTocId355570">* 3. Versions</a></li>
         <li><a href="#mozTocId739622">* 4. Concept of this sample mod</a>
           <ul>
             <li><a href="#mozTocId922313">** 4.1 GEAR (Items owned by the player)</a></li>
@@ -163,32 +163,32 @@ code {
         <li><a href="#mozTocId244550">* 5. Workflow</a></li>
         <li><a href="#mozTocId943027">* 6. Folder structure</a>
           <ul>
-            <li><a href="#mozTocId920380">** 6-1. Creating a folder</a></li>
-            <li><a href="#mozTocId178524">** 6-2. Download Unity template</a></li>
+            <li><a href="#mozTocId920380">** 6.1. Creating a folder</a></li>
+            <li><a href="#mozTocId731583">** 6.2. Download Unity template</a></li>
           </ul>
         </li>
         <li><a href="#mozTocId757371">* 7. Blender</a>
           <ul>
-            <li><a href="#mozTocId653335">** 7.0 Explanation to users who are accustomed to Blender</a></li>
+            <li><a href="#mozTocId653335">** 7.0 Instructions for users familiar with Blender</a></li>
             <li><a href="#mozTocId193879">** 7.1 Install</a></li>
             <li><a href="#mozTocId24591">** 7.2 Preparation</a>
               <ul>
                 <li><a href="#mozTocId542310">*** 7.2.1 Starting Blender</a></li>
                 <li><a href="#mozTocId860317">*** 7.2.2 Blender window configuration</a></li>
-                <li><a href="#mozTocId235037">*** 7.2.3 Basic 3D Viewpoint operation</a></li>
+                <li><a href="#mozTocId235037">*** 7.2.3 Basic 3D viewport operation</a></li>
                 <li><a href="#mozTocId766147">*** 7.2.2.2 Select and delete</a></li>
                 <li><a href="#mozTocId974675">*** 7.2.4 Changing the display language of Blender</a></li>
               </ul>
             </li>
             <li><a href="#mozTocId616670">** 7.3 Object creation</a>
               <ul>
-                <li><a href="#mozTocId687587">*** 7.3.1 Cylinder (cylinder) creation</a></li>
+                <li><a href="#mozTocId421552">*** 7.3.1 Create a cylinder</a></li>
                 <li><a href="#mozTocId513762">*** 7.3.2 Edit mode</a>
                   <ul>
                     <li><a href="#mozTocId439030">**** 7.3.2.1 Mode switching</a></li>
                     <li><a href="#mozTocId864693">**** 7.3.2.2 Insertion of face</a></li>
                     <li><a href="#mozTocId923765">**** 7.3.2.3 Deleted face</a></li>
-                    <li><a href="#mozTocId315853">**** 7.3.2.4 Hide the back side</a></li>
+                    <li><a href="#mozTocId354242">**** 7.3.2.4 Hide the backface</a></li>
                     <li><a href="#mozTocId255435">**** 7.3.2.5 Edge loop bridge</a></li>
                     <li><a href="#mozTocId5185">**** 7.3.2.6 Return to object mode</a></li>
                   </ul>
@@ -202,8 +202,8 @@ code {
                 <li><a href="#mozTocId597164">*** 7.4.2 Editing UV mapping</a>
                   <ul>
                     <li><a href="#mozTocId192432">**** 7.4.2.1 Face selection</a></li>
-                    <li><a href="#mozTocId885791">**** 7.4.2.2 UV unfolding</a></li>
-                    <li><a href="#mozTocId919337">****7.4.2.3 UV編集</a></li>
+                    <li><a href="#mozTocId885791">**** 7.4.2.2 UV Unwrap</a></li>
+                    <li><a href="#mozTocId104489">****7.4.2.3 UV Edit</a></li>
                     <li><a href="#mozTocId653746">*** 7.4.2.4 Editing UV mapping</a></li>
                   </ul>
                 </li>
@@ -219,7 +219,7 @@ code {
             <li><a href="#mozTocId684772">** 7.7 Object fine-tuning</a>
               <ul>
                 <li><a href="#mozTocId92598">*** 7.7.1 Smooth shading</a></li>
-                <li><a href="#mozTocId350262">*** 7.7.1</a></li>
+                <li><a href="#mozTocId260237">*** 7.7.1 Apply - Object Origin</a></li>
               </ul>
             </li>
             <li><a href="#mozTocId300137">** 7.8 FBX export</a></li>
@@ -247,7 +247,7 @@ code {
             <li><a href="#mozTocId497751">** 9.3 Start Unity Editor</a>
               <ul>
                 <li><a href="#mozTocId16520">*** 9.3.1 Project creation</a></li>
-                <li><a href="#mozTocId683090">*** 9.3.1 Japanese localization</a></li>
+                <li><a href="#mozTocId429449">*** 9.3.1 localization</a></li>
               </ul>
             </li>
             <li><a href="#mozTocId571212">** 9.4 Asset creation</a>
@@ -302,7 +302,7 @@ code {
           <ul>
             <li><a href="#mozTocId994736">** 11.1 Preparation</a>
               <ul>
-                <li><a href="#mozTocId10362">*** 11.1.1 Required MOD</a></li>
+                <li><a href="#mozTocId10362">*** 11.1.1 Required Mods</a></li>
                 <li><a href="#mozTocId12687">*** 11.1.2 Recommended mods</a></li>
               </ul>
             </li>
@@ -322,17 +322,20 @@ code {
             <li><a href="#mozTocId899040">** 13.0 Description</a></li>
             <li><a href="#mozTocId686409">** 13.1 Creating a TXT file</a></li>
             <li><a href="#mozTocId468990">** 13.2 Editing Loot Table</a></li>
-            <li><a href="#mozTocId322519">** 13.3 Editing Item Spawn</a></li>
+            <li><a href="#mozTocId322519">** 13.3 Editing Item Spawn</a>
+              <ul>
+                <li><a href="#mozTocId797834">***13.3.2 scene command</a></li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#mozTocId684995">* 14. Recreating the mod</a></li>
         <li><a href="#mozTocId404900">* 15. Completion</a></li>
         <li><a href="#mozTocId897527">* 16. Additional tutorial assignments</a></li>
       </ul>
-      <p><br>
-      </p>
+      <br>
     </details>
-    <h1><a id="mozTocId857564"></a>* 1. Preface</h1>
+    <h1><a id="mozTocId857564" class="mozTocH1"></a>* 1. Preface</h1>
     <p>(Actually, most of the information you need is already at&nbsp;<a
         href="https://github.com/ds5678/ModComponent/tree/master/docs/"
         target="_blank">https://github.com/ds5678/ModComponent/tree/master/docs/</a>&nbsp;. <br>
@@ -346,19 +349,19 @@ code {
       This tutorial is from installing 3D software (Blender) and Unity, actually creating a model, and introducing it into the game.<br>
       <strong>Since there is no time to explain the operation of Blender in detail, this tutorial will only create a simple model.</strong><br>
       Also, the clothing function and sound source function are omitted.</p>
-    <h1><a id="mozTocId559000"></a>* 2. Premise</h1>
+    <h1><a id="mozTocId559000" class="mozTocH1"></a>* 2. Premise</h1>
     <ul>
       <li>- Windows users (If you don't, please replace it with your own environment and read it)</li>
       <li>- Basic knowledge and operation of Windows and the Internet</li>
       <li>- Basic image processing software operation</li>
     </ul>
-    <h1>* 3. Versions </h1>
+    <h1><a id="mozTocId355570" class="mozTocH1"></a>* 3. Versions </h1>
     <ul>
       <li>Blender 2.93LTS (In my case. Other versions are fine, but export settings etc may be different.)</li>
       <li>Unity 2019.4.19 (Depending on the version of the TLD game. Mods may not work properly except for this version.)</li>
     </ul>
-    <h1><a id="mozTocId739622"></a>* 4. Concept of this sample mod</h1>
-    <h2><a id="mozTocId922313"></a>** 4.1 GEAR (Items owned by the player)</h2>
+    <h1><a id="mozTocId739622" class="mozTocH1"></a>* 4. Concept of this sample mod</h1>
+    <h2><a id="mozTocId922313" class="mozTocH2"></a>** 4.1 GEAR (Items owned by the player)</h2>
     <p><img src="Images/Tut4-1.png" style="width: 200px; height: 200px;"><img
         src="Images/Tut0-0.jpg" alt="" style="width: 200px; height: 200px;"></p>
     <ul>
@@ -367,23 +370,23 @@ code {
       <li>It also allows you to Harvest and craft two Tinder Plugs, just like newsprints.</li>
       <li>Place finished items directly in the house or spawn from lockers.</li>
     </ul>
-    <h2><a id="mozTocId26578"></a>** 4.2 Naming</h2>
-    <h3><a id="mozTocId111608"></a>*** 4.2.1 Prefab name</h3>
+    <h2><a id="mozTocId26578" class="mozTocH2"></a>** 4.2 Naming</h2>
+    <h3><a id="mozTocId111608" class="mozTocH3"></a>*** 4.2.1 Prefab name</h3>
     <p>Items need a&nbsp;prefab name&nbsp;for use in Unity, in addition to the name normally displayed in the game .<br>
       This should start with "GEAR_", so this time we 'll use the prefab name&nbsp;"<em>GEAR_ToiletPaperA</em>"&nbsp;.<br>
       <em>Remember that the name "ToiletPaperA" is important.</em></p>
-    <h3><a id="mozTocId172337"></a>*** 4.2.2 Asset Bundle Name</h3>
+    <h3><a id="mozTocId172337" class="mozTocH3"></a>*** 4.2.2 Asset Bundle Name</h3>
     <p>For mod items, prepare files such as 3D models, 2D icons, translated text, etc., and<br>
       then use Unity to combine them into an&nbsp;<strong>asset bundle&nbsp;</strong>.<br>
       (Even if you make multiple items, it will be one asset bundle.)<br>
       <em>The&nbsp;file name of the asset bundle is not important</em>,&nbsp;but this time it will be&nbsp;"<em>toiletpapermod</em>" all in lowercase.</p>
-    <h1><a id="mozTocId244550"></a>* 5. Workflow</h1>
+    <h1><a id="mozTocId244550" class="mozTocH1"></a>* 5. Workflow</h1>
     <p><img src="Images/Tut5-0-ENG.jpg"><br>
       <br>
       <br>
     </p>
-    <h1><a id="mozTocId943027"></a>* 6. Folder structure</h1>
-    <h2><a id="mozTocId920380"></a>** 6.1. Creating a folder</h2>
+    <h1><a id="mozTocId943027" class="mozTocH1"></a>* 6. Folder structure</h1>
+    <h2><a id="mozTocId920380" class="mozTocH2"></a>** 6.1. Creating a folder</h2>
     <p>This time , I will assume that you will use the&nbsp;"<em>D:\Mod_TP</em>"&nbsp;folder as the working folder .<br>
       You can actually create a working folder anywhere you like with any name.<br>
       Next, create folders for various work in that subfolder as shown below.</p>
@@ -396,7 +399,7 @@ code {
     <p>In addition, create " <em>auto-mapped&nbsp;</em>", "&nbsp;<em>blueprints&nbsp;</em>", and "&nbsp;<em>gear-spawns&nbsp;</em>" as subfolders of " <strong>Items_TP&nbsp;</strong>".<br>
       These&nbsp;three folder names are <em>important </em>and cannot be changed&nbsp;.</p>
     <p><img src="Images/Tut6-1.jpg" alt=""></p>
-    <h2>** 6.2. Download Unity template</h2>
+    <h2><a id="mozTocId731583" class="mozTocH2"></a>** 6.2. Download Unity template</h2>
     <ol>
       <li>Go to the following page.<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
@@ -410,34 +413,36 @@ code {
         <img src="Images/Tut6-2_3.jpg" alt=""></li>
       <li>After that, search all subfolders under the Asset folder for files with names starting with "<strong>DELETE_This_</strong>" and delete them all.&nbsp;There should be 12 in all.</li>
     </ol>
-    <h1><a id="mozTocId757371"></a>* 7. Blender</h1>
-    <h2><a id="mozTocId653335"></a>** 7.0 Explanation to users who are accustomed to Blender</h2>
-    <p>The steps from 7-1 to 7-8 are Blender's explanations, so you don't need to read them.<br>
+    <h1><a id="mozTocId757371" class="mozTocH1"></a>* 7. Blender</h1>
+    <h2><a id="mozTocId653335" class="mozTocH2"></a>** 7.0 Instructions for users familiar with Blender</h2>
+    <p>The steps from Step7-1 to Step7-8 are Blender's explanations, so you don't need to read them.<br>
       I usually just make it in Blender, but first I will test it with a simple model.<br>
       UVs, materials and textures are also easy.&nbsp;Cameras and lights are not required.&nbsp;You can use the Blender file as it is for Unity, but this time I will export only the necessary objects to&nbsp;<strong>FBX </strong>.<br>
       <br>
       The model created this time is as follows.</p>
-    <p><img src="Images/Tut7-0.jpg" alt=""></p>
     <ul>
       <li>- <strong>Blender&nbsp;file name:&nbsp;</strong>TP01.blend</li>
       <li>- <strong>Material&nbsp;name:&nbsp;</strong>TP_Material</li>
       <li>- <strong>Texture&nbsp;name:&nbsp;</strong>TP1_Texture (1024 * 1024)</li>
       <li>-&nbsp;<strong>FBX:&nbsp;</strong>TP01.fbx</li>
     </ul>
-    <h2><a id="mozTocId193879"></a>** 7.1 Install</h2>
+    <p><img src="Images/Tut7-0.jpg" alt=""></p>
+    <ul>
+    </ul>
+    <h2><a id="mozTocId193879" class="mozTocH2"></a>** 7.1 Install</h2>
     <p>Go to the following page.</p>
     <p><a href="https://www.blender.org/download/lts/2-93/" target="_blank">https://www.blender.org/download/lts/2-93/</a></p>
     <p>You usually get it from the Windows Store or Steam using the button at the top of the page.<br>
       If you don't want to use them,&nbsp;download them using the&nbsp;<em>2.93.7</em> link at the bottom.<br>
       Install and proceed to the next step.</p>
-    <h2><a id="mozTocId24591"></a>** 7.2 Preparation</h2>
+    <h2><a id="mozTocId24591" class="mozTocH2"></a>** 7.2 Preparation</h2>
     <details open="">
-      <summary>Blender beginner's description</summary>
-      <h3><a id="mozTocId542310"></a>*** 7.2.1 Starting Blender</h3>
+      <summary>Instructions for Blender beginners</summary>
+      <h3><a id="mozTocId542310" class="mozTocH3"></a>*** 7.2.1 Starting Blender</h3>
       <p>When you start it, you will see a splash screen in the center, but ignore it.</p>
       <p><img src="Images/Tut7-2_1.jpg" alt=""></p>
       <p>Click on the empty area around it to close the splash screen.</p>
-      <h3><a id="mozTocId860317"></a>*** 7.2.2 Blender window configuration</h3>
+      <h3><a id="mozTocId860317" class="mozTocH3"></a>*** 7.2.2 Blender window configuration</h3>
       <p><img src="Images/Tut7-2_5.jpg" alt=""><br>
       </p>
       <p>There is a<u> top bar</u> at the top of the window, where menus and other items are lined up.</p>
@@ -446,7 +451,7 @@ code {
         The button on the top left of the area is for changing the editor type.</p>
       <p>The widest area is "3D Viewport".<br>
         At the top of the area is the <u>header</u> and at the left is the <u>toolbar</u>.&nbsp;(The shortcut key for showing / hiding the toolbar is<strong> [T]</strong>.)</p>
-      <h3><a id="mozTocId235037"></a>*** 7.2.3 Basic 3D viewport operation</h3>
+      <h3><a id="mozTocId235037" class="mozTocH3"></a>*** 7.2.3 Basic 3D viewport operation</h3>
       <p>Practice the operation when the mouse cursor is within the area of ​​the 3D viewport.<br>
         (Operation tips are displayed in the status bar at the bottom of the window.)</p>
       <p>Initially, the&nbsp;<strong>Select&nbsp;tool </strong>on the <u>toolbar</u> is selected, so you can select it by&nbsp;<strong>left-click </strong>on the box object in the center of the area .<br>
@@ -459,7 +464,7 @@ code {
       <p>Press the<strong> [Home]</strong> key to bring all objects into view.<br>
         <em>Note:</em> If you lose track of where you are looking, press the <strong>[Home] </strong>key.</p>
       <p>If you select one of the objects and then press the <strong>[Numpad period]</strong> key, that object will be in the center of your field of view.</p>
-      <h3><a id="mozTocId766147"></a>*** 7.2.2.2 Select and delete</h3>
+      <h3><a id="mozTocId766147" class="mozTocH3"></a>*** 7.2.2.2 Select and delete</h3>
       <p>Delete all three objects (box, camera, light) that are displayed from the beginning.</p>
       <p><img src="Images/Tut7-2-2-2_1.jpg" alt=""></p>
       <p>Header <u>Select menu</u>&gt; <u>All command </u>(shortcut:<strong>&nbsp;[A]&nbsp;</strong>key)</p>
@@ -469,7 +474,7 @@ code {
       <p><img src="Images/Tut7-2-2-2_3.jpg" alt=""></p>
       <p>All objects have been deleted.</p>
       <br>
-      <h3><a id="mozTocId974675"></a>*** 7.2.4 Changing the display language of Blender</h3>
+      <h3><a id="mozTocId974675" class="mozTocH3"></a>*** 7.2.4 Changing the display language of Blender</h3>
       <p>Blender is initially displayed in English. You can change the interface language.</p>
       <p><img src="Images/Tut7-2_2.jpg" alt=""></p>
       <p><u>Edit </u>menu&gt; <u>Preference </u>command</p>
@@ -479,10 +484,10 @@ code {
       <p><br>
       </p>
     </details>
-    <h2><a id="mozTocId616670"></a>** 7.3 Object creation</h2>
+    <h2><a id="mozTocId616670" class="mozTocH2"></a>** 7.3 Object creation</h2>
     <details open="" id="YY">
-      <summary>Blender beginner's description</summary>
-      <h3>*** 7.3.1 Create a cylinder</h3>
+      <summary>Instructions for Blender beginners</summary>
+      <h3><a id="mozTocId421552" class="mozTocH3"></a>*** 7.3.1 Create a cylinder</h3>
       <p>There is a <strong>3D cursor </strong>(red and white circle) at the intersection of the <strong
           style="background-color: #ff6666;">&nbsp;X&nbsp;</strong> and <strong
           style="background-color: #66ff99;">&nbsp;Y&nbsp;</strong> axes.</p>
@@ -500,16 +505,16 @@ code {
         (Reference: Coffee cups are dodecagonal, soda cans and peach cans are decagonal)</p>
       <p><br>
       </p>
-      <h3><a id="mozTocId513762"></a>*** 7.3.2 Edit mode</h3>
+      <h3><a id="mozTocId513762" class="mozTocH3"></a>*** 7.3.2 Edit mode</h3>
       <p>Put the 3D viewport in <strong>Edit mode&nbsp;</strong>for more editing of the basic cylinder&nbsp;.<br>
         Blender's 3Dviewport has the object mode and the edit mode.<br>
         <em>Object mode:</em>&nbsp;A mode for performing operations such as "create, delete, move, rotate" objects such as <strong>"Cube, Cylinder, Camera, Light"</strong>.<br>
         <em>Edit mode:</em>&nbsp;A mode in which you can edit the elements such as <strong>"Face, Edge, and Vertex"</strong> that make up an individual object in detail.</p>
-      <h4><a id="mozTocId439030"></a>**** 7.3.2.1 Mode switching</h4>
+      <h4><a id="mozTocId439030" class="mozTocH4"></a>**** 7.3.2.1 Mode switching</h4>
       <p>Select a cylinder object in object mode and then press <strong>[Tab]key </strong>to set the view to edit mode for that object.<br>
         (You can also change the mode by using the list box at the top left of the header instead of pressing the [Tab] key.)</p>
       <p><img src="Images/Tut7-3_5_2.jpg" alt=""></p>
-      <h4><a id="mozTocId864693"></a>**** 7.3.2.2 Insertion of face</h4>
+      <h4><a id="mozTocId864693" class="mozTocH4"></a>**** 7.3.2.2 Insertion of face</h4>
       <p>In edit mode, select the select arrow button on the toolbar.<br>
         Select the "Face select" button as shown below.</p>
       <p><img src="Images/Tut7-3_6.jpg" alt=""></p>
@@ -521,7 +526,7 @@ code {
       <p>Move the mouse toward the center of the cylinder to create a new face inside the selected face, left click to confirm the size.</p>
       <p>Set as follows in the "Inset Faces" panel displayed at the bottom left of the area.</p>
       <p><img src="Images/Tut7-3_14.jpg" alt=""></p>
-      <h4><a id="mozTocId923765"></a>**** 7.3.2.3 Deleted face</h4>
+      <h4><a id="mozTocId923765" class="mozTocH4"></a>**** 7.3.2.3 Deleted face</h4>
       <p>Delete the inserted face.</p>
       <p>Press the [X] key or the [Del] key to delete the selected face.<br>
         When the selection list of the target to be deleted is displayed, select "Faces".</p>
@@ -529,14 +534,14 @@ code {
       <p><img src="Images/Tut7-3_16.jpg" alt=""></p>
       <p>Blender's mesh objects are made up of multiple faces and are hollow inside.<br>
         There is a hole in the cylinder so that you can see the inside of the cylinder.</p>
-      <h4>**** 7.3.2.4 Hide the backface</h4>
+      <h4><a id="mozTocId354242" class="mozTocH4"></a>**** 7.3.2.4 Hide the backface</h4>
       <p>The front and back of Blender are both visible, but in the game the back is transparent and not visible.<br>
         In order to match the game, Blender should also be set to not show the back face.</p>
       <p><img src="Images/Tut7-3_9b.jpg" alt=""></p>
       <p>Show the "Shading" settings panel in the header and turn on "Backface Culling" as shown above.</p>
       <p><br>
       </p>
-      <h4><a id="mozTocId255435"></a>**** 7.3.2.5 Edge loop bridge</h4>
+      <h4><a id="mozTocId255435" class="mozTocH4"></a>**** 7.3.2.5 Edge loop bridge</h4>
       <p>There is a hole in the cylinder, so stick a face to close the hole.</p>
       <p>In edit mode, select the <u>select </u>arrow button on the <u>toolbar</u>.<br>
         Select the "<strong>Edge select</strong>" button as shown below.</p>
@@ -553,40 +558,40 @@ code {
       <p><img src="Images/Tut7-3_20.jpg" alt=""></p>
       <p><br>
       </p>
-      <h4><a id="mozTocId5185"></a>**** 7.3.2.6 Return to object mode</h4>
+      <h4><a id="mozTocId5185" class="mozTocH4"></a>**** 7.3.2.6 Return to object mode</h4>
       <p><img src="Images/Tut7-3_5_1.jpg" alt=""></p>
       <p>Press the<strong> [Tab]</strong> key to return from edit mode to object mode.</p>
     </details>
-    <h3><a id="mozTocId864892"></a>*** 7.3.3 Save file</h3>
+    <h3><a id="mozTocId864892" class="mozTocH3"></a>*** 7.3.3 Save file</h3>
     <p>Now that you have created the object, save the file.</p>
     <p><u>File ＞ Save</u></p>
     <p><img src="Images/Tut7-3_21.jpg" alt=""></p>
     <p>The folder to save is&nbsp;"<strong>D:\Mod_TP\Working</strong>"</p>
     <p>The file name should be "&nbsp;<strong>TP01.blend&nbsp;</strong>".&nbsp;This name is&nbsp;<em>not important&nbsp;</em>.</p>
     <p><img src="Images/Tut7-3_22.jpg" alt=""></p>
-    <h2><a id="mozTocId267406"></a>** 7.4 UV editing</h2>
+    <h2><a id="mozTocId267406" class="mozTocH2"></a>** 7.4 UV editing</h2>
     <details open="">
-      <summary>Blender beginner's description</summary>
+      <summary>Instructions for Blender beginners</summary>
       <p>Create a "development view / expanded view" of a 3D mesh object in order to paste a 2D image (texture) into the object in Blender<br>
         .&nbsp;(Refer to step 7.0 for the completed drawing)</p>
-      <h3><a id="mozTocId174143"></a>*** 7.4.1 UV Editor View</h3>
+      <h3><a id="mozTocId174143" class="mozTocH3"></a>*** 7.4.1 UV Editor View</h3>
       <p>Switch the workspace to "<strong>UV Editing</strong>" in the <u>Top bar</u>.<br>
         The 3D viewport area is split left and right, with the <strong>UV Editor </strong>area on the left.</p>
       <p><img src="Images/Tut7-4_2.jpg" alt=""></p>
       <p>In the 3D viewport (the area on the right), select All.&nbsp;(Shortcut: <strong>[A]</strong> key)</p>
       <p>The <strong>UV map</strong> of the selected part is displayed in the area on the left.</p>
       <p><img src="Images/Tut7-4_1.jpg" alt=""></p>
-      <h3><a id="mozTocId597164"></a>*** 7.4.2 Editing UV mapping</h3>
+      <h3><a id="mozTocId597164" class="mozTocH3"></a>*** 7.4.2 Editing UV mapping</h3>
       <p>The UV map of the new inner cylinder, which was created by connecting the two holes, is also created by connecting the UV holes.<br>
         Move the UVs in that area to a different position to make it easier to paint.</p>
-      <h4><a id="mozTocId192432"></a>**** 7.4.2.1 Face selection</h4>
+      <h4><a id="mozTocId192432" class="mozTocH4"></a>**** 7.4.2.1 Face selection</h4>
       <p>Select the selection tool in the 3D view as shown below to enter the face selection mode.<br>
         Use the <strong>[Shift]</strong> or <strong>[Alt]</strong> key to select all 10 inner faces of the cylinder.</p>
       <p><img src="Images/Tut7-4_3.jpg" alt=""></p>
       <p>Only the selected UVs are now displayed in the left area (UV Editor).</p>
       <p><br>
       </p>
-      <h4><a id="mozTocId885791"></a>**** 7.4.2.2 UV Unwrap</h4>
+      <h4><a id="mozTocId885791" class="mozTocH4"></a>**** 7.4.2.2 UV Unwrap</h4>
       <p>Since the UV of the selected cylinder has a shape that is difficult to paint, change it to a flat development view.</p>
       <p><img src="Images/Tut7-4_4.jpg" alt=""></p>
       <p>With the face selected, press the <strong>[-Y]</strong> button on the viewport gizmo. (Shortcut : <strong>[Numpad 1] </strong>key)<br>
@@ -597,7 +602,7 @@ code {
       <p>Set up the Cylinder Projection as shown below.<br>
         The 10 faces will be expanded to line up horizontally.</p>
       <p><img src="Images/Tut7-4_6.jpg" alt=""></p>
-      <h4>****7.4.2.3 UV Edit </h4>
+      <h4><a id="mozTocId104489" class="mozTocH4"></a>****7.4.2.3 UV Edit </h4>
       <p>In the left area (UV Editor), set the selection tool's <u>UV selection mode </u>to <strong>Island</strong>.</p>
       <p><img src="Images/Tut7-4_7_1.jpg" alt=""></p>
       <p>Clicking on any one of the 10 rectangles displayed in the UV Editor area will select all 10 of them.<br>
@@ -621,7 +626,7 @@ code {
       <p><img src="Images/Tut7-4_10.jpg" alt=""></p>
       <p>Make sure that the UVs do not extend beyond the grid area in the end.</p>
       <p><img src="Images/Tut7-4_11.jpg" alt=""></p>
-      <h4><a id="mozTocId653746"></a>*** 7.4.2.4 Editing UV mapping</h4>
+      <h4><a id="mozTocId653746" class="mozTocH4"></a>*** 7.4.2.4 Editing UV mapping</h4>
       <p>After editing the UVs, export the UV layout as a <strong>PNG </strong>image.</p>
       <p><u>UV &gt; Export UV Layout</u></p>
       <p><img src="Images/Tut7-4_12b.jpg" alt=""></p>
@@ -632,13 +637,13 @@ code {
       <p>The file name should be "&nbsp;<strong>TP01_UV.png&nbsp;</strong>".&nbsp;This name is&nbsp;<em>not important&nbsp;</em>.&nbsp;You can actually use any name you like.</p>
       <p><img src="Images/Tut7-4_14.jpg" alt=""></p>
     </details>
-    <h2><a id="mozTocId919397"></a>** 7.5 Creating Textures and Materials</h2>
+    <h2><a id="mozTocId919397" class="mozTocH2"></a>** 7.5 Creating Textures and Materials</h2>
     <p>The texture should be around 1024x1024 to match other items.<br>
       Material settings are done in Unity, so no detailed settings are required in Blender.</p>
     <details open="">
-      <summary>Blender beginner's description</summary>
+      <summary>Instructions for Blender beginners</summary>
       <p>Set the texture and material for the objects created up to the section above.</p>
-      <h3><a id="mozTocId310072"></a>*** 7.5.1 Creating a new texture</h3>
+      <h3><a id="mozTocId310072" class="mozTocH3"></a>*** 7.5.1 Creating a new texture</h3>
       <p>Create a new texture image in the UV editor.</p>
       <p>Press the <strong>[+ New ]</strong> button in the <u>header</u>.</p>
       <p><img src="Images/Tut7-5_1.jpg"></p>
@@ -650,7 +655,7 @@ code {
       <p>The folder to save is&nbsp;"<strong>D:\Mod_TP\Working</strong>"</p>
       <p>The file name should be "&nbsp;<strong>TP1_Texture.png&nbsp;</strong>".&nbsp;This name is&nbsp;<em>not important&nbsp;</em>.&nbsp;You can actually use any name you like.</p>
       <p><img src="Images/Tut7-5_4.jpg" alt=""></p>
-      <h3><a id="mozTocId999844"></a>*** 7.5.1 Creating a new material</h3>
+      <h3><a id="mozTocId999844" class="mozTocH3"></a>*** 7.5.1 Creating a new material</h3>
       <p>In the <strong>Properties area</strong>, select a <strong>material </strong>property.<br>
         Press the [+ New] button to create a new material.</p>
       <p><img src="Images/Tut7-5_5.jpg" alt=""></p>
@@ -667,11 +672,11 @@ code {
       <p><br>
       </p>
     </details>
-    <h2><a id="mozTocId963195"></a>** 7.6 Texture paint</h2>
+    <h2><a id="mozTocId963195" class="mozTocH2"></a>** 7.6 Texture paint</h2>
     <p>You can even edit the texture image directly in your painting software. In that case, it is helpful to import the exported UV layout PNG as a layer.<br>
       However, in this example, we will do a simple painting directly in Blender.</p>
     <details open="">
-      <summary>Blender beginner's description</summary>
+      <summary>Instructions for Blender beginners</summary>
       <p>Select the <strong>Texture Paint </strong>workspace in the <u>top bar</u>.</p>
       <p>The left and right areas are in <em>paint mode</em>, and you can paint on <strong> TP1_Texture </strong>in either areas.<br>
         The "<strong>Draw</strong>" tool has been selected. (Brush icon)</p>
@@ -686,11 +691,15 @@ code {
       <p><img src="Images/Tut7-6_4.jpg" alt=""></p>
       <p><br>
       </p>
+      <p>The textures can be further edited with paint software.</p>
+      <p><a href="file:///G:/mydoc/The_Long_Dark/%7ETEST-Mod/ModCompDocs/TutorialTP/Samples/TP1_Texture_2.png"
+          target="_blank"><img src="Samples/TP1_Texture_2.jpg" alt=""></a></p>
+      <p> </p>
     </details>
-    <h2><a id="mozTocId684772"></a>** 7.7 Object fine-tuning</h2>
+    <h2><a id="mozTocId684772" class="mozTocH2"></a>** 7.7 Object fine-tuning</h2>
     <details open="">
-      <summary>Blender beginner's description</summary>
-      <h3><a id="mozTocId92598"></a>*** 7.7.1 Smooth shading</h3>
+      <summary>Instructions for Blender beginners</summary>
+      <h3><a id="mozTocId92598" class="mozTocH3"></a>*** 7.7.1 Smooth shading</h3>
       <p>Edit the item to make it look better.</p>
       <p>In the <u>Layout </u>workspace, switch to <u>object mode</u>.&nbsp;(Shortcut:<strong>&nbsp;[Tab]</strong>&nbsp;)</p>
       <p><img src="Images/Tut7-7-1_1.jpg" alt=""></p>
@@ -703,7 +712,7 @@ code {
       <p><img src="Images/Tut7-7-1_5.jpg" alt=""></p>
       <p><br>
       </p>
-      <h3>*** 7.7.1 Apply - Object Origin</h3>
+      <h3><a id="mozTocId260237" class="mozTocH3"></a>*** 7.7.1 Apply - Object Origin</h3>
       <p>In the <u>Layout </u>workspace, switch to <u>Object Mode</u>.</p>
       <p><img src="Images/Tut7-7_2.jpg" alt=""></p>
       <p>Select the toilet paper object, then click the <strong style="background-color: #ff6666;">red X </strong>in the <strong>Gizmo </strong>in the upper right.&nbsp;(Shortcut:<strong> [Numpad 3] / [Crrl]+[Numpad 3]</strong>)</p>
@@ -720,14 +729,14 @@ code {
       <p>Save the file.</p>
     </details>
     <p>Blender and Unity have different directions of XYZ axis. Normally, it is recommended to rotate the object 180 degrees on the Z axis <u>- Select &gt; [R](Rotate) &gt; [Z] &gt; [180] &gt; [Enter]&nbsp; -</u> to match the front direction of the object to Unity before doing the Apply. (This doesn't matter because the toilet paper in this example has symmetrical front and back shapes.)</p>
-    <h2><a id="mozTocId300137"></a>** 7.8 FBX export</h2>
+    <h2><a id="mozTocId300137" class="mozTocH2"></a>** 7.8 FBX export</h2>
     <p>You can use the Blender file as it is in Unity, but this time I will export it to FBX.<br>
       Choose <u>File &gt; Export&gt; FBX.</u></p>
     <p><img src="Images/Tut7-8_1.jpg" alt=""></p>
     <p>Set as shown in the screenshot below.</p>
     <p><img src="Images/Tut7-8_2.jpg" alt=""></p>
-    <h1><a id="mozTocId446410"></a>* 8. JSON</h1>
-    <h2><a id="mozTocId595763"></a>** 8.1 Creating an item JSON file</h2>
+    <h1><a id="mozTocId446410" class="mozTocH1"></a>* 8. JSON</h1>
+    <h2><a id="mozTocId595763" class="mozTocH2"></a>** 8.1 Creating an item JSON file</h2>
     <p>A <em>JSON file&nbsp;</em>is a file for writing details about how Mod items work.<br>
       You need one item JSON file for each item.<br>
       Save the JSON of the item in the <strong>"auto-mapped" folder</strong>.<br>
@@ -735,7 +744,7 @@ code {
       Change the extension to&nbsp;<em>.json&nbsp;</em>instead of&nbsp;<strong>.txt&nbsp;</strong>. <br>
       For example, if the item is named "GEAR_ToiletPaperA", the JSON file name should be "<em>toiletpapera.json</em>" with "GEAR_"&nbsp;removed&nbsp;. <br>
       File names must be all lowercase.&nbsp;Please actually create&nbsp;<strong>Mod_TP\Items_TP\auto-mapped\toiletpapera.json&nbsp;</strong>.</p>
-    <h3><a id="mozTocId600780"></a>*** 8.1.1 Introducing Item JSON Template</h3>
+    <h3><a id="mozTocId600780" class="mozTocH3"></a>*** 8.1.1 Introducing Item JSON Template</h3>
     <p>A description of each JSON can be found on the following page.</p>
     <ul>
       <li>- <strong>Component</strong></li>
@@ -762,7 +771,7 @@ code {
     </ul>
     <p><br>
     </p>
-    <h3><a id="mozTocId286161"></a>*** 8.1.2 Editing item JSON</h3>
+    <h3><a id="mozTocId286161" class="mozTocH3"></a>*** 8.1.2 Editing item JSON</h3>
     <p>Edit the contents of the toiletpapera.json file.<br>
       Pay attention to the position of the comma when adding or removing objects.<br>
       Comments cannot be written in JSON, so if there is a comment part in the template, please delete it.</p>
@@ -808,12 +817,12 @@ code {
                              }
 }
     </pre>
-    <h2><a id="mozTocId626740"></a>** 8.2 Creating JSON for translation</h2>
+    <h2><a id="mozTocId626740" class="mozTocH2"></a>** 8.2 Creating JSON for translation</h2>
     <p>Edit "<strong>Mod_TP\Unity\Assets\Localization.json</strong>" that you copied from the Unity template to the working folder in (step6-2)&nbsp;.<br>
       You can edit it with a JSON editor or just a text editor.<br>
       A description of localized JSON can be found below.<br>
       <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md">https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md</a></p>
-    <h3><a id="mozTocId20876"></a>*** 8.2 Editing Localization.json</h3>
+    <h3><a id="mozTocId20876" class="mozTocH3"></a>*** 8.2 Editing Localization.json</h3>
     <p>Edit the JSON content to match the name of the mod item you are creating.&nbsp;You must rename<br>
       "&nbsp;GAMEPLAY_SampleItem&nbsp;" and "&nbsp;GAMEPLAY_SampleItemDescription ".<br>
       If the item is named "&nbsp;GEAR_ToiletPaperA&nbsp;", change it to "GAMEPLAY_ToiletPaperA " and "&nbsp;GAMEPLAY_ToiletPaperADescription&nbsp;".</p>
@@ -828,34 +837,34 @@ code {
     }
 }
 </pre>
-    <h1><a id="mozTocId633942"></a>* 9. Unity</h1>
-    <h2><a id="mozTocId930707"></a>** 9.1 Installation</h2>
+    <h1><a id="mozTocId633942" class="mozTocH1"></a>* 9. Unity</h1>
+    <h2><a id="mozTocId930707" class="mozTocH2"></a>** 9.1 Installation</h2>
     <p>First, download and install Unity Hub from the link below.<br>
       <a href="https://unity.com/download">https://unity.com/download</a></p>
     <p>Next, Unity will install Unity <em>2019.4.19 </em>instead of the latest version.</p>
     <p><img src="Images/Tut9-1_1.jpg" style="width: 942.5px;"></p>
     <p>You can select the Language pack during installation.</p>
     <p><img src="Images/Tut9-1_2.jpg" style="width: 942.5px;"></p>
-    <h2><a id="mozTocId745271"></a>** 9.2 Using templates</h2>
+    <h2><a id="mozTocId745271" class="mozTocH2"></a>** 9.2 Using templates</h2>
     <p>After the Unity installation is complete, open Unity Hub.&nbsp;Click Open&nbsp;for the<br>
       Project&nbsp;.</p>
     <p>&nbsp;<img src="Images/Tut9-2_2.jpg" alt="" style="width: 942.5px;"></p>
     <p>Open your <strong>Mod_TP\Unity </strong>folder where you previously copied the <u>Unity template</u>. (step 6.2)</p>
     <p><img src="Images/Tut9-2_5.jpg" alt=""></p>
     <p><img src="Images/Tut9-2_6.jpg" alt="" style="width: 942.5px;"></p>
-    <h2><a id="mozTocId497751"></a>** 9.3 Start Unity Editor</h2>
-    <h3><a id="mozTocId16520"></a>*** 9.3.1 Project creation</h3>
+    <h2><a id="mozTocId497751" class="mozTocH2"></a>** 9.3 Start Unity Editor</h2>
+    <h3><a id="mozTocId16520" class="mozTocH3"></a>*** 9.3.1 Project creation</h3>
     <p>Now that you have a new project in Unity Hub, click on it to open it.<br>
       A dialog box will appear asking you to confirm the new version of the Unity Editor. Click the "Skip new version" button to cancel the download.<br>
       <br>
       The Unity Editor window opens.&nbsp;The window is divided into several views.<br>
       <em>Hierarchy </em>is on the upper left, <em>Scene </em>is on the center, <em>Project </em>is on the lower left, and <em>Inspector </em>is on the right.</p>
     <p><img src="Images/Tut9-3.jpg" alt=""></p>
-    <h3>*** 9.3.1 localization</h3>
+    <h3><a id="mozTocId429449" class="mozTocH3"></a>*** 9.3.1 localization</h3>
     <p>If you have the language pack installed, you can open <u>Edit menu&gt; Preferences&gt; Languages </u>​​and select your language.</p>
     <p><img src="Images/Tut9-3-1.jpg" alt=""></p>
-    <h2><a id="mozTocId571212"></a>** 9.4 Asset creation</h2>
-    <h3><a id="mozTocId625276"></a>*** 9.4.1 FBX import</h3>
+    <h2><a id="mozTocId571212" class="mozTocH2"></a>** 9.4 Asset creation</h2>
+    <h3><a id="mozTocId625276" class="mozTocH3"></a>*** 9.4.1 FBX import</h3>
     <p>Import the FBX file exported from Blender into Unity. <br>
       Drag the <strong> TP01.fbx&nbsp;</strong>file from&nbsp;<strong>Windows File Explorer</strong> to the <u>Models folder </u>in the project view&nbsp;.</p>
     <p><img src="Images/Tut9-4-1_1.jpg" alt=""></p>
@@ -863,35 +872,35 @@ code {
     <p><img src="Images/Tut9-4-1_1b.jpg" alt=""></p>
     <p>TP01 is imported into the Models folder and the icon is displayed.</p>
     <p><img src="Images/Tut9-4-1_2.jpg" alt=""></p>
-    <h3><a id="mozTocId451040"></a>*** 9.4.2 Import texture</h3>
+    <h3><a id="mozTocId451040" class="mozTocH3"></a>*** 9.4.2 Import texture</h3>
     <p>Import the PNG file for the texture used in Blender into Unity.<br>
       Drag the <strong>TP1_Texture.png&nbsp;</strong>file from&nbsp;<strong>Windows File Explorer</strong> to the Textures folder in the project view.<br>
       Alternatively, select the Models folder in the project view and select "Import New Asset" from the Asset menu or right-click.</p>
     <p><img src="Images/Tut9-4-2.jpg" alt=""></p>
-    <h3><a id="mozTocId917835"></a>*** 9.4.3 Material</h3>
-    <h4><a id="mozTocId774961"></a>**** 9.4.3.1 Extract material</h4>
+    <h3><a id="mozTocId917835" class="mozTocH3"></a>*** 9.4.3 Material</h3>
+    <h4><a id="mozTocId774961" class="mozTocH4"></a>**** 9.4.3.1 Extract material</h4>
     <p>The material is embedded in the imported model "<strong>TP01</strong>", Extract it.<br>
       Select the <u>Models folder </u>in the <u>project view </u>to see the contents of the folder to the right of it.<br>
       Select TP01 from there, then click the <strong>Extract Materials </strong>button in the <u>Inspector view</u>.</p>
     <p><img src="Images/Tut9-4-3_1.jpg" alt=""></p>
     <p>When the window for selecting the extraction destination folder is displayed, select the "<strong>Materials</strong>" folder.</p>
     <p><img src="Images/Tut9-4-3-1_2.jpg" alt=""></p>
-    <h4><a id="mozTocId621851"></a>**** 9.4.3.2 Material settings</h4>
+    <h4><a id="mozTocId621851" class="mozTocH4"></a>**** 9.4.3.2 Material settings</h4>
     <p>Select " <strong>TP_Material&nbsp;</strong>" extracted from the Materials folder in the project view&nbsp;.<br>
       Please set as follows in the <u>inspector view</u>.</p>
     <p><img src="Images/Tut9-4-3_2.jpg" alt=""><br>
       <strong>Albedo </strong>has&nbsp;<strong>TP1_Texture&nbsp;</strong>set for the&nbsp;texture .<br>
       The albedo color is white and the Metallic and Smoothness values ​​are 0.</p>
-    <h3><a id="mozTocId231942"></a>*** 9.4.4 Save</h3>
+    <h3><a id="mozTocId231942" class="mozTocH3"></a>*** 9.4.4 Save</h3>
     <p>Let's save it.</p>
     <p>Save everything with <u>File&gt; Save.</u></p>
     <p><img src="Images/Tut9-5.jpg" alt=""></p>
-    <h2><a id="mozTocId35967"></a>** 9.5 Prefab</h2>
-    <h3><a id="mozTocId90483"></a>*** 9.5.1 Creating a GameObject</h3>
+    <h2><a id="mozTocId35967" class="mozTocH2"></a>** 9.5 Prefab</h2>
+    <h3><a id="mozTocId90483" class="mozTocH3"></a>*** 9.5.1 Creating a GameObject</h3>
     <p>Drag the file TP01 imported into <strong>Asset/Models </strong>into the <u>Hierarchy view</u>.</p>
     <p>The Hierarchy displays the icon for the game object TP01, and the <u>Scene view</u> displays the model.</p>
     <p><img src="Images/Tut9-5-1.jpg" alt=""></p>
-    <h3><a id="mozTocId371321"></a>*** 9.5.2 Creating a prefab</h3>
+    <h3><a id="mozTocId371321" class="mozTocH3"></a>*** 9.5.2 Creating a prefab</h3>
     <p>Drag the <u>Hierarchy's</u> <strong>TP01 icon</strong> to <u>Asset/Prefabs</u>.<br>
       When asked to choose between "Original Prefab" and "Prefab Variant", select the "<strong>Original Prefab</strong>" button.</p>
     <p><img src="Images/Tut9-5-2_1.jpg" alt=""></p>
@@ -899,23 +908,23 @@ code {
       Then rename TP01 in Prefabs to "&nbsp;<em>GEAR_ToiletPaperA&nbsp;</em>" as you had decided in advance.<br>
       This&nbsp;<strong>prefab name </strong>is&nbsp;<em>important </em>for&nbsp;ModComponent&nbsp;.</p>
     <p><img src="Images/Tut9-5-2_2.jpg" alt=""></p>
-    <h3><a id="mozTocId192309"></a>*** 9.5.3 Editing Prefabs</h3>
+    <h3><a id="mozTocId192309" class="mozTocH3"></a>*** 9.5.3 Editing Prefabs</h3>
     <p>Select <strong>GEAR_ToiletPaperA </strong>in <u>Prefabs</u> and then click the <u>Inspector</u>'s&nbsp;<strong>Open Prefab&nbsp;</strong>button.<br>
       Alternatively,&nbsp;<strong>double-click&nbsp;</strong>GEAR_ToiletPaperA .&nbsp;Alternatively, click the " <strong>&gt;</strong>&nbsp;" button to<br>
       the right of the <u>Hierarchy </u>TP01 name .&nbsp;This will open the prefab and allow you to edit it in the <u>Inspector</u>.</p>
     <p><img src="Images/Tut9-5-3.jpg" alt=""></p>
-    <h3><a id="mozTocId329789"></a>*** 9.5.4 Addition of collider components</h3>
+    <h3><a id="mozTocId329789" class="mozTocH3"></a>*** 9.5.4 Addition of collider components</h3>
     <p>Click the [ <u>Add Component</u> ] button in the <u>Inspector </u>of <strong>GEAR_ToiletPaperA</strong>.</p>
     <p>Select <u>Physics&gt; Box Collider</u>.</p>
     <p><img src="Images/Tut9-5-4_1.jpg" alt=""></p>
     <p>Objects in the scene are wrapped in a box-shaped green line.<br>
       The collider should normally be the right size, but if you want to edit the size, turn on the <u>Edit Collider button</u> and then drag the green dot that appears on the surface of the box.</p>
     <p><img src="Images/Tut9-5-4_2.jpg" alt=""></p>
-    <h3><a id="mozTocId816088"></a>*** 9.5.5 Finish editing the prefab</h3>
+    <h3><a id="mozTocId816088" class="mozTocH3"></a>*** 9.5.5 Finish editing the prefab</h3>
     <p>Click the "<strong>&lt;</strong>" button to the left of the <u>Hierarchy</u> <strong>GEAR_ToiletPaperA</strong> icon.</p>
     <p><img src="Images/Tut9-5-5.jpg" alt=""></p>
-    <h2><a id="mozTocId380050"></a>** 9.6 Inventory icon</h2>
-    <h3><a id="mozTocId811460"></a>*** 9.6.1 Change icon name</h3>
+    <h2><a id="mozTocId380050" class="mozTocH2"></a>** 9.6 Inventory icon</h2>
+    <h3><a id="mozTocId811460" class="mozTocH3"></a>*** 9.6.1 Change icon name</h3>
     <p>Select the Assets/<strong>InventoryGridIcons&nbsp;</strong>folder in&nbsp;the <u>Project view </u>.<br>
       The folder contains an image file called "<strong>ico_GearItem__SampleItem.png</strong>" as a template.&nbsp;(The character following GearItem is&nbsp;<em>two underscores&nbsp;</em>.)<br>
       This filename is <em>important</em>.<br>
@@ -926,7 +935,7 @@ code {
     <p>More detailed information about the inventory icon can be found on the following pages.<br>
       <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md">https://github.com/ds5678/ModComponent/blob/master/docs/Basic-Item-Configuration.md</a><br>
       This image must be 512 * 512 pixels in size.</p>
-    <h3><a id="mozTocId538700"></a>*** 9.6.2 Editing icon images</h3>
+    <h3><a id="mozTocId538700" class="mozTocH3"></a>*** 9.6.2 Editing icon images</h3>
     <p>Nothing is drawn on the icon image of the template, so edit it yourself.<br>
       If you want to view the image file in&nbsp;<strong>Windows File Explorer </strong>,&nbsp;<strong>right-click</strong> on&nbsp;<strong>ico_GearItem__ToiletPaperA.png&nbsp;</strong>in&nbsp;the Project view and select&nbsp;"Show in Explorer".</p>
     <p><img src="Images/Tut9-6-2.jpg" alt=""></p>
@@ -946,12 +955,14 @@ code {
       </ul>
       <li>(5) If you like the display size and angle of the items in the scene, turn off the&nbsp;<strong>grid display button&nbsp;</strong>and take a screen shot.</li>
       <li>Open <strong>ico_GearItem__ToiletPaperA.png </strong>with 2D image editing software and paste the screenshot.<br>
-        Select the background and remove it to make it transparent.&nbsp;(PNG alpha channel)</li>
+        Select the background and remove it to make it transparent.&nbsp;(PNG alpha channel)<br>
+        If necessary, you can add more noise and shadows to the texture using the functions of your painting software.<br>
+        <img src="Samples/ico_GearItem__ToiletPaperA.png" alt=""></li>
     </ul>
     <p>If the image is saved correctly , "&nbsp;<strong>ico_GearItem__ToiletPaperA.png </strong>" in the&nbsp;<u>InventoryGridIcons&nbsp;folder </u>will be&nbsp;updated.</p>
     <p><img src="Images/Tut9-6-2_3.jpg" alt=""></p>
-    <h2><a id="mozTocId537662"></a>** 9.7 Asset Bundle</h2>
-    <h3><a id="mozTocId988871"></a>*** 9.7.1 Name of AssetBundle</h3>
+    <h2><a id="mozTocId537662" class="mozTocH2"></a>** 9.7 Asset Bundle</h2>
+    <h3><a id="mozTocId988871" class="mozTocH3"></a>*** 9.7.1 Name of AssetBundle</h3>
     <p>In this example, I'll&nbsp;name&nbsp;the AssetBundle "&nbsp;<em>toiletpapermod&nbsp;</em>".<br>
       Select the <u>Assets folder </u>in the <u>Project view</u>, then click the <strong>Localization file </strong>icon in it.<br>
       Select <strong>New </strong>in the <u>Interloper</u> Asset Bundle drop-down list box.</p>
@@ -960,18 +971,18 @@ code {
     <p><img src="Images/Tut9-7-1_2.jpg" alt=""></p>
     <p>In the same way, select the two icons in the "<strong>InventoryGridIcons</strong>" folder and the "<strong>Prefabs</strong>" folder, and name their AssetBundle as "<strong>toiletpapermod</strong>".<br>
       Note: You do not need to rename the AssetBundle for the files in those folders.</p>
-    <h3><a id="mozTocId244279"></a>*** 9.7.2 Exporting AssetBundles</h3>
+    <h3><a id="mozTocId244279" class="mozTocH3"></a>*** 9.7.2 Exporting AssetBundles</h3>
     <p>This is the final task in Unity.<br>
       Select the <u>Build Asset Bundles </u>command from the <u>Assets menu</u>.</p>
     <p><img src="Images/Tut9-7-2_1.jpg" alt=""></p>
     <p>The Unity template creates a "<strong>Mod_TP\Unity\AssetBundles&nbsp;</strong>" folder and exports the set bundle files into it.<br>
       Multiple files are stored in the AssetBundles folder,&nbsp;but ModComponent only needs one file named "&nbsp;<em>toiletpapermod.unity3d </em>".</p>
-    <h1><a id="mozTocId876119"></a>* 10.ModComponent</h1>
+    <h1><a id="mozTocId876119" class="mozTocH1"></a>* 10.ModComponent</h1>
     <p>The ModComponent file is just a ZIP file renamed and the extension changed to "<strong>.modcomponent</strong>".</p>
-    <h2><a id="mozTocId640346"></a>** 10.1 Copy the file to the correct folder</h2>
+    <h2><a id="mozTocId640346" class="mozTocH2"></a>** 10.1 Copy the file to the correct folder</h2>
     <p>You need to collect the required files in the "<strong>Items_TP</strong>" folder and create a ZIP first.<br>
       Copy the toiletpapermod.unity3d exported to the <u>Mod_TP\Unity\AssetBundles </u>folder to&nbsp;the&nbsp;<u>Mod_TP\Items_TP\auto-mapped</u>&nbsp;folder.&nbsp;At this time, <strong>toiletpapera.json </strong>should already be saved in the auto-mapped folder by (step 8.1)&nbsp;.</p>
-    <h2><a id="mozTocId312541"></a>** 10.2 Creating a ZIP file</h2>
+    <h2><a id="mozTocId312541" class="mozTocH2"></a>** 10.2 Creating a ZIP file</h2>
     <p>In this example, we will use "<em>ModComponent Extractor</em>", a tool to easily create ModComponent files.<br>
       Proceed to the next step (10.3).<br>
       <br>
@@ -980,33 +991,33 @@ code {
     <p><img src="Images/Tut10-2.jpg" alt=""></p>
     <p>Please note that the Items_TP folder should not be included in Items_TP.zip.&nbsp;The three folders "auto-mapped", "blueprints" and "gear-spawns" must be placed directly in the ZIP.</p>
     <p>Once the ZIP file is created, change its extension from&nbsp;.zip&nbsp;to&nbsp;.modcomponent&nbsp;.</p>
-    <h2><a id="mozTocId920038"></a>** 10.3 Use ModComponent Extractor</h2>
+    <h2><a id="mozTocId920038" class="mozTocH2"></a>** 10.3 Use ModComponent Extractor</h2>
     <p>ModComponentExtractor is an application for making and extracting'.modcomponent' files used by&nbsp;ModComponent&nbsp;.</p>
-    <h3><a id="mozTocId447351"></a>*** 10.3.1 Download ModComponent Extractor</h3>
+    <h3><a id="mozTocId447351" class="mozTocH3"></a>*** 10.3.1 Download ModComponent Extractor</h3>
     <p>Open the link below to download the latest release.&nbsp;(Windows users need ModComponentExtractor_Win64.zip)<br>
       <a href="https://github.com/ds5678/ModComponentExtractor">https://github.com/ds5678/ModComponentExtractor Extract&nbsp;</a><br>
       <strong>ModComponentExtractor.exe </strong>from the downloaded zip file&nbsp;to&nbsp;<strong>Mod_TP&nbsp;</strong>folder.</p>
-    <h3><a id="mozTocId5937"></a>*** 10.3.2 Create a .modcomponent using ModComponent Extractor</h3>
+    <h3><a id="mozTocId5937" class="mozTocH3"></a>*** 10.3.2 Create a .modcomponent using ModComponent Extractor</h3>
     <p>In Windows File Explorer, drag the Items_TP&nbsp;icon&nbsp;in the <strong>Mod_TP </strong>folder to&nbsp;<strong>ModComponentExtractor.exe&nbsp;</strong>.</p>
     <p><img src="Images/Tut10-3-2.jpg" alt=""></p>
     <p>If "<strong>Succeeded</strong>" is displayed in white letters in the black window of ModComponent Extractor, it is successful.<br>
       Please close the black window.</p>
     <p>Inside the <strong>Mod_TP </strong>folder,&nbsp;there should be a file named&nbsp;<em>Items_TP.modcomponent </em>.</p>
     <p><em>That is the completed item mod.</em></p>
-    <h1><a id="mozTocId80113"></a>* 11. Install Mod</h1>
-    <h2><a id="mozTocId994736"></a>** 11.1 Preparation</h2>
+    <h1><a id="mozTocId80113" class="mozTocH1"></a>* 11. Install Mod</h1>
+    <h2><a id="mozTocId994736" class="mozTocH2"></a>** 11.1 Preparation</h2>
     <p>If you want to create your own item mods, you should already be using other TLD mods.<br>
       So I won't go into detail about basic mod installations here.<br>
       Instructions on installing the basic mods can be found at&nbsp;<a
         href="https://xpazeman.com/tld-mod-list/">https://xpazeman.com/tld-mod-list/</a>&nbsp;.</p>
-    <h3><a id="mozTocId10362"></a>*** 11.1.1 Required Mods</h3>
+    <h3><a id="mozTocId10362" class="mozTocH3"></a>*** 11.1.1 Required Mods</h3>
     <p>Please install all of the following mods to make it work without errors.</p>
     <ul>
       <li>- ModComponent and its dependencies (ModSettings, GearSpawner, LocalizationUtilities, CraftingRevisions)</li>
       <li>- DeveloperConsole</li>
       <li>- Coordinates Grabber</li>
     </ul>
-    <h3><a id="mozTocId12687"></a>*** 11.1.2 Recommended mods</h3>
+    <h3><a id="mozTocId12687" class="mozTocH3"></a>*** 11.1.2 Recommended mods</h3>
     <p>The following mods are not required, but are recommended as they are useful.</p>
     <ul>
       <li>- Placing Anywhere (to place items)</li>
@@ -1014,11 +1025,11 @@ code {
       <li>- SaveAnywhere (so that you can save and load at any time)</li>
       <li>- Other Modder item mods (if you don't want to overlap spawn positions with them)</li>
     </ul>
-    <h2><a id="mozTocId82062"></a>** 11.2 Install your mod</h2>
+    <h2><a id="mozTocId82062" class="mozTocH2"></a>** 11.2 Install your mod</h2>
     <p>Make sure The Long Dark game program is closed.<br>
       Just like any other mod, copy your mod (<strong>Items_TP.modcomponent</strong>) to The <u>LongDark\Mods folder</u>.</p>
-    <h1><a id="mozTocId286941"></a>* 12. MOD test</h1>
-    <h2><a id="mozTocId286655"></a>** 12.1 Check with Melon Loader</h2>
+    <h1><a id="mozTocId286941" class="mozTocH1"></a>* 12. MOD test</h1>
+    <h2><a id="mozTocId286655" class="mozTocH2"></a>** 12.1 Check with Melon Loader</h2>
     <p>Launch The Long Dark.<br>
       In the MelonLoader window, look for any errors.<br>
       When Melon Loader is hidden in the game window, use <strong>[Alt] + [Tab] </strong>to bring the window to the front.<br>
@@ -1030,12 +1041,12 @@ code {
       <li>Error sample.&nbsp;Red lines!<br>
         <img src="Images/Tut12-1.jpg" alt=""></li>
     </ul>
-    <h2><a id="mozTocId347362"></a>** 12.2 Check with console command</h2>
+    <h2><a id="mozTocId347362" class="mozTocH2"></a>** 12.2 Check with console command</h2>
     <p>If there are no errors, launch the game and then open the developer console.&nbsp;( <strong>[F1]</strong> key)<br>
       After entering the name halfway like "add toil", press the&nbsp;<strong>[Tab]</strong>&nbsp;key to "auto-complete" the remaining characters in the item name.<br>
       Then press Enter to execute the command.&nbsp;If the item has been added to the inventory, it is successful.</p>
     <p><strong>If you can't autocomplete the item name, there is something wrong with the mod.</strong></p>
-    <h2><a id="mozTocId581689"></a>** 12.3 Item save check</h2>
+    <h2><a id="mozTocId581689" class="mozTocH2"></a>** 12.3 Item save check</h2>
     <p>Checks if the item can be manipulated and saved.</p>
     <ul>
       <li>Drop MOD items from your inventory to the ground.&nbsp;It is <em> successful&nbsp;</em>if it is placed on the ground in the correct size&nbsp;.</li>
@@ -1054,7 +1065,7 @@ code {
         <li>(But in my tutorial, I didn't have any issues without changing the layers)</li>
       </ul>
     </ul>
-    <h2><a id="mozTocId877412"></a>** 12.4 Item feature check</h2>
+    <h2><a id="mozTocId877412" class="mozTocH2"></a>** 12.4 Item feature check</h2>
     <p>Check if the function of the item set in JSON (toiletpapera.json) works normally.</p>
     <p><img src="Images/Tut12-4.jpg" alt=""></p>
     <ul>
@@ -1067,8 +1078,8 @@ code {
         <li>Check if the item is Harvest.</li>
       </ul>
     </ul>
-    <h1><a id="mozTocId939307"></a>* 13.gear-spawns folder</h1>
-    <h2><a id="mozTocId899040"></a>** 13.0 Description</h2>
+    <h1><a id="mozTocId939307" class="mozTocH1"></a>* 13.gear-spawns folder</h1>
+    <h2><a id="mozTocId899040" class="mozTocH2"></a>** 13.0 Description</h2>
     <p>After all the modding tests are done, set up the items to be available to the player during gameplay.<br>
       There are the following two types.</p>
     <ul>
@@ -1088,7 +1099,7 @@ code {
       <br>
       We will use the required MOD Coordinates Grabber, so please check the MOD distribution page for how to use it.<br>
       <a href="https://github.com/ds5678/Coordinates-Grabber" target="_blank">https://github.com/ds5678/Coordinates-Grabber</a></p>
-    <h2><a id="mozTocId686409"></a>** 13.1 Creating a TXT file</h2>
+    <h2><a id="mozTocId686409" class="mozTocH2"></a>** 13.1 Creating a TXT file</h2>
     <p>You need to create a text file in the&nbsp;Mod_TP\Items_TP\gear-spawns folder.<br>
       The number of files and the file name are <em>not important</em>.<br>
       In this example, create the following two files.</p>
@@ -1097,7 +1108,7 @@ code {
       <li>-&nbsp;<em>TP-Scenes.txt</em></li>
     </ul>
     <p>You can leave the contents empty, so actually save these two files there.</p>
-    <h2><a id="mozTocId468990"></a>** 13.2 Editing Loot Table</h2>
+    <h2><a id="mozTocId468990" class="mozTocH2"></a>** 13.2 Editing Loot Table</h2>
     <p>Edit <em>TP-LootTables.txt&nbsp;</em>with a text editor.<br>
       The following URL has the necessary information.<br>
       <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Loot-Tables.md">https://github.com/ds5678/ModComponent/blob/master/docs/Loot-Tables.md</a></p>
@@ -1119,7 +1130,7 @@ item=ToiletPaperA w=3
       You can use Coordinates Grabber in loot table mode during the game to find out the &lt;Loot Table Name&gt; of the container under the mouse cursor.</p>
     <p><br>
     </p>
-    <h2><a id="mozTocId322519"></a>** 13.3 Editing Item Spawn</h2>
+    <h2><a id="mozTocId322519" class="mozTocH2"></a>** 13.3 Editing Item Spawn</h2>
     <p>Edit <em>TP-Scenes.txt </em>with a text editor.<br>
       The following URL has the necessary information.<br>
       <a href="https://github.com/ds5678/ModComponent/blob/master/docs/Scenes.md"
@@ -1150,21 +1161,21 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       "<strong>Paste</strong>" it in the correct Scene position in TP-Scenes.txt with a text editor&nbsp;. <br>
       Then&nbsp;use Coordinates Grabber in&nbsp;<strong>Name mode </strong>and press the&nbsp;<strong>Right Ctrl </strong>key to&nbsp;copy&nbsp;the complete&nbsp;item&nbsp;clipboard&nbsp;. <br>
       " <strong>Paste&nbsp;</strong>" it in a text editor under the correct Scene in TP-Scenes.txt&nbsp;.</p>
-    <h3>***13.3.2 scene command</h3>
+    <h3><a id="mozTocId797834" class="mozTocH3"></a>***13.3.2 scene command</h3>
     <p>When you use the <strong>scene </strong>command in the developer console mod, the scene will be loaded immediately.<br>
       (Example: <strong style="background-color: #cccccc;">scene campoffice</strong>)<br>
       <em>NOTE:</em> You may think this is convenient, as it is like instantaneous movement, but since it initializes the scene and the player's inventory, it should only be used for debugging, not for normal play.</p>
-    <h1><a id="mozTocId684995"></a>* 14. Recreating the mod</h1>
+    <h1><a id="mozTocId684995" class="mozTocH1"></a>* 14. Recreating the mod</h1>
     <p>After saving the two text files, create ModComponent again.&nbsp;See (Step 10.3.2.).<br>
       Then install the completed modding again.&nbsp;See (Step11.).<br>
       Then test the mod again.&nbsp;See (Step12.).</p>
     <p>Start a new game.&nbsp;Go to the Mystery Lake camp office.<br>
       (You set the spawn there in step 13.3)<br>
       If you don't get an error and you have one or more toilet papers spawned on your camp office file cabinet, <em>you're good to&nbsp;go&nbsp;.</em></p>
-    <h1><a id="mozTocId404900"></a>* 15. Completion</h1>
+    <h1><a id="mozTocId404900" class="mozTocH1"></a>* 15. Completion</h1>
     <p><em>congratulation!&nbsp;This completes the item mod.</em><br>
       You can publish the completed "<strong>Items_TP.modcomponent</strong>".</p>
-    <h1><a id="mozTocId897527"></a>* 16. Additional tutorial assignments</h1>
+    <h1><a id="mozTocId897527" class="mozTocH1"></a>* 16. Additional tutorial assignments</h1>
     <p>Create a new object in Blender called "ToiletPaperB" as another new item (half-used and thin toilet paper roll) and add it to your mod.<br>
       In this case, one asset bundle file will contain two prefabs.<br>
       You need to create a new toiletpaperb.json for the item JSON.<br>
