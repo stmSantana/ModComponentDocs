@@ -143,6 +143,7 @@ body {
 </style></head>
   <body>
     <h1><a id="mozTocId793962" class="mozTocH1"></a>* 0.（初心者向け）ModComponentアイテム作成の段階的なチュートリアル</h1>
+    <p style="text-align: left; background-color: #ffeeff; width: 40%; display: block; margin-left: auto; font-size: 0.9em;">内容についての問い合わせはSteamかGitHub、Discordでご連絡ください。</p>
     <p style="text-align: right;"><strong>日本語 / <a href="index.html">English</a> <br>
       </strong></p>
     <p style="text-align: right;"> </p>
@@ -392,7 +393,7 @@ body {
       <br>
     </p>
     <h1><a id="mozTocId681342" class="mozTocH1"></a>* 6.フォルダ構成</h1>
-    <h2><a id="mozTocId203054" class="mozTocH2"></a>**6-1. フォルダの作成</h2>
+    <h2>**6.1. フォルダの作成</h2>
     <p>今回は作業用フォルダとして<em>「D:\Mod_TP」</em>フォルダを使うと仮定して説明します。<br>
       実際には作業用のフォルダをあなたの好きな場所に任意の名前で作ることができます。<br>
       次に、そのサブフォルダに、各種作業用のフォルダを下記のように作成して下さい。</p>
@@ -406,7 +407,7 @@ body {
     <p>さらに、「Items_TP」のサブフォルダとして「<em>auto-mapped</em>」「<em>blueprints</em>」 「<em>gear-spawns</em>」 を作成して下さい。<br>
       これらの<em>3つのフォルダ名は重要なので変更できません</em>。</p>
     <p><img src="Images/Tut6-1.jpg" alt=""> </p>
-    <h2><a id="mozTocId521675" class="mozTocH2"></a>**6-2.Unityテンプレートのダウンロード</h2>
+    <h2>**6.2.Unityテンプレートのダウンロード</h2>
     <ol>
       <li>以下のページに行きます。<a href="https://github.com/ds5678/ModComponent_TemplateProject"
           target="_blank"><br>
@@ -418,7 +419,7 @@ body {
         <img src="Images/Tut6-2_2.jpg" alt=""></li>
       <li>そのUnityフォルダに入っている「Assets」と「ProjectSettings」を全て、自分の作業用フォルダ「D:\Mod_TP \Unity」 にコピーして下さい。<br>
         <img src="Images/Tut6-2_3.jpg" alt=""></li>
-      <li>その後、Assetフォルダ以下の全てのサブフォルダから、「DELETE_This_」から始まる名前がついているファイルを検索して全て削除しま す。全部 で12個あるはずです。 </li>
+      <li>その後、Assetフォルダ以下の全てのサブフォルダから、「DELETE_This_」から始まる名前がついているファイルを検索して全て削除します。全部で12個あるはずです。 </li>
     </ol>
     <h1><a id="mozTocId134660" class="mozTocH1"></a>* 7. Blender</h1>
     <h2><a id="mozTocId348667" class="mozTocH2"></a>**7.0 Blenderに慣れているユーザーへの説明</h2>
@@ -444,7 +445,7 @@ body {
       それらを使いたくない場合はその下部にある<b>2.93.7</b>のリンクを使用してダウンロードします。<br>
       インストールして次のステップに進みます。</p>
     <h2><a id="mozTocId10106" class="mozTocH2"></a>**7.2 準備</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <h3><a id="mozTocId973464" class="mozTocH3"></a> ***7.2.1 Blenderの起動</h3>
       <p>起動したら、中央にスプラッシュスクリーンというものが表示されていますが無視します。</p>
@@ -460,7 +461,7 @@ body {
       <p>ワークスペースのボタンが複数あり、最初は「Layout」（レイアウト）ワークスペースが選ばれています。</p>
       <p>ウィンドウの内側は複数のエリアに区切られていて、それぞれが別の種類のエディタが表示されています。<br>
         エリアの左上のボタンはエディタの種類を変更するためのものです。</p>
-      <p>一番広く表示されているエリアは「3D Viewpoint」です。<br>
+      <p>一番広く表示されているエリアは「3D Viewport」です。<br>
         そのエリアの上端にはヘッダーがあり、左端にはツールバーがあります。（ツールバーの表示・非表示の切り替えショートカットキーは［T］です。）</p>
       <h3><a id="mozTocId765575" class="mozTocH3"></a>***7.2.3 基本的な 3D Viewpoint 操作</h3>
       <p>マウスカーソルが3Dビューポイントのエリア内にある時の操作を練習して下さい。<br>
@@ -472,9 +473,11 @@ body {
       <p><strong>マウスホイール</strong>を回転させると、視界がズームイン／ズームアウトします。 </p>
       <p><strong>マウスホイール</strong>を抑えたままマウスを動かすと、視野を回転できます。</p>
       <p><strong>[Shift]キー</strong>と<strong>マウスホイール</strong>を抑えたままマウスを動かすと、視点を移動 できます。</p>
-      <p><strong>[Home]</strong>キーを押すと、全てのオブジェクトが見えるように視野が変更されます。</p>
+      <p><strong>[Home]</strong>キーを押すと、全てのオブジェクトが見えるように視野が変更されます。<br>
+        <em>注：</em>自分がどこを見ているのかわからなくなったら<strong>[Home]</strong>キーを押して下さい。</p>
       <p>いずれかのオブジェクトを選択してから<strong>[テンキー ピリオド]</strong>キーを押すと、そのオブジェクトが視界の中心になりま す。</p>
-      <p><strong>注意：</strong>自分がどこを見ているのかわからなくなったら、<em>[Home]</em>キーを押して下さい。</p>
+      <p><br>
+      </p>
       <h3><a id="mozTocId330304" class="mozTocH3"></a>***7.2.2.2 選択と削除</h3>
       <p>最初から表示されている3つのオブジェクト（箱、カメラ、ライト）を全て削除してください。</p>
       <p><img src="Images/Tut7-2-2-2_1.jpg" alt=""></p>
@@ -500,7 +503,7 @@ body {
       <br>
     </details>
     <h2><a id="mozTocId89267" class="mozTocH2"></a>**7.3 オブジェクト作成</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <h3><a id="mozTocId867159" class="mozTocH3"></a>***7.3.1 シリンダー（円柱）作成</h3>
       <p>X軸とY軸の交点に3Dカーソル（赤と白の円）があります。</p>
@@ -511,7 +514,7 @@ body {
       <p>3Dカーソルがある場所に円柱が追加され、それが選択された状態になっています。</p>
       <p><img src="Images/Tut7-3_2.jpg" alt=""></p>
       <p>その直後に、追加された円柱に関する設定を変更するパネルが3Dビューポイントの左下に表示されます。</p>
-      <p>「Add Cylinder」をクリックしてパネルを広げます。円柱の設定を下記のように変更します。</p>
+      <p>「 ▼ Add Cylinder 」をクリックしてパネルを広げます。円柱の設定を下記のように変更します。</p>
       <p><img src="Images/Tut7-3_3.jpg" alt=""></p>
       <p>追加された円柱の半径は1mなのでトイレットペーパーとしては大きすぎます。半径0.07m、深さ0.12mに変更します。<br>
         頂点の数は最初は32です。しかしThe Long Darkのほとんどのオブジェクトはローポリゴンなので、10角形に変更します。<br>
@@ -589,7 +592,7 @@ body {
     <p>ファイル名は「<b>TP01.blend</b>」にします。この名前は<em>重要ではありません</em>。</p>
     <p><img src="Images/Tut7-3_22.jpg" alt=""> </p>
     <h2><a id="mozTocId512646" class="mozTocH2"></a>**7.4 UV編集</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <p>Blenderでオブジェクトに2Dの画像（テクスチャ）を貼り付けるために、<br>
         3Dのメッシュオブジェクトの「展開図」を作ります。（完成図は手順7.0を参照）</p>
@@ -651,7 +654,7 @@ body {
       <p><img src="Images/Tut7-4_10.jpg" alt=""></p>
       <p>最終的にUVがグリッドエリアからはみ出さないようにしてください。</p>
       <p><img src="Images/Tut7-4_11.jpg" alt=""></p>
-      <h4><a id="mozTocId38562" class="mozTocH4"></a>***7.4.2.4 UVマッピングの編集</h4>
+      <h4><a id="mozTocId38562" class="mozTocH4"></a>***7.4.2.4 UVレイアウトのエクスポート</h4>
       <p></p>
       <p>UVの編集が完了したら、UVレイアウトをPNG画像としてエクスポートします。 </p>
       <p>UV &gt; Export UV Layout</p>
@@ -669,7 +672,7 @@ body {
     <h2><a id="mozTocId395878" class="mozTocH2"></a>**7.5 テクスチャとマテリアルの作成</h2>
     <p>テクスチャは他のアイテムにあわせて1024x1024程度にします。<br>
       マテリアルの設定はUnityで行うので細かい設定は必要ありません。</p>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <p>上のセクションまでに作成したオブジェクトにテクスチャとマテリアルとを設定します。</p>
       <h3><a id="mozTocId312760" class="mozTocH3"></a>***7.5.1 新規テクスチャの作成</h3>
@@ -707,9 +710,9 @@ body {
       <br>
     </details>
     <h2><a id="mozTocId988957" class="mozTocH2"></a>**7.6 テクスチャペイント</h2>
-    <p>保存されたUVレイアウト画像とテクスチャ画像の２つのPNGを使って、ペイントソフトを使ってテクスチャ<strong></strong>を直接描くこ ともできます。<br>
+    <p>先程保存したテクスチャ画像をペイントソフトで直接編集する事もできます。その場合はペイントソフトにUVレイアウト画像をインポートすると役立ちます。<br>
       しかし、今回の例ではBlenderで直接簡単なペイントをします。</p>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <p>トップバーで「Texture Paint」ワークスペースを選択します。</p>
       <p>左右のエリアがペイントモードになり、どちらでもTP1_Textureにペイントできます。<br>
@@ -720,7 +723,8 @@ body {
       <p><img src="Images/Tut7-6_2.jpg" alt=""></p>
       <p>3Dビューポートのシェーディングボタンを「<strong>マテリアルプレビュー</strong>」モードにすると、オブジェクトにライトが当たっ た状態をプレビューできます。</p>
       <p><img src="Images/Tut7-6_3.jpg" alt=""></p>
-      <p>ペイントが終わったら、テクスチャ画像（TP1_Texture.png）を上書き保存します。</p>
+      <p><img src="Images/Tut7-6_3c.jpg" alt=""></p>
+      <p>ペイントが終わったら、テクスチャ画像（<strong>TP1_Texture.png</strong>）を上書き保存します。</p>
       <p><img src="Images/Tut7-6_4.jpg" alt=""> </p>
       <p><br>
       </p>
@@ -728,7 +732,7 @@ body {
     <p><br>
     </p>
     <h2><a id="mozTocId61019" class="mozTocH2"></a>**7.7 オブジェクトの微調整</h2>
-    <details>
+    <details open="">
       <summary>Blender初心者用の説明</summary>
       <h3><a id="mozTocId26161" class="mozTocH3"></a>***7.7.1 スムーズシェーディング</h3>
       <p>アイテムの外見がもっと良くなるように編集しましょう。</p>
@@ -739,28 +743,28 @@ body {
       <p>面の影がスムーズになりますが、見た目が悪いです。</p>
       <p><img src="Images/Tut7-7-1_4.jpg" alt=""></p>
       <p>「Object Data Property」パネルを選択し、「Auto Smooth」をチェックします。</p>
-      <p>角度のボックスを変更すると、影が改善される角度を探します。</p>
+      <p>ボックスの角度を変更しながら影が改善される角度を探してください。</p>
       <p><img src="Images/Tut7-7-1_5.jpg" alt=""></p>
       <p><br>
       </p>
-      <h3><a id="mozTocId454380" class="mozTocH3"></a>***7.7.1 </h3>
+      <h3>***7.7.1 適用（原点の操作）</h3>
       <p>レイアウトワークスペースで、オブジェクトにします。</p>
       <p><img src="Images/Tut7-7_2.jpg" alt=""></p>
-      <p>トイレットペーパーのオブジェクトを選んでから、右上のギズモの赤いXをクリックします。（ショートカット：[テンキー 3]）</p>
+      <p>トイレットペーパーのオブジェクトを選んでから、右上の<strong>ギズモ</strong>にある<strong>赤いX</strong>をクリックします。（ショートカット：[テンキー 3]か[Ctrl]+[テンキー3]）</p>
       <p><img src="Images/Tut7-7_3.jpg" alt=""></p>
       <p>視線が横方向からになります。</p>
       <p>移動ツールを選び、トイレットペーパーオブジェクトの「上向き青色矢印」を上にドラッグします。</p>
       <p><img src="Images/Tut7-7_4.jpg" alt=""></p>
       <p>上の図のように、トイレットペーパーの底面とY軸の位置を揃えてください。</p>
       <p> 最後に、オブジェクトの原点やサイズを適用します。</p>
-      <p>位置が決定したら、Object ＞ Apply &gt; All Transforms を選択します。</p>
+      <p>位置が決定したら、<u>Object ＞ Apply &gt; All Transforms </u>（オブジェクト＞適用＞全トランスフォーム）を選択します。</p>
       <p><img src="Images/Tut7-7_5.jpg" alt=""></p>
-      <p>これによって、オブジェクトが移動した事が反映されます。</p>
+      <p>これによって、オブジェクトが移動した事が反映されます。<br>
+        （一般的には、これを行わないとオブジェクトの下半分が地面に埋まります）</p>
       <p>以上で、Blenderでの編集は終わりです。</p>
       <p>ファイルを上書き保存してください。</p>
     </details>
-    <p>今回の例のトイレットペーパーには関係ありませんが、BlenderとUnityではXYZの軸の方向が異なるので<br>
-      通常はApplyをするより先にオブジェクトの正面の方向をUnityにあわせるためにオブジェクトをZ軸で180度回転する事をおすすめします。</p>
+    <p>今回の例のトイレットペーパーの形では関係ありませんが、BlenderとUnityではXYZの軸の方向が異なるので通常はApplyをするより先にオブジェクトの正面の方向をUnityにあわせるためにオブジェクトをZ軸で180度回転する事をおすすめします。（オブジェクトを選んでから、[R]（回転）＞[Z]キー＞[180]と入力＞[Enter] ）</p>
     <h2><a id="mozTocId972953" class="mozTocH2"></a>**7.8 FBXのエクスポート</h2>
     <p>BlenderファイルのままでもUnityで使用できますが、今回はFBXにエクスポートします。<br>
       ファイルメニュー＞エクスポート＞FBXを選択します。</p>
@@ -769,7 +773,7 @@ body {
     <p><img src="Images/Tut7-8_2.jpg" alt=""> </p>
     <h1><a id="mozTocId794250" class="mozTocH1"></a>* 8. JSON</h1>
     <h2><a id="mozTocId227777" class="mozTocH2"></a>**8.1 アイテムJSONファイルの作成</h2>
-    <p><em>JSONファイル</em>はModアイテムがどのように動作するかの詳細を書くためのファ イルです。<br>
+    <p><em>JSONファイル</em>はModアイテムがどのように動作するかの詳細を書くためのファイルです。<br>
       アイテム1つにつき1つのアイテムJSONファイルが必要です。<br>
       アイテムのJSONは「auto-mapped」フォルダに保存します。<br>
       作成するModアイテムの名前に合わせ、テキストエディタでファイルを作成します。<br>
@@ -796,7 +800,7 @@ body {
       <li> - <a href="https://github.com/ds5678/ModComponent/blob/master/docs/index.md">https://github.com/ds5678/ModComponent/blob/master/docs/index.md</a></li>
     </ul>
     <p> <br>
-      今回は <strong>ModGenericComponent </strong>と <strong>ModTinderBehaviour </strong>を 使います。<br>
+      今回は <strong>ModGenericComponent </strong>と <strong>ModTinderBehaviour </strong>, <strong>ModHarvestableBehaviour </strong>, <strong>ModStackableBehaviour </strong>を使います。<br>
       必要な部分をコピーしてから、次の項目を変更する必要があります。</p>
     <ul>
       <li> - <strong>"GAMEPLAY_SampleItem"</strong> －－－－－＞ <strong>"GAMEPLAY_ToiletPaperA"</strong></li>
@@ -880,7 +884,7 @@ body {
       <a href="https://unity.com/download">https://unity.com/download</a><br>
     </p>
     <p> </p>
-    <p>次に、Unityは最新版ではなくUnity 2019.4.19をインストールします。<br>
+    <p>次に、Unityは最新版ではなくUnity <em>2019.4.19</em>をインストールします。<br>
     </p>
     <p><img src="Images/Tut9-1_1.jpg" style="width: 50%;"></p>
     <p>インストールの時にLanguage pack（言語パック）を選択できます。</p>
@@ -890,7 +894,7 @@ body {
       <strong>Project</strong>の<strong>Open</strong>(開く)をクリックします。</p>
     <p><img src="Images/Tut9-2_1.jpg" alt="" style="width: 50%;"> <img
         src="Images/Tut9-2_2.jpg" alt="" style="width: 50%;"></p>
-    <p> 前もってUnityテンプレートをコピーしておいた自分のUnityフォルダを開きます。</p>
+    <p> 前もって（手順6.2で）Unityテンプレートをコピーしておいた自分のUnityフォルダを開きます。</p>
     <p><img src="Images/Tut9-2_5.jpg" alt=""></p>
     <p><img src="Images/Tut9-2_6.jpg" alt="" style="width: 50%;"></p>
     <p></p>
@@ -901,7 +905,7 @@ body {
       Unityエディタの新しいバージョンを確認するダイアログボックスが表示されるので、「Skip new version」ボタンを押してダウンロードをキャンセルします。<br>
       <br>
       Unityエディターのウィンドウが開きます。ウインドウ内はいくつかのビューに区切られています。<br>
-      左上にHierarchy（ヒエラルキー）、中央上にScene（シーン）、左下にProject（プロジェクト）、右にInspector（インスペク ター）があります。</p>
+      左上に<em>Hierarchy</em>（ヒエラルキー）、中央上に<em>Scene</em>（シーン）、左下に<em>Project</em>（プロジェクト）、右に<em>Inspector</em>（インスペク ター）があります。</p>
     <p><img src="Images/Tut9-3.jpg" alt=""></p>
     <h3><a id="mozTocId272488" class="mozTocH3"></a>***9.3.1 日本語化</h3>
     <p>言語パックをインストールしてあれば、Editメニュー＞Preference＞Languagesを開き、言語を選択できます。</p>
@@ -909,9 +913,9 @@ body {
     <h2><a id="mozTocId368665" class="mozTocH2"></a>**9.4 アセット作成</h2>
     <h3><a id="mozTocId913856" class="mozTocH3"></a>***9.4.1 FBXのインポート</h3>
     <p>BlenderからエクスポートしたFBXファイルを、Unityにインポートします。<br>
-      プロジェクトビューの「Models」フォルダへ、<b>Windowsファイルエクスプローラー</b>から<strong>TP01.fbx</strong>ファ イルをドラッグします。</p>
+      プロジェクトビューの「Models」フォルダへ、<b>Windowsファイルエクスプローラー</b>から<strong>TP01.fbx</strong>ファイルをドラッグします。</p>
     <p><img src="Images/Tut9-4-1_1.jpg" alt=""></p>
-    <p> または、プロジェクトビューのModelsフォルダを選び、<strong>Assetメニュー</strong>か<strong>右クリック</strong>か ら、「新しいアセットをインポート」して、TP01.fbxを選びます。</p>
+    <p> または、プロジェクトビューのModelsフォルダを選び、<strong>Assetメニュー</strong>か<strong>右クリック</strong>から、「新しいアセットをインポート」して、TP01.fbx を選びます。</p>
     <p><img src="Images/Tut9-4-1_1b.jpg" alt=""></p>
     <p>Modelsフォルダの中にTP01がインポートされてアイコンが表示されます。</p>
     <p><img src="Images/Tut9-4-1_2.jpg" alt=""></p>
@@ -1163,7 +1167,6 @@ body {
     <p>下記はTP-LootTables.txtのサンプルです。<br>
       これは<strong>浴室のキャビネット</strong>と<strong>釣り小屋の引き出し</strong>からトイレットペーパーが発見される確 率を設定します。<br>
       手順13.0の説明に従って「GEAR_ToiletPaperA」の名前を省略可能なので「ToiletPaperA」と記述しています。</p>
-    <p>コード </p>
     <blockquote>
       <pre><code>
 loottable=BathroomCabinet
@@ -1212,7 +1215,11 @@ item=GEAR_ToiletPaperA p=4.6700,1.8265,-3.1150 r=0.0000,55.7875,0.0000 c=100
       次に、Sceneモード中に［<strong>右 Ctrl</strong>］キーを押せば、その&lt;<strong>SceneName</strong>&gt; がクリップボードに<strong>コピー</strong>されます。<br>
       それをテキストエディタでTP- Scenes.txtの正しいScene位置に「<strong>貼 り付け</strong>」して下さい。<br>
       次に、Coordinates Grabberを<strong>Nameモード</strong>で使用して［<strong>右 Ctrl</strong>］ キーを押せば、マウスカーソルの下にあるアイテムの完全なア<strong>イテムスポーン定義</strong>がクリップボードに<strong>コピー</strong>さ れます。<br>
-      それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼 り付け</strong>」して下さい。</p>
+      それをテキストエディタでTP- Scenes.txtの正しいSceneの下の行に「<strong>貼り付け</strong>」して下さい。</p>
+    <h3>***13.3.2 scene コマンド</h3>
+    <p>デベロッパーコンソールで<strong>scene</strong>コマンドを使うと、そのsceneがすぐにロードされます。<br>
+      （例：　<strong style="background-color: #cccccc;">scene campoffice</strong>&nbsp;&nbsp; ）<br>
+      <em>注意：</em>まるで瞬間移動のようで便利だと思うでしょうが、シーンやプレイヤーのインベントリが初期化されるので、これは通常のプレイではなくデバッグでのみ使用してください。</p>
     <h1><a id="mozTocId977385" class="mozTocH1"></a>* 14.MODの再作成</h1>
     <p>2つのテキストファイルを保存したら、もう一度ModComponentを作ります。（手順10.3.2.）を参照。<br>
       それから、再び完成したMODを、もう一度インストールします。（手順11.）を参照。<br>
