@@ -1,0 +1,267 @@
+{
+	"author":"stmSantana",
+	"authorURL":"https://github.com/stmSantana?tab=repositories", 
+	"mods":[
+		{
+			"name":"FoodsBySantana", 
+			"displayName": "Foods by Santana",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.2.1", 
+			"updated":"2022-03-11", 
+			"description":"<b>(ITEM MOD)</b> Mod to add food such as ramen.<br>Move the two files in the downloaded ZIP to the Mods folder.<br><b>Note:</b> Zip files should not be moved to the Mods folder!", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/FoodsBySantana/main/images/Foods-v1.1_Thumb_01.jpg",
+			"modURL":"https://github.com/stmSantana/FoodsBySantana", 
+			"downloadURL":"https://github.com/stmSantana/FoodsBySantana/releases/latest/download/FoodsBySantana.zip", 
+			"testedon":{
+				"tldversion":"1.99",
+				"mlversion":"0.5.3"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities",
+				"CraftingRevisions"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"ToiletPaper", 
+			"displayName": "Toilet Paper Mod",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.0", 
+			"updated":"2022-02-07", 
+			"description":"<b>(ITEM MOD)</b> Mod to add toilet paper.", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/ToiletPaper/main/Images/Tut0-0.jpg",
+			"modURL":"https://github.com/stmSantana/ToiletPaper", 
+			"downloadURL":"https://github.com/stmSantana/ToiletPaper/releases/latest/download/Items_TP.modcomponent", 
+			"testedon":{
+				"tldversion":"1.99",
+				"mlversion":"0.5.3"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities",
+				"CraftingRevisions"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"Wall_Interior", 
+			"displayName": "Interior wall decorations and My pictures",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.4", 
+			"updated":"2022-04-08", 
+			"description":"<b>(ITEM MOD)</b> Mod to decoration such as posters.<br><b>Recommended mod:</b> Placing Anywhere ", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/InteriorWallDecorations/main/Images/Gallery/Gallery.jpg",
+			"modURL":"https://github.com/stmSantana/InteriorWallDecorations", 
+			"downloadURL":"https://github.com/stmSantana/InteriorWallDecorations/releases/latest/download/Wall_Interior.zip", 
+			"testedon":{
+				"tldversion":"2.00",
+				"mlversion":"0.5.4"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities",
+				"CraftingRevisions"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"Show-Map-Location", 
+			"displayName": "Show Map Location",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"4.1.0.1", 
+			"updated":"2022-02-18", 
+			"description":"Displays the player icon on the map like in story mode.", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/ToiletPaper/main/Images/Icon_ShopMapLocation.jpg",
+			"modURL":"https://github.com/stmSantana/Show-Map-Location", 
+			"downloadURL":"https://github.com/stmSantana/Show-Map-Location/releases/latest/download/Show-Map-Location.dll", 
+			"testedon":{
+				"tldversion":"1.99",
+				"mlversion":"0.5.3"
+			},
+			"dependencies":[
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":"Known issue: An arrow icon is also displayed on the world map. Ignore it."
+			}
+		},
+		{
+			"name":"HowToSurviveBook", 
+			"displayName": "How To Survive Book",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.0.1", 
+			"updated":"2022-03-15", 
+			"description":"Collectable books that increase all skill points are added to the game.", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/HowToSurviveBook/main/Images/Thumb_HtsBookAZ.jpg",
+			"modURL":"https://github.com/stmSantana/HowToSurviveBook", 
+			"downloadURL":"https://github.com/stmSantana/HowToSurviveBook/releases/latest/", 
+			"testedon":{
+				"tldversion":"1.99",
+				"mlversion":"0.5.3"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"ArrowColorChanger", 
+			"displayName": "Arrow Color Changer",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"2.0.0.1", 
+			"updated":"2022-03-16", 
+			"description":"You can change the color of the arrow.<br><b>Note:</b> Zip files should not be moved to the Mods folder!", 
+			"thumb": "https://raw.githubusercontent.com/stmSantana/ArrowColorChanger/main/Images/ArrowColor01.jpg",
+			"modURL":"https://github.com/stmSantana/ArrowColorChanger", 
+			"downloadURL":"https://github.com/stmSantana/ArrowColorChanger/releases/latest/download/ArrowColorChanger.zip", 
+			"testedon":{
+				"tldversion":"1.99",
+				"mlversion":"0.5.3"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"DiyBySantana", 
+			"displayName": "DIY by Santana",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.5.1", 
+			"updated":"2022-04-26", 
+			"description":"<b>(ITEM MOD)</b> Mod to add some craftable furniture.<br>Move files in the downloaded ZIP to the Mods folder.<br><b>Note:</b> Zip files should not be moved to the Mods folder!", 
+			"thumb": "",
+			"modURL":"https://github.com/stmSantana/DIY_by_Santana", 
+			"downloadURL":"https://github.com/stmSantana/DIY_by_Santana/releases/latest/download/DiyBySantana_v1.5.1.zip", 
+			"testedon":{
+				"tldversion":"2.0",
+				"mlversion":"0.5.4"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities",
+				"CraftingRevisions",
+				"Placing Anywhere"
+			], 
+			"updater":{
+				"enable":true, 
+				"downloads":[
+				"https://github.com/stmSantana/DIY_by_Santana/releases/latest/download/DiyBySantana.modcomponent",
+				"https://github.com/stmSantana/DIY_by_Santana/releases/latest/download/DiyBySantana_AddOn.modcomponent",
+				"https://github.com/stmSantana/DIY_by_Santana/releases/latest/download/DiyBySantana.dll"
+				] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		},
+		{
+			"name":"ItemPiles", 
+			"displayName": "Item Piles Mod",
+			"aliases":[], 
+			"author":"", 
+			"authorURL":"", 
+			"version":"1.2.2", 
+			"updated":"2022-04-17", 
+			"description":"<b>(ITEM MOD)</b> Mod to add some item piles.", 
+			"thumb": "",
+			"modURL":"https://github.com/stmSantana/ItemPiles", 
+			"downloadURL":"https://github.com/stmSantana/ItemPiles/releases/latest/download/ItemPiles.modcomponent", 
+			"testedon":{
+				"tldversion":"2.0",
+				"mlversion":"0.5.4"
+			},
+			"dependencies":[
+				"ModComponent",
+				"ModSettings",
+				"GearSpawner",
+				"LocalizationUtilities",
+				"CraftingRevisions",
+				"Placing Anywhere"
+			], 
+			"updater":{
+				"enable":false, 
+				"downloads":[] 
+			},
+			"status":{
+				"working":true,
+				"issues":"",
+				"notes":""
+			}
+		}
+	]
+}
