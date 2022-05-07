@@ -12,5 +12,5 @@
 - 親（レイヤー00 Default　、Colliderなし）、子（レイヤー00 Default 、Collider有り）……　マウスで触れない（ロード後） 
 - 親（レイヤー00 Default　、Collider有り）、子（レイヤー00 Default 、Colliderなし）……　通常のGear
 - 親（レイヤー00 Default　、Collider有り）、子（レイヤー00 Default 、Collider有り）……　プレイヤーと衝突する（ロード後）
-- 親（レイヤー17 Gear　 　、Collider有り）、子（レイヤー17 Gear　 　、Collider有り）……　通常のGearとして、プレイヤーがすり抜ける
+- 親（レイヤー17 Gear　 　、Collider有り）、子（レイヤー17 Gear　 　、Collider有り）……　通常のGear、プレイヤーがすり抜ける
 - 親（レイヤー18 Container、Collider有り）、子（レイヤー00 Default 、Collider有り）……　プレイヤーと衝突する
